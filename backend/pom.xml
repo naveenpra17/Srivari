@@ -22,7 +22,7 @@
         <mapstruct.version>1.6.3</mapstruct.version>
         <jjwt.version>0.12.6</jjwt.version>
         <springdoc.version>2.7.0</springdoc.version>
-        <cloudinary.version>2.0.0</cloudinary.version>
+        <cloudinary.version>1.39.0</cloudinary.version>
     </properties>
 
     <dependencies>

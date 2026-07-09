@@ -143,6 +143,8 @@ Copy from `backend/.env.example` and fill in real values:
 | `CLOUDINARY_CLOUD_NAME` | *(from Cloudinary)* |
 | `CLOUDINARY_API_KEY` | *(from Cloudinary)* |
 | `CLOUDINARY_API_SECRET` | *(from Cloudinary)* |
+
+> **Docker build failed with `DependencyResolutionException`?** Ensure `pom.xml` uses `cloudinary-http44` version `1.39.0` (version `2.0.0` does not exist on Maven Central).
 | `MAIL_HOST` | `smtp.gmail.com` *(optional)* |
 | `MAIL_PORT` | `587` |
 | `MAIL_USERNAME` | your email |
