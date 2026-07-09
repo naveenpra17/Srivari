@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/motors_db
+    url: jdbc:postgresql://db.bkhatfknfzxkumrdgqcj.supabase.co:5432/postgres?sslmode=require
     username: postgres
-    password: postgres
+    password: emBAuWtYWPlGJM8y
     driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: true

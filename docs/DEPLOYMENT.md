@@ -152,6 +152,8 @@ Copy from `backend/.env.example` and fill in real values:
 | `MAIL_FROM` | `noreply@motors.com` |
 | `MAIL_ADMIN` | `admin@motors.com` |
 
+> **Mail is optional.** If `MAIL_HOST` is not set, the app starts normally and contact/quote forms still save to the database — email notifications are skipped.
+
 5. Deploy and wait for **Live** status
 6. Test: `https://YOUR-SERVICE.onrender.com/api/v1/public/health` → `{"status":"UP"}`
 7. Swagger: `https://YOUR-SERVICE.onrender.com/api/swagger-ui.html`
@@ -253,6 +255,7 @@ Fresh installs only need `schema.sql` + `seed.sql`.
 | Blank homepage | Check browser console; verify `API_URL` on Vercel |
 | `jpaAuditingHandler` bean error | Fixed in code — remove duplicate `@EnableJpaAuditing`; redeploy |
 | Profile shows `dev` on Render | Set `SPRING_PROFILES_ACTIVE=prod` in Render env vars (also set in Dockerfile) |
+| `JavaMailSender` bean not found | Mail is optional — redeploy latest code; or set `MAIL_HOST`, `MAIL_USERNAME`, `MAIL_PASSWORD` |
 
 ---
 
