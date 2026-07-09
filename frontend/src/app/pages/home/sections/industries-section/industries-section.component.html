@@ -1,0 +1,58 @@
+<section class="section industries-section" id="industries">
+  <div class="section-bg" aria-hidden="true"></div>
+  <div class="container position-relative">
+    <div class="section-intro text-center">
+      <span class="eyebrow slide-up">Industries</span>
+      <h2 class="section-title slide-up">Sectors We Power</h2>
+      <p class="section-subtitle slide-up">Delivering reliable solutions across diverse industrial landscapes</p>
+    </div>
+
+    @if (industries().length > 0) {
+      <div class="row g-4">
+        @for (industry of industries(); track industry.id; let i = $index) {
+          <div class="col-lg-4 col-md-6">
+            <article
+              class="industry-card card-custom fade-in"
+              [class.visible]="visible()"
+              [style.animation-delay.ms]="i * 100">
+              @if (industry.imageUrl) {
+                <div class="industry-image">
+                  <img [src]="industry.imageUrl" [alt]="industry.name" loading="lazy">
+                </div>
+              }
+              <div class="industry-body">
+                <div class="industry-icon" [attr.aria-hidden]="true">
+                  @switch (industry.icon) {
+                    @case ('oil_barrel') {
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-1V3H6v2H5c-1.1 0-2 .9-2 2v1c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V7c0-1.1-.9-2-2-2zM5 10v9c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-9H5zm4 3h6v2H9v-2z"/></svg>
+                    }
+                    @case ('pickaxe') {
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.79 10.79L6.79 18.79 5.38 17.38l8-8-1.59-1.59 2.12-2.12 1.59 1.59 2.12-2.12 1.41 1.41-2.12 2.12 1.59 1.59-2.12 2.12zm4.5-4.5l1.41 1.41-2.83 2.83-1.41-1.41 2.83-2.83z"/></svg>
+                    }
+                    @case ('anchor') {
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5 0 3.53-3.28 8.86-5 11.15C10.28 17.86 7 12.53 7 9c0-2.76 2.24-5 5-5z"/></svg>
+                    }
+                    @case ('bolt') {
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66L11 3h1l-1 7h3.5c.49 0 .56.33.47.51L11 21z"/></svg>
+                    }
+                    @case ('science') {
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6 8h1.5v1.5H13V13zm1.5 1.5H16V16h-1.5v-1.5zM16 13h1.5v1.5H16V13zm-3 3h1.5v1.5H13V16zm1.5 1.5H16V19h-1.5v-1.5zM16 16h1.5v1.5H16V16zm1.5-1.5H19V16h-1.5v-1.5zm0 3H19V19h-1.5v-1.5zM22 11h-2V9h-2V7h-2V5h-2V3h-2V1h2v2h2v2h2v2h2v2h2v2z"/></svg>
+                    }
+                    @case ('water_drop') {
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8z"/></svg>
+                    }
+                    @default {
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    }
+                  }
+                </div>
+                <h3>{{ industry.name }}</h3>
+                <p>{{ industry.description }}</p>
+              </div>
+            </article>
+          </div>
+        }
+      </div>
+    }
+  </div>
+</section>

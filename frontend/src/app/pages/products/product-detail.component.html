@@ -1,0 +1,125 @@
+<main class="product-detail-page">
+  @if (loading()) {
+    <div class="container section text-center">
+      <p class="text-muted">Loading product...</p>
+    </div>
+  } @else if (product(); as p) {
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a routerLink="/">Home</a> /
+          <a routerLink="/products">Products</a> /
+          <span>{{ p.name }}</span>
+        </nav>
+        <h1>{{ p.name }}</h1>
+        @if (p.categoryName) {
+          <span class="category-badge">{{ p.categoryName }}</span>
+        }
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="product-gallery">
+            <div class="product-image-main card-custom">
+              @if (selectedImage(); as img) {
+                <img [ngSrc]="img.imageUrl"
+                     [alt]="img.altText || p.name"
+                     width="800" height="600"
+                     priority
+                     class="main-image">
+              }
+            </div>
+            @if (galleryImages().length > 1) {
+              <div class="thumbnail-row">
+                @for (img of galleryImages(); track img.id; let i = $index) {
+                  <button type="button"
+                    class="thumbnail"
+                    [class.active]="selectedImageIndex() === i"
+                    (click)="selectImage(i)"
+                    [attr.aria-label]="'View image ' + (i + 1)">
+                    <img [ngSrc]="img.imageUrl" [alt]="img.altText || p.name" width="100" height="80">
+                  </button>
+                }
+              </div>
+            }
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="product-info">
+            <p class="short-desc">{{ p.shortDescription }}</p>
+            @if (p.description) {
+              <div class="description">{{ p.description }}</div>
+            }
+            @if (specEntries(p).length > 0) {
+              <div class="specifications card-custom">
+                <h3>Specifications</h3>
+                <dl>
+                  @for (spec of specEntries(p); track spec.key) {
+                    <div class="spec-row">
+                      <dt>{{ spec.key }}</dt>
+                      <dd>{{ spec.value }}</dd>
+                    </div>
+                  }
+                </dl>
+              </div>
+            }
+            @if (p.price) {
+              <p class="price">Starting from <strong>{{ p.price | currency:'INR':'symbol':'1.0-0' }}</strong></p>
+            }
+
+            <div class="action-buttons">
+              <button class="btn-secondary-custom" (click)="toggleQuoteForm()">Request Quote</button>
+              @if (p.brochureUrl) {
+                <button class="btn-outline-custom" (click)="downloadBrochure()">Download Brochure</button>
+              }
+            </div>
+
+            @if (showQuoteForm()) {
+              <form class="quote-form card-custom" [formGroup]="quoteForm" (ngSubmit)="submitQuote()">
+                <h3>Request a Quote</h3>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label>Name *</label>
+                    <input formControlName="name" placeholder="Your name">
+                  </div>
+                  <div class="col-md-6">
+                    <label>Email *</label>
+                    <input type="email" formControlName="email" placeholder="your@email.com">
+                  </div>
+                  <div class="col-md-6">
+                    <label>Phone</label>
+                    <input formControlName="phone" placeholder="+91-9876543210">
+                  </div>
+                  <div class="col-md-6">
+                    <label>Company</label>
+                    <input formControlName="company" placeholder="Company name">
+                  </div>
+                  <div class="col-md-6">
+                    <label>Quantity *</label>
+                    <input type="number" formControlName="quantity" min="1">
+                  </div>
+                  <div class="col-12">
+                    <label>Message</label>
+                    <textarea formControlName="message" rows="3" placeholder="Additional requirements..."></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn-secondary-custom" [disabled]="quoteSubmitting()">
+                      {{ quoteSubmitting() ? 'Submitting...' : 'Submit Quote Request' }}
+                    </button>
+                  </div>
+                </div>
+              </form>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  } @else {
+    <div class="container section text-center">
+      <h2>Product not found</h2>
+      <a routerLink="/products" class="btn-secondary-custom mt-3">Back to Products</a>
+    </div>
+  }
+</main>

@@ -1,0 +1,111 @@
+<div class="admin-layout" [class.sidebar-open]="sidebarOpen()">
+
+  @if (sidebarOpen()) {
+    <div class="sidebar-overlay" (click)="closeSidebar()"></div>
+  }
+
+  <aside class="sidebar">
+
+    <div class="sidebar-header">
+
+      <h2>Motors Admin</h2>
+
+      <button class="sidebar-close d-lg-none" (click)="closeSidebar()" aria-label="Close menu">&times;</button>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <a routerLink="/admin/dashboard" routerLinkActive="active" (click)="closeSidebar()">Dashboard</a>
+
+      @if (auth.canEdit()) {
+
+        <a routerLink="/admin/products" routerLinkActive="active" (click)="closeSidebar()">Products</a>
+
+        <a routerLink="/admin/categories" routerLinkActive="active" (click)="closeSidebar()">Categories</a>
+
+        <a routerLink="/admin/industries" routerLinkActive="active" (click)="closeSidebar()">Industries</a>
+
+        <a routerLink="/admin/gallery" routerLinkActive="active" (click)="closeSidebar()">Gallery</a>
+
+        <a routerLink="/admin/testimonials" routerLinkActive="active" (click)="closeSidebar()">Testimonials</a>
+
+        <a routerLink="/admin/hero-slider" routerLinkActive="active" (click)="closeSidebar()">Hero Slider</a>
+
+        <a routerLink="/admin/settings" routerLinkActive="active" (click)="closeSidebar()">Settings</a>
+
+      }
+
+      <a routerLink="/admin/messages" routerLinkActive="active" (click)="closeSidebar()">Messages</a>
+
+      <a routerLink="/admin/quotes" routerLinkActive="active" (click)="closeSidebar()">Quote Requests</a>
+
+      @if (auth.isAdmin()) {
+
+        <a routerLink="/admin/users" routerLinkActive="active" (click)="closeSidebar()">Users</a>
+
+        <a routerLink="/admin/audit-logs" routerLinkActive="active" (click)="closeSidebar()">Audit Logs</a>
+
+      }
+
+      <a routerLink="/admin/profile" routerLinkActive="active" (click)="closeSidebar()">My Profile</a>
+
+    </nav>
+
+    <div class="sidebar-footer">
+
+      <a routerLink="/" target="_blank">View Site</a>
+
+      <button (click)="logout()">Logout</button>
+
+    </div>
+
+  </aside>
+
+  <main class="admin-main">
+
+    <header class="admin-topbar">
+
+      <div class="topbar-left">
+        <button class="sidebar-toggle d-lg-none" (click)="toggleSidebar()" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+        <span>Welcome, {{ auth.user()?.firstName }}</span>
+      </div>
+
+      <div class="topbar-actions">
+        <button class="theme-toggle" (click)="theme.toggle()" [attr.aria-label]="theme.darkMode() ? 'Switch to light mode' : 'Switch to dark mode'">
+          @if (theme.darkMode()) {
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1z"/></svg>
+          } @else {
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.08-.88-.1-1.36-.1z"/></svg>
+          }
+        </button>
+        @if (auth.isViewer()) {
+          <span class="viewer-badge">Read Only</span>
+        }
+      </div>
+
+    </header>
+
+    @if (auth.isViewer()) {
+
+      <div class="viewer-notice">
+
+        You have view-only access. Contact an administrator to make changes.
+
+      </div>
+
+    }
+
+    <div class="admin-content">
+
+      <router-outlet />
+
+    </div>
+
+  </main>
+
+</div>
+
+

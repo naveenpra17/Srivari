@@ -1,0 +1,82 @@
+<div class="admin-page-header">
+  <h1>Audit Logs</h1>
+  <p class="text-muted" style="margin: 0.25rem 0 0">Track create, update, and delete actions across the admin panel.</p>
+</div>
+
+@if (loading()) {
+  <div class="loading-state">Loading audit logs...</div>
+} @else if (logs().length === 0) {
+  <div class="empty-state admin-card">No audit log entries yet.</div>
+} @else {
+  <div class="admin-card">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Entity</th>
+          <th>Entity ID</th>
+          <th>User ID</th>
+          <th>IP</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (entry of logs(); track entry.id) {
+          <tr>
+            <td><span [class]="actionClass(entry.action)">{{ entry.action }}</span></td>
+            <td>{{ entry.entityType }}</td>
+            <td>{{ entry.entityId ?? '—' }}</td>
+            <td>{{ entry.userId ?? '—' }}</td>
+            <td>{{ entry.ipAddress ?? '—' }}</td>
+            <td>{{ entry.createdAt | date:'medium' }}</td>
+            <td>
+              <button class="btn-edit" (click)="viewLog(entry)">Details</button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  @if (totalPages() > 1) {
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button class="btn-outline-custom" [disabled]="currentPage() === 0" (click)="goToPage(currentPage() - 1)">Previous</button>
+      <span class="align-self-center">Page {{ currentPage() + 1 }} of {{ totalPages() }}</span>
+      <button class="btn-outline-custom" [disabled]="currentPage() >= totalPages() - 1" (click)="goToPage(currentPage() + 1)">Next</button>
+    </div>
+  }
+}
+
+@if (selectedLog(); as entry) {
+  <div class="admin-modal-overlay" (click)="closeDetail()">
+    <div class="admin-modal" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>{{ entry.action }} — {{ entry.entityType }}</h2>
+        <button class="close-btn" (click)="closeDetail()">&times;</button>
+      </div>
+      <div class="modal-body audit-detail">
+        <p><strong>Log ID:</strong> {{ entry.id }}</p>
+        <p><strong>Entity ID:</strong> {{ entry.entityId ?? '—' }}</p>
+        <p><strong>User ID:</strong> {{ entry.userId ?? 'System' }}</p>
+        <p><strong>IP Address:</strong> {{ entry.ipAddress ?? '—' }}</p>
+        <p><strong>Timestamp:</strong> {{ entry.createdAt | date:'full' }}</p>
+        @if (entry.oldValue) {
+          <div class="audit-json">
+            <strong>Previous Value</strong>
+            <pre>{{ entry.oldValue | json }}</pre>
+          </div>
+        }
+        @if (entry.newValue) {
+          <div class="audit-json">
+            <strong>New Value</strong>
+            <pre>{{ entry.newValue | json }}</pre>
+          </div>
+        }
+      </div>
+      <div class="modal-footer">
+        <button class="btn-cancel" (click)="closeDetail()">Close</button>
+      </div>
+    </div>
+  </div>
+}

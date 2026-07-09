@@ -1,0 +1,162 @@
+.product-detail-page {
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
+.page-hero {
+  background: var(--primary);
+  color: white;
+  padding: 40px 0;
+
+  .breadcrumb {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    word-break: break-word;
+
+    a { color: white; &:hover { color: var(--secondary); } }
+    span { color: var(--secondary); }
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+  }
+
+  .category-badge {
+    display: inline-block;
+    background: rgba(255, 107, 0, 0.2);
+    color: var(--secondary);
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+.product-image-main {
+  overflow: hidden;
+
+  .main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.product-gallery {
+  .thumbnail-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .thumbnail {
+    flex-shrink: 0;
+    width: 80px;
+    height: 64px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    transition: var(--transition);
+
+    img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    &.active, &:hover {
+      border-color: var(--secondary);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.specifications {
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+
+  h3 { font-size: 1rem; color: var(--primary); margin-bottom: 1rem; }
+
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color, #eee);
+    font-size: 0.9rem;
+
+    dt { color: var(--text-muted); font-weight: 500; }
+    dd { color: var(--text-dark); font-weight: 600; margin: 0; }
+  }
+}
+
+.product-info {
+  .short-desc {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+
+    strong { font-size: 1.5rem; color: var(--secondary); }
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.quote-form {
+  padding: 1.5rem;
+  margin-top: 1rem;
+
+  h3 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    min-height: 44px;
+    border: 1px solid var(--border-color, #e0e0e0);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+
+    &:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(10, 43, 94, 0.1);
+    }
+  }
+}

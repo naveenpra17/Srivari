@@ -1,0 +1,90 @@
+<section class="testimonials-hero">
+  <div class="container">
+    <span class="eyebrow fade-in">Real Customer Stories</span>
+    <h1 class="fade-in">Trusted by Industry Leaders Worldwide</h1>
+    <p class="fade-in">Discover how Motors Industries delivers reliability, performance, and partnership across manufacturing, energy, and infrastructure.</p>
+    <a routerLink="/" fragment="contact" class="btn-secondary-custom">Share Your Experience</a>
+  </div>
+</section>
+
+@if (featured().length > 0) {
+  <section class="section featured-section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured Stories</h2>
+        <p>Highlighted experiences from our most valued partners</p>
+      </div>
+      <div class="row g-4">
+        @for (item of featured(); track item.id) {
+          <div class="col-lg-4 col-md-6">
+            <app-testimonial-card [testimonial]="item" (liked)="onLike($event)" />
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+}
+
+<section class="section browse-section">
+  <div class="container">
+    <div class="filters-panel">
+      <div class="search-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C8.01 14 6 11.99 6 9.5S8.01 5 10.5 5 15 7.01 15 9.5 12.99 14 10.5 14z"/></svg>
+        <input
+          type="search"
+          [(ngModel)]="searchQuery"
+          (ngModelChange)="onSearchChange()"
+          placeholder="Search testimonials..."
+          aria-label="Search testimonials">
+      </div>
+      <div class="filter-row">
+        <select [(ngModel)]="selectedCategory" (ngModelChange)="onFilterChange()" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          @for (cat of categories(); track cat) {
+            <option [value]="cat">{{ cat }}</option>
+          }
+        </select>
+        <select [(ngModel)]="selectedRating" (ngModelChange)="onFilterChange()" aria-label="Filter by rating">
+          <option [ngValue]="0">All Ratings</option>
+          <option [ngValue]="5">5 Stars</option>
+          <option [ngValue]="4">4+ Stars</option>
+          <option [ngValue]="3">3+ Stars</option>
+        </select>
+        <select [(ngModel)]="sortBy" (ngModelChange)="onFilterChange()" aria-label="Sort testimonials">
+          <option value="latest">Latest</option>
+          <option value="oldest">Oldest</option>
+          <option value="popular">Most Popular</option>
+        </select>
+      </div>
+    </div>
+
+    @if (loading()) {
+      <div class="loading-grid">
+        @for (i of [1,2,3,4,5,6]; track i) {
+          <div class="skeleton-card"></div>
+        }
+      </div>
+    } @else if (testimonials().length === 0) {
+      <div class="empty-state">
+        <h3>No testimonials found</h3>
+        <p>Try adjusting your search or filters.</p>
+      </div>
+    } @else {
+      <div class="row g-4">
+        @for (item of testimonials(); track item.id) {
+          <div class="col-lg-4 col-md-6">
+            <app-testimonial-card [testimonial]="item" (liked)="onLike($event)" />
+          </div>
+        }
+      </div>
+
+      @if (totalPages() > 1) {
+        <nav class="pagination-wrap" aria-label="Testimonials pagination">
+          <button class="btn-outline-custom" [disabled]="currentPage() === 0" (click)="goToPage(currentPage() - 1)">Previous</button>
+          <span>Page {{ currentPage() + 1 }} of {{ totalPages() }}</span>
+          <button class="btn-outline-custom" [disabled]="currentPage() >= totalPages() - 1" (click)="goToPage(currentPage() + 1)">Next</button>
+        </nav>
+      }
+    }
+  </div>
+</section>

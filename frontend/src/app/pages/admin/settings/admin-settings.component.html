@@ -1,0 +1,75 @@
+<div class="admin-page-header">
+  <h1>Site Settings</h1>
+  <button class="btn-save" [disabled]="saving() || loading()" (click)="save()">
+    {{ saving() ? 'Saving...' : 'Save All Settings' }}
+  </button>
+</div>
+
+@if (loading()) {
+  <div class="loading-state">Loading settings...</div>
+} @else if (form) {
+  <div class="admin-card" style="padding: 1.5rem">
+    <form class="admin-form" [formGroup]="form">
+      <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1rem;">Company Information</h3>
+      @for (key of ['company_name', 'company_tagline', 'company_phone', 'company_email', 'company_address', 'company_working_hours']; track key) {
+        <div class="form-group">
+          <label>{{ labelFor(key) }}</label>
+          @if (isTextarea(key)) {
+            <textarea [formControlName]="key" rows="2"></textarea>
+          } @else {
+            <input [formControlName]="key">
+          }
+        </div>
+      }
+
+      <h3 style="color: var(--primary); margin: 1.5rem 0 1rem; font-size: 1rem;">Statistics</h3>
+      <div class="form-row">
+        @for (key of ['years_experience', 'happy_clients', 'products_delivered', 'countries_served']; track key) {
+          <div class="form-group">
+            <label>{{ labelFor(key) }}</label>
+            <input [formControlName]="key">
+          </div>
+        }
+      </div>
+
+      <h3 style="color: var(--primary); margin: 1.5rem 0 1rem; font-size: 1rem;">About Section</h3>
+      @for (key of ['about_mission', 'about_vision', 'about_history', 'about_achievements']; track key) {
+        <div class="form-group">
+          <label>{{ labelFor(key) }}</label>
+          <textarea [formControlName]="key" rows="3"></textarea>
+        </div>
+      }
+
+      <h3 style="color: var(--primary); margin: 1.5rem 0 1rem; font-size: 1rem;">Social Media</h3>
+      <div class="form-row">
+        @for (key of ['facebook_url', 'linkedin_url', 'twitter_url', 'instagram_url']; track key) {
+          <div class="form-group">
+            <label>{{ labelFor(key) }}</label>
+            <input [formControlName]="key">
+          </div>
+        }
+      </div>
+
+      <div class="form-group">
+        <label>Google Maps Embed URL</label>
+        <textarea formControlName="google_maps_embed" rows="2"></textarea>
+      </div>
+
+      <h3 style="color: var(--primary); margin: 1.5rem 0 1rem; font-size: 1rem;">WhatsApp &amp; Chat Widget</h3>
+      <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 1rem;">
+        Configure the floating chat button. Use <code>chat_provider</code> to switch providers in the future (whatsapp, tawk, crisp, intercom, none).
+        Use <code>&#123;productName&#125;</code> in product messages.
+      </p>
+      @for (key of ['chat_provider', 'chat_widget_enabled', 'whatsapp_phone', 'whatsapp_tooltip', 'whatsapp_message_general', 'whatsapp_message_product', 'whatsapp_message_contact']; track key) {
+        <div class="form-group">
+          <label>{{ labelFor(key) }}</label>
+          @if (isTextarea(key)) {
+            <textarea [formControlName]="key" rows="2"></textarea>
+          } @else {
+            <input [formControlName]="key">
+          }
+        </div>
+      }
+    </form>
+  </div>
+}

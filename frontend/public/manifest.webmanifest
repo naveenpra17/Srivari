@@ -1,0 +1,10 @@
+{
+  "name": "Motors Industries",
+  "short_name": "Motors",
+  "description": "Premium industrial motors, pumps, pipes and accessories",
+  "theme_color": "#0A2B5E",
+  "background_color": "#F7F8FA",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}

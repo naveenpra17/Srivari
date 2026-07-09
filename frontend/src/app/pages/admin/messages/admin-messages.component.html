@@ -1,0 +1,70 @@
+<div class="admin-page-header">
+  <h1>Contact Messages</h1>
+</div>
+
+@if (loading()) {
+  <div class="loading-state">Loading messages...</div>
+} @else if (messages().length === 0) {
+  <div class="empty-state admin-card">No messages yet.</div>
+} @else {
+  <div class="admin-card">
+    <table class="admin-table">
+      <thead>
+        <tr><th>Status</th><th>Name</th><th>Email</th><th>Date</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        @for (msg of messages(); track msg.id) {
+          <tr [style.fontWeight]="!msg.isRead ? '600' : 'normal'">
+            <td>
+              @if (!msg.isRead) {
+                <span class="badge unread">New</span>
+              } @else {
+                <span class="badge active">Read</span>
+              }
+            </td>
+            <td>{{ msg.name }}</td>
+            <td>{{ msg.email }}</td>
+            <td>{{ msg.createdAt | date:'medium' }}</td>
+            <td>
+              <div class="admin-actions">
+                <button class="btn-edit" (click)="viewMessage(msg)">View</button>
+                <button class="btn-delete" (click)="deleteMessage(msg)">Delete</button>
+              </div>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  @if (totalPages() > 1) {
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button class="btn-outline-custom" [disabled]="currentPage() === 0" (click)="goToPage(currentPage() - 1)">Previous</button>
+      <span class="align-self-center">Page {{ currentPage() + 1 }} of {{ totalPages() }}</span>
+      <button class="btn-outline-custom" [disabled]="currentPage() >= totalPages() - 1" (click)="goToPage(currentPage() + 1)">Next</button>
+    </div>
+  }
+}
+
+@if (selectedMessage(); as msg) {
+  <div class="admin-modal-overlay" (click)="closeDetail()">
+    <div class="admin-modal" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>Message from {{ msg.name }}</h2>
+        <button class="close-btn" (click)="closeDetail()">&times;</button>
+      </div>
+      <div class="modal-body" style="line-height: 1.7">
+        <p><strong>Email:</strong> {{ msg.email }}</p>
+        @if (msg.phone) { <p><strong>Phone:</strong> {{ msg.phone }}</p> }
+        @if (msg.subject) { <p><strong>Subject:</strong> {{ msg.subject }}</p> }
+        <p><strong>Date:</strong> {{ msg.createdAt | date:'full' }}</p>
+        <hr style="margin: 1rem 0; border: none; border-top: 1px solid #eee">
+        <p>{{ msg.message }}</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-delete" style="padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer" (click)="deleteMessage(msg)">Delete</button>
+        <button class="btn-cancel" (click)="closeDetail()">Close</button>
+      </div>
+    </div>
+  </div>
+}

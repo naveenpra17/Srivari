@@ -1,0 +1,58 @@
+<div class="admin-page-header">
+  <h1>Testimonials</h1>
+  <button class="btn-secondary-custom" (click)="openCreate()">+ Add Testimonial</button>
+</div>
+
+@if (loading()) { <div class="loading-state">Loading...</div> }
+@else {
+  <div class="admin-card">
+    <table class="admin-table">
+      <thead><tr><th>Client</th><th>Company</th><th>Rating</th><th>Status</th><th>Actions</th></tr></thead>
+      <tbody>
+        @for (item of items(); track item.id) {
+          <tr>
+            <td>{{ item.clientName }}</td>
+            <td>{{ item.company || '—' }}</td>
+            <td>{{ item.rating }} / 5</td>
+            <td><span class="badge" [class.active]="item.active" [class.inactive]="!item.active">{{ item.active ? 'Active' : 'Inactive' }}</span></td>
+            <td><div class="admin-actions"><button class="btn-edit" (click)="openEdit(item)">Edit</button><button class="btn-delete" (click)="deleteItem(item)">Delete</button></div></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}
+
+@if (showModal()) {
+  <div class="admin-modal-overlay" (click)="closeModal()">
+    <div class="admin-modal" (click)="$event.stopPropagation()">
+      <div class="modal-header"><h2>{{ editingId() ? 'Edit' : 'Add' }} Testimonial</h2><button class="close-btn" (click)="closeModal()">&times;</button></div>
+      <form class="modal-body admin-form" [formGroup]="form">
+        <div class="form-row">
+          <div class="form-group"><label>Client Name *</label><input formControlName="clientName"></div>
+          <div class="form-group"><label>Designation</label><input formControlName="designation"></div>
+        </div>
+        <div class="form-group"><label>Company</label><input formControlName="company"></div>
+        <div class="form-row">
+          <div class="form-group"><label>Category</label><input formControlName="category" placeholder="e.g. Manufacturing, Energy"></div>
+          <div class="form-group"><label>Slug (optional)</label><input formControlName="slug" placeholder="auto-generated if empty"></div>
+        </div>
+        <div class="form-group"><label>Short Quote *</label><textarea formControlName="content" rows="3"></textarea></div>
+        <div class="form-group"><label>Full Story</label><textarea formControlName="fullStory" rows="4" placeholder="Extended story for detail page"></textarea></div>
+        <div class="form-group"><label>Photo</label><app-image-upload folder="testimonials" [imageUrl]="form.get('imageUrl')?.value || ''" (imageUrlChange)="form.patchValue({imageUrl: $event})" /></div>
+        <div class="form-group"><label>Video URL (optional)</label><input formControlName="videoUrl" placeholder="YouTube or video link"></div>
+        <div class="form-row">
+          <div class="form-group"><label>Rating (1-5)</label><input type="number" formControlName="rating" min="1" max="5"></div>
+          <div class="form-group"><label>Sort Order</label><input type="number" formControlName="sortOrder"></div>
+          <div class="form-group"><label>Likes</label><input type="number" formControlName="likes" min="0"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group checkbox-row"><input type="checkbox" formControlName="featured" id="featured"><label for="featured">Featured</label></div>
+          <div class="form-group checkbox-row"><input type="checkbox" formControlName="verified" id="verified"><label for="verified">Verified</label></div>
+          <div class="form-group checkbox-row"><input type="checkbox" formControlName="active" id="testActive"><label for="testActive">Active</label></div>
+        </div>
+      </form>
+      <div class="modal-footer"><button class="btn-cancel" (click)="closeModal()">Cancel</button><button class="btn-save" [disabled]="saving()" (click)="save()">Save</button></div>
+    </div>
+  </div>
+}

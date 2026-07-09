@@ -1,0 +1,92 @@
+@if (loading()) {
+  <div class="loading-state container section">Loading story...</div>
+} @else if (testimonial(); as t) {
+  <article class="story-page">
+    <header class="story-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a routerLink="/">Home</a> / <a routerLink="/testimonials">Testimonials</a> / <span>{{ t.clientName }}</span>
+        </nav>
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            @if (t.category) { <span class="eyebrow">{{ t.category }}</span> }
+            <h1>{{ t.clientName }}'s Experience</h1>
+            <p class="lead">"{{ t.content }}"</p>
+            <div class="meta-row">
+              <app-star-rating [rating]="t.rating" />
+              @if (t.verified) {
+                <span class="verified-badge">✓ Verified Customer</span>
+              }
+              @if (t.createdAt) {
+                <time [dateTime]="t.createdAt">{{ t.createdAt | date:'longDate' }}</time>
+              }
+            </div>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="profile-card">
+              <div class="profile-avatar">
+                @if (t.imageUrl) {
+                  <img [src]="t.imageUrl" [alt]="t.clientName" loading="eager" width="120" height="120">
+                } @else {
+                  <span>{{ t.clientName.charAt(0) }}</span>
+                }
+              </div>
+              <h2>{{ t.clientName }}</h2>
+              <p>{{ t.designation }}@if (t.company) {, {{ t.company }}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container section story-body">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <section class="story-content premium-card">
+            <h2>Full Story</h2>
+            <div class="story-text">
+              {{ t.fullStory || t.content }}
+            </div>
+            @if (t.videoUrl) {
+              <div class="video-wrap">
+                <a [href]="t.videoUrl" target="_blank" rel="noopener">Watch video testimonial →</a>
+              </div>
+            }
+          </section>
+
+          <section class="comments-placeholder premium-card" aria-label="Comments section coming soon">
+            <h3>Comments</h3>
+            <p class="text-muted">Community discussions are coming soon. Share your thoughts with us on WhatsApp in the meantime.</p>
+          </section>
+        </div>
+
+        <aside class="col-lg-4">
+          <div class="sidebar-card premium-card">
+            <button type="button" class="like-btn-lg" (click)="likeStory()" [disabled]="liked()">
+              ♥ {{ t.likes ?? 0 }} {{ liked() ? 'Liked' : 'Like this story' }}
+            </button>
+            <div class="share-group">
+              <span>Share</span>
+              <button type="button" (click)="share('twitter')" aria-label="Share on Twitter">Twitter</button>
+              <button type="button" (click)="share('linkedin')" aria-label="Share on LinkedIn">LinkedIn</button>
+              <button type="button" (click)="share('copy')" aria-label="Copy link">Copy link</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      @if (related().length > 0) {
+        <section class="related-section">
+          <h2>Related Stories</h2>
+          <div class="row g-4">
+            @for (item of related(); track item.id) {
+              <div class="col-md-6 col-lg-3">
+                <app-testimonial-card [testimonial]="item" [showLike]="false" [compact]="true" />
+              </div>
+            }
+          </div>
+        </section>
+      }
+    </div>
+  </article>
+}

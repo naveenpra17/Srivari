@@ -1,0 +1,44 @@
+<section class="testimonials-section section" id="testimonials">
+  <div class="section-bg" aria-hidden="true"></div>
+  <div class="container position-relative">
+    <div class="section-intro text-center">
+      <span class="eyebrow slide-up">Customer Voices</span>
+      <h2 class="section-title slide-up">Stories That Inspire Trust</h2>
+      <p class="section-subtitle slide-up">Real experiences from partners who power industries with Motors Industries</p>
+    </div>
+
+    @if (featured().length > 0) {
+      <div class="carousel-stage">
+        <div class="row g-4 justify-content-center">
+          @for (item of visibleCards(); track item.id) {
+            <div class="col-lg-4 col-md-6">
+              <app-testimonial-card [testimonial]="item" (liked)="onLike($event)" />
+            </div>
+          }
+        </div>
+
+        @if (featured().length > 3) {
+          <div class="carousel-controls">
+            <button type="button" class="nav-btn" (click)="next()" aria-label="Next testimonials">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+            <div class="dots" role="tablist">
+              @for (t of featured(); track t.id; let i = $index) {
+                <button
+                  type="button"
+                  role="tab"
+                  [class.active]="currentIndex() === i"
+                  (click)="goTo(i)"
+                  [attr.aria-label]="'Show testimonial ' + (i + 1)"></button>
+              }
+            </div>
+          </div>
+        }
+      </div>
+
+      <div class="text-center mt-5">
+        <a routerLink="/testimonials" class="btn-primary-custom">Explore All Stories</a>
+      </div>
+    }
+  </div>
+</section>

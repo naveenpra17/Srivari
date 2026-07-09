@@ -1,0 +1,71 @@
+<div class="admin-page-header">
+  <h1>Quote Requests</h1>
+</div>
+
+@if (loading()) { <div class="loading-state">Loading...</div> }
+@else if (quotes().length === 0) { <div class="empty-state admin-card">No quote requests yet.</div> }
+@else {
+  <div class="admin-card">
+    <table class="admin-table">
+      <thead>
+        <tr><th>Status</th><th>Product</th><th>Name</th><th>Email</th><th>Qty</th><th>Date</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        @for (q of quotes(); track q.id) {
+          <tr [style.fontWeight]="!q.isRead ? '600' : 'normal'">
+            <td><span class="badge" [class.unread]="!q.isRead" [class.active]="q.isRead">{{ q.isRead ? 'Read' : 'New' }}</span></td>
+            <td>{{ q.productName || '—' }}</td>
+            <td>{{ q.name }}</td>
+            <td>{{ q.email }}</td>
+            <td>{{ q.quantity || '—' }}</td>
+            <td>{{ q.createdAt | date:'medium' }}</td>
+            <td>
+              <div class="admin-actions">
+                <button class="btn-edit" (click)="viewQuote(q)">View</button>
+                @if (auth.canDelete()) {
+                  <button class="btn-delete" (click)="deleteQuote(q)">Delete</button>
+                }
+              </div>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  @if (totalPages() > 1) {
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button class="btn-outline-custom" [disabled]="currentPage() === 0" (click)="goToPage(currentPage() - 1)">Previous</button>
+      <span class="align-self-center">Page {{ currentPage() + 1 }} of {{ totalPages() }}</span>
+      <button class="btn-outline-custom" [disabled]="currentPage() >= totalPages() - 1" (click)="goToPage(currentPage() + 1)">Next</button>
+    </div>
+  }
+}
+
+@if (selected(); as q) {
+  <div class="admin-modal-overlay" (click)="closeDetail()">
+    <div class="admin-modal" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>Quote from {{ q.name }}</h2>
+        <button class="close-btn" (click)="closeDetail()">&times;</button>
+      </div>
+      <div class="modal-body" style="line-height: 1.7">
+        <p><strong>Product:</strong> {{ q.productName || 'N/A' }}</p>
+        <p><strong>Email:</strong> {{ q.email }}</p>
+        <p><strong>Phone:</strong> {{ q.phone || 'N/A' }}</p>
+        <p><strong>Company:</strong> {{ q.company || 'N/A' }}</p>
+        <p><strong>Quantity:</strong> {{ q.quantity || 'N/A' }}</p>
+        <p><strong>Date:</strong> {{ q.createdAt | date:'full' }}</p>
+        @if (q.message) {
+          <hr style="margin: 1rem 0; border: none; border-top: 1px solid #eee">
+          <p>{{ q.message }}</p>
+        }
+      </div>
+      <div class="modal-footer">
+        @if (auth.canDelete()) {
+          <button class="btn-delete" style="padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer" (click)="deleteQuote(q)">Delete</button>
+        }
+        <button class="btn-cancel" (click)="closeDetail()">Close</button>
+      </div>
+    </div>
+  </div>
+}
