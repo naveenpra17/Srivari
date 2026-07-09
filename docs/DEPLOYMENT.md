@@ -251,6 +251,8 @@ Fresh installs only need `schema.sql` + `seed.sql`.
 | 502 on first API call | Render free tier waking up — wait and retry |
 | Admin login fails | Re-run `seed.sql` or reset password in DB |
 | Blank homepage | Check browser console; verify `API_URL` on Vercel |
+| `jpaAuditingHandler` bean error | Fixed in code — remove duplicate `@EnableJpaAuditing`; redeploy |
+| Profile shows `dev` on Render | Set `SPRING_PROFILES_ACTIVE=prod` in Render env vars (also set in Dockerfile) |
 
 ---
 
