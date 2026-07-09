@@ -21,7 +21,7 @@ motors/
 | Frontend | Angular 20, Bootstrap 5, Angular Material, Signals, RxJS |
 | Database | PostgreSQL (Supabase) |
 | Images | Cloudinary |
-| Hosting | Render (API) + Vercel (Frontend) |
+| Hosting | Render (Docker API) + Vercel (Frontend) |
 
 ## Quick Start (Local)
 

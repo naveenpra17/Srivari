@@ -89,20 +89,42 @@ jdbc:postgresql://db.YOUR_PROJECT_REF.supabase.co:5432/postgres?sslmode=require
 
 ---
 
-## Step 4 — Render (Backend)
+## Step 4 — Render (Backend — Docker)
 
-1. Go to [render.com](https://render.com) → **New → Blueprint** (or **Web Service**)
+Render uses **Docker** for Java/Spring Boot (no native Java runtime). A `Dockerfile` is included in `backend/`.
+
+1. Go to [render.com](https://render.com) → **New → Web Service**
 2. Connect your GitHub repo
-3. If using `backend/render.yaml` Blueprint, Render auto-configures the service
-4. Otherwise set manually:
+3. Configure:
 
 | Setting | Value |
 |---------|-------|
-| Root Directory | `backend` |
-| Runtime | Java |
-| Build Command | `mvn clean package -DskipTests` |
-| Start Command | `java -jar target/motors-backend-1.0.0.jar` |
-| Health Check Path | `/api/v1/public/health` |
+| **Root Directory** | `backend` |
+| **Runtime** | `Docker` |
+| **Dockerfile Path** | `./Dockerfile` *(auto-detected if root is `backend`)* |
+| **Health Check Path** | `/api/v1/public/health` |
+
+> **Blueprint:** You can also use **New → Blueprint** and point to `backend/render.yaml`.
+
+**Or via Render dashboard manually:**
+- Environment → **Docker**
+- Root directory → `backend`
+- Render builds the image from `backend/Dockerfile` and runs the Spring Boot JAR inside the container.
+
+**Local Docker test (optional):**
+
+```bash
+cd backend
+docker build -t motors-backend .
+docker run -p 8080:8080 \
+  -e SPRING_PROFILES_ACTIVE=prod \
+  -e DATABASE_URL=jdbc:postgresql://host.docker.internal:5432/motors_db \
+  -e DATABASE_USERNAME=postgres \
+  -e DATABASE_PASSWORD=yourpassword \
+  -e JWT_SECRET=your-secret-key-at-least-256-bits-long \
+  -e CORS_ALLOWED_ORIGINS=http://localhost:4200 \
+  motors-backend
+```
 
 ### Environment variables (Render → Environment)
 
