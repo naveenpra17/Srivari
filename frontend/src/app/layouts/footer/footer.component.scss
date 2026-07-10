@@ -5,19 +5,36 @@
 .footer-industrial {
   background: $color-primary;
   color: rgba($color-white, 0.85);
-  padding: 64px 0 0;
+  padding: 48px 0 0;
+
+  @include respond-to(md) {
+    padding: 56px 0 0;
+  }
+
+  @include respond-to(lg) {
+    padding: 64px 0 0;
+  }
 
   h3, h4 {
     color: $color-white;
-    margin-bottom: 1rem;
-    font-size: 1.05rem;
+    margin-bottom: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
+
+    @include respond-to(md) {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
   }
 
   p {
-    font-size: 0.9rem;
-    line-height: 1.7;
-    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.65;
+
+    @include respond-to(md) {
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
   }
 
   ul {
@@ -26,13 +43,17 @@
     margin: 0;
 
     li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
 
       a {
         color: rgba($color-white, 0.72);
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         text-decoration: none;
         transition: color $transition;
+
+        @include respond-to(md) {
+          font-size: 0.9rem;
+        }
 
         &:hover { color: $color-secondary; }
       }
@@ -40,14 +61,27 @@
   }
 }
 
+.footer-brand {
+  margin-bottom: 0.5rem;
+
+  @include respond-to(lg) {
+    margin-bottom: 0;
+  }
+}
+
 .social-links {
   display: flex;
-  gap: 10px;
-  margin-top: 1.25rem;
+  gap: 8px;
+  margin-top: 1rem;
+
+  @include respond-to(md) {
+    gap: 10px;
+    margin-top: 1.25rem;
+  }
 
   a {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     background: rgba($color-white, 0.1);
     display: flex;
@@ -56,46 +90,66 @@
     color: $color-white;
     transition: $transition;
 
+    @include respond-to(md) {
+      width: 40px;
+      height: 40px;
+    }
+
     &:hover {
       background: $color-secondary;
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
   }
 }
 
 .newsletter-text {
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.85rem !important;
   color: rgba($color-white, 0.7);
 }
 
 .newsletter-form {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.6rem;
 
   input {
-    padding: 12px 16px;
+    padding: 11px 14px;
     border: none;
     border-radius: $radius-pill;
     font-family: $font-family;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     outline: none;
+    width: 100%;
   }
 
   button {
-    padding: 12px 20px;
+    padding: 11px 18px;
     font-size: 0.85rem;
+    width: 100%;
+
+    @include respond-to(sm) {
+      width: auto;
+    }
   }
 }
 
 .footer-bottom {
-  margin-top: 48px;
-  padding: 20px 0;
+  margin-top: 36px;
+  padding: 18px 0;
   border-top: 1px solid rgba($color-white, 0.12);
   text-align: center;
 
+  @include respond-to(md) {
+    margin-top: 44px;
+    padding: 20px 0;
+  }
+
   p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: rgba($color-white, 0.5);
+
+    @include respond-to(md) {
+      font-size: 0.85rem;
+    }
   }
 }

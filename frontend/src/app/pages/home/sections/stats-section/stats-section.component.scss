@@ -3,69 +3,110 @@
 
 .stats-industrial {
   background: $color-primary;
-  padding: 56px 0;
+  padding: 40px 0;
+
+  @include respond-to(md) {
+    padding: 56px 0;
+  }
 
   @include respond-to(lg) {
-    padding: 72px 0;
+    padding: 64px 0;
   }
 }
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 0.75rem;
 
   @include respond-to(md) {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 
   @include respond-to(lg) {
     grid-template-columns: repeat(5, 1fr);
-    gap: 1.25rem;
+    gap: 1rem;
   }
 }
 
 .stat-card {
   text-align: center;
-  padding: 1.5rem 1rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.15rem 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: $radius;
-  transition: $transition;
+  transition: background $transition;
 
-  &:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-4px);
+  @include respond-to(md) {
+    padding: 1.35rem 1rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background: rgba(255, 255, 255, 0.09);
+    }
+  }
+
+  // Center the 5th stat on mobile (2-col grid)
+  &:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 220px;
+    margin: 0 auto;
+    width: 100%;
+
+    @include respond-to(md) {
+      grid-column: auto;
+      max-width: none;
+      margin: 0;
+    }
   }
 
   .stat-icon {
     color: $color-secondary;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: center;
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      @include respond-to(md) {
+        width: 28px;
+        height: 28px;
+      }
+    }
   }
 
   .stat-value {
-    font-size: 2rem;
+    font-size: 1.65rem;
     font-weight: 700;
     color: $color-white;
     line-height: 1;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.3rem;
+
+    @include respond-to(sm) {
+      font-size: 1.85rem;
+    }
 
     @include respond-to(md) {
-      font-size: 2.25rem;
+      font-size: 2.1rem;
     }
   }
 
   .stat-label {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.72);
     font-weight: 500;
+    line-height: 1.35;
+
+    @include respond-to(md) {
+      font-size: 0.8rem;
+    }
   }
 }
 
-.stats-industrial.animated .stat-card {
-  .stat-value {
-    animation: ind-scale-in 0.5s ease backwards;
-  }
+.stats-industrial.animated .stat-card .stat-value {
+  animation: ind-scale-in 0.5s ease backwards;
 }

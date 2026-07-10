@@ -2,18 +2,29 @@
 @use '../../../../../styles/industrial/mixins' as *;
 
 .gallery-industrial {
-  @include section-padding;
   background: $color-bg;
+  @include section-padding;
+  overflow: hidden;
 }
 
 .gallery-masonry {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 180px;
-  gap: 1rem;
+  grid-auto-rows: 150px;
+  gap: 0.75rem;
+
+  @include respond-to(sm) {
+    grid-auto-rows: 170px;
+    gap: 1rem;
+  }
 
   @include respond-to(md) {
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 180px;
+    gap: 1rem;
+  }
+
+  @include respond-to(lg) {
     grid-auto-rows: 200px;
     gap: 1.125rem;
   }
@@ -46,27 +57,31 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.45s ease;
   }
 
   .gallery-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, transparent 40%, rgba($color-primary, 0.88) 100%);
+    background: linear-gradient(180deg, transparent 35%, rgba($color-primary, 0.85) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 1rem;
+    padding: 0.85rem;
     opacity: 0;
     transition: opacity $transition;
+
+    @include respond-to(md) {
+      padding: 1rem;
+    }
 
     .zoom {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 48px;
-      height: 48px;
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
       background: $color-white;
       color: $color-primary;
@@ -78,17 +93,28 @@
     .title {
       color: $color-white;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.85rem;
+
+      @include respond-to(md) {
+        font-size: 0.95rem;
+      }
     }
   }
 
-  &:hover,
-  &:focus-visible {
-    transform: translateY(-4px);
-    box-shadow: $shadow-lg;
-    outline: none;
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: $shadow-md;
 
-    img { transform: scale(1.06); }
+      img { transform: scale(1.05); }
+      .gallery-overlay { opacity: 1; }
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-secondary;
+    outline-offset: 2px;
+
     .gallery-overlay { opacity: 1; }
   }
 }
@@ -97,27 +123,35 @@
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba($color-primary, 0.92);
+  background: rgba($color-primary, 0.94);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.25rem;
   animation: ind-fade-in 0.3s ease;
 
+  @include respond-to(md) {
+    padding: 2rem;
+  }
+
   img {
-    max-width: min(92vw, 900px);
-    max-height: 72vh;
+    max-width: min(94vw, 900px);
+    max-height: 68vh;
     border-radius: $radius;
     box-shadow: $shadow-lg;
+
+    @include respond-to(md) {
+      max-height: 72vh;
+    }
   }
 
   .lightbox-close {
     position: absolute;
-    top: max(20px, env(safe-area-inset-top));
-    right: max(20px, env(safe-area-inset-right));
-    width: 48px;
-    height: 48px;
+    top: max(16px, env(safe-area-inset-top));
+    right: max(16px, env(safe-area-inset-right));
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     border: 1px solid rgba($color-white, 0.25);
     background: rgba($color-white, 0.1);
@@ -135,12 +169,13 @@
   }
 
   .lightbox-caption {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
     text-align: center;
     color: $color-white;
     max-width: 560px;
+    padding: 0 0.5rem;
 
-    h3 { margin: 0 0 0.35rem; font-size: 1.2rem; }
-    p { margin: 0; color: rgba($color-white, 0.75); line-height: 1.6; }
+    h3 { margin: 0 0 0.35rem; font-size: 1.1rem; }
+    p { margin: 0; color: rgba($color-white, 0.75); line-height: 1.6; font-size: 0.9rem; }
   }
 }

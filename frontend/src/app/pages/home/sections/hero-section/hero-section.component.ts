@@ -53,10 +53,22 @@ export class HeroSectionComponent implements AfterViewInit, OnDestroy {
 
   readonly displaySlides = computed(() => {
     const api = this.slides();
-    if (api.length > 0) {
-      return api.map((s, i) => this.mapApiSlide(s, i));
-    }
-    return DEFAULT_INDUSTRIAL_SLIDES;
+    return DEFAULT_INDUSTRIAL_SLIDES.map((fallback, index) => {
+      const apiSlide = api[index];
+      if (!apiSlide || this.isTestimonialSlide(apiSlide)) {
+        return fallback;
+      }
+      return {
+        ...fallback,
+        id: apiSlide.id,
+        imageUrl: apiSlide.imageUrl || fallback.imageUrl,
+        description: apiSlide.description || apiSlide.subtitle || fallback.description,
+        ctaText: apiSlide.ctaText || fallback.ctaText,
+        ctaLink: apiSlide.ctaLink || fallback.ctaLink,
+        secondaryCtaText: apiSlide.secondaryCtaText || fallback.secondaryCtaText,
+        secondaryCtaLink: apiSlide.secondaryCtaLink || apiSlide.videoUrl || fallback.secondaryCtaLink
+      };
+    });
   });
 
   ngAfterViewInit(): void {
@@ -106,27 +118,9 @@ export class HeroSectionComponent implements AfterViewInit, OnDestroy {
     return hash || undefined;
   }
 
-  private mapApiSlide(slide: HeroSlide, index: number): IndustrialHeroSlide {
-    const fallback = DEFAULT_INDUSTRIAL_SLIDES[index % DEFAULT_INDUSTRIAL_SLIDES.length];
-    const words = (slide.title || '').split(/\s+/).filter(Boolean);
-    const headlineLines: HeadlineLine[] = words.length >= 3
-      ? [
-          { text: words[0] },
-          { text: words[1] },
-          { text: words.slice(2, -1).join(' '), accent: words[words.length - 1] }
-        ]
-      : fallback.headlineLines;
-
-    return {
-      id: slide.id,
-      headlineLines,
-      description: slide.description || slide.subtitle || fallback.description,
-      imageUrl: slide.imageUrl || fallback.imageUrl,
-      ctaText: slide.ctaText || 'Explore Products',
-      ctaLink: slide.ctaLink || '/products',
-      secondaryCtaText: slide.secondaryCtaText || 'Watch Video',
-      secondaryCtaLink: slide.secondaryCtaLink || slide.videoUrl || '#gallery'
-    };
+  private isTestimonialSlide(slide: HeroSlide): boolean {
+    const blob = `${slide.title} ${slide.subtitle ?? ''} ${slide.description ?? ''} ${slide.ctaLink ?? ''} ${slide.secondaryCtaLink ?? ''}`.toLowerCase();
+    return blob.includes('/testimonials') || /testimonial|stories|share your story|community trust|every story/.test(blob);
   }
 }
 

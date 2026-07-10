@@ -3,91 +3,135 @@
 @use '../../../../../styles/industrial/buttons';
 
 .about-industrial {
-  @include section-padding;
   background: $color-white;
+  @include section-padding;
 }
 
 .about-visual {
   position: relative;
+  margin-bottom: 2rem;
+
+  @include respond-to(lg) {
+    margin-bottom: 0;
+  }
 
   img {
     width: 100%;
     border-radius: $radius;
-    box-shadow: $shadow-lg;
+    box-shadow: $shadow-md;
     display: block;
     object-fit: cover;
-    aspect-ratio: 5 / 4;
+    aspect-ratio: 4 / 3;
+
+    @include respond-to(lg) {
+      aspect-ratio: 5 / 4;
+      box-shadow: $shadow-lg;
+    }
   }
 
   .experience-badge {
     position: absolute;
-    bottom: -18px;
-    right: 24px;
+    bottom: -14px;
+    right: 16px;
     background: $color-secondary;
     color: $color-white;
-    padding: 1.25rem 1.5rem;
+    padding: 1rem 1.25rem;
     border-radius: $radius;
     text-align: center;
     box-shadow: $shadow-md;
 
+    @include respond-to(md) {
+      bottom: -18px;
+      right: 24px;
+      padding: 1.25rem 1.5rem;
+    }
+
     .years {
       display: block;
-      font-size: 2rem;
+      font-size: 1.65rem;
       font-weight: 700;
       line-height: 1;
+
+      @include respond-to(md) {
+        font-size: 2rem;
+      }
     }
 
     .label {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-weight: 500;
-      margin-top: 0.25rem;
+      margin-top: 0.2rem;
       display: block;
+
+      @include respond-to(md) {
+        font-size: 0.75rem;
+      }
     }
   }
 }
 
 .eyebrow {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: $color-secondary;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .about-title {
-  @include heading-2;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
   color: $color-primary;
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.25rem;
+
+  @include respond-to(sm) { font-size: 30px; }
+  @include respond-to(md) { font-size: 34px; margin-bottom: 1.5rem; }
+  @include respond-to(lg) { font-size: 42px; margin-bottom: 1.75rem; }
 }
 
 .about-blocks {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  @include respond-to(md) {
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .about-block {
-  padding-left: 1rem;
+  padding-left: 0.85rem;
   border-left: 3px solid $color-secondary;
 
   h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: $color-primary;
-    margin: 0 0 0.4rem;
+    margin: 0 0 0.35rem;
   }
 
   p {
     margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.7;
+    font-size: 0.88rem;
+    line-height: 1.65;
     color: $color-grey;
+
+    @include respond-to(md) {
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
   }
 }
 
 .read-more {
   display: inline-flex;
+
+  @include mobile-down {
+    width: 100%;
+  }
 }

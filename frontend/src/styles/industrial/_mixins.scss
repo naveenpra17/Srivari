@@ -58,7 +58,25 @@
 
 @mixin section-padding {
   padding: $section-py-mobile 0;
+  @include respond-to(md) {
+    padding: 64px 0;
+  }
   @include respond-to(lg) {
     padding: $section-py 0;
+  }
+}
+
+@mixin hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin mobile-down {
+  @media (max-width: #{$bp-lg - 1}) {
+    @content;
   }
 }

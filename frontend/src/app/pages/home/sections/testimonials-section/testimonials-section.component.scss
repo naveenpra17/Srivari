@@ -2,64 +2,98 @@
 @use '../../../../../styles/industrial/mixins' as *;
 
 .testimonials-industrial {
-  @include section-padding;
   background: $color-white;
+  @include section-padding;
+  overflow: hidden;
 }
 
 .testimonial-swiper {
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
+  overflow: visible;
+
+  @include respond-to(md) {
+    padding-bottom: 3rem;
+  }
 }
 
 .testimonial-card {
   @include card;
-  padding: 1.75rem;
+  padding: 1.35rem;
   height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: $shadow-sm;
+
+  @include respond-to(md) {
+    padding: 1.75rem;
+  }
 
   .testimonial-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.25rem;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
 
     img {
-      width: 64px;
-      height: 64px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid rgba($color-primary, 0.08);
+      border: 2px solid rgba($color-primary, 0.08);
+      flex-shrink: 0;
+
+      @include respond-to(md) {
+        width: 64px;
+        height: 64px;
+        border-width: 3px;
+      }
     }
 
     .stars {
       display: flex;
       gap: 2px;
       color: $color-secondary;
+      flex-shrink: 0;
     }
   }
 
   blockquote {
-    margin: 0 0 1.25rem;
-    font-size: 0.95rem;
-    line-height: 1.75;
+    margin: 0 0 1rem;
+    font-size: 0.88rem;
+    line-height: 1.7;
     color: $color-text;
     flex: 1;
+
+    @include respond-to(md) {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+    }
   }
 
   footer {
     display: flex;
     flex-direction: column;
-    gap: 0.15rem;
+    gap: 0.1rem;
 
     strong {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: $color-primary;
+
+      @include respond-to(md) {
+        font-size: 0.95rem;
+      }
     }
 
     span {
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       color: $color-grey;
+
+      @include respond-to(md) {
+        font-size: 0.82rem;
+      }
     }
   }
 }
@@ -70,18 +104,24 @@
   top: 42%;
   transform: translateY(-50%);
   z-index: 3;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   border: 1px solid $color-border;
   background: $color-white;
   color: $color-primary;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   box-shadow: $shadow-sm;
   transition: $transition;
+
+  @include respond-to(xl) {
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
 
   &:hover {
     background: $color-primary;
@@ -91,8 +131,8 @@
   &::after { display: none; }
 }
 
-.testimonial-nav-prev { left: -8px; @include respond-to(lg) { left: -20px; } }
-.testimonial-nav-next { right: -8px; @include respond-to(lg) { right: -20px; } }
+.testimonial-nav-prev { left: -12px; }
+.testimonial-nav-next { right: -12px; }
 
 .testimonial-pagination {
   bottom: 0 !important;
@@ -106,14 +146,7 @@
 
   :global(.swiper-pagination-bullet-active) {
     background: $color-secondary;
-    width: 24px;
+    width: 22px;
     border-radius: 4px;
-  }
-}
-
-@media (max-width: 767px) {
-  .testimonial-nav-prev,
-  .testimonial-nav-next {
-    display: none;
   }
 }

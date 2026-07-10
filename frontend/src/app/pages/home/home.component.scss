@@ -5,21 +5,29 @@
 }
 
 .home-skeleton {
-  padding-top: $header-height;
+  padding-top: $header-height-mobile;
+
+  @media (min-width: $bp-lg) {
+    padding-top: $header-height;
+  }
 
   .skeleton-hero {
-    height: 520px;
-    margin-bottom: 3rem;
+    height: 420px;
+    margin-bottom: 2rem;
     border-radius: 0;
+
+    @media (min-width: $bp-md) {
+      height: 480px;
+    }
   }
 
   .skeleton-title {
-    height: 40px;
-    width: 240px;
-    margin-bottom: 2rem;
+    height: 36px;
+    width: 200px;
+    margin-bottom: 1.5rem;
   }
 
   .skeleton-card {
-    height: 280px;
+    height: 260px;
   }
 }

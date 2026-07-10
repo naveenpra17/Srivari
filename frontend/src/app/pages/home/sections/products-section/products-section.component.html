@@ -1,8 +1,10 @@
 <section class="products-industrial" id="products">
   <div class="container">
     <app-section-header title="Our Products" link="/products" />
+  </div>
 
-    <div class="products-track" appReveal>
+  <div class="container container-products">
+    <div class="scroll-strip products-track" appReveal>
       @if (products().length > 0) {
         @for (product of products(); track product.id) {
           <a [routerLink]="['/products', product.slug]" class="product-card">

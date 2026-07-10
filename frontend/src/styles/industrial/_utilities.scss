@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+// Consistent page container padding
+.container {
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+
+  @media (min-width: $bp-md) {
+    padding-left: max(24px, env(safe-area-inset-left));
+    padding-right: max(24px, env(safe-area-inset-right));
+  }
+}
+
+// Horizontal scroll strip (products, etc.)
+.scroll-strip {
+  margin-left: calc(-1 * max(20px, env(safe-area-inset-left)));
+  margin-right: calc(-1 * max(20px, env(safe-area-inset-right)));
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+}
