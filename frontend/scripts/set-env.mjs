@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const outPath = join(__dirname, '../src/environments/environment.prod.ts');
 
-const apiUrl = process.env.API_URL || 'https://motors-backend.onrender.com/api/v1';
+const apiUrl = process.env.API_URL || 'https://srivari-1.onrender.com/api/v1';
 const appName = process.env.APP_NAME || 'Motors Industries';
 const tagline = process.env.APP_TAGLINE || 'Where Innovation Meets Reliability';
 const whatsappPhone = process.env.WHATSAPP_PHONE || '919876543210';

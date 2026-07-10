@@ -139,7 +139,7 @@ Copy from `backend/.env.example` and fill in real values:
 | `JWT_SECRET` | *(run `openssl rand -base64 48`)* |
 | `CORS_ALLOWED_ORIGINS` | `https://your-app.vercel.app` |
 | `SITE_FRONTEND_URL` | `https://your-app.vercel.app` |
-| `SITE_API_URL` | `https://motors-backend.onrender.com/api` |
+| `SITE_API_URL` | `https://srivari-1.onrender.com/api` |
 | `CLOUDINARY_CLOUD_NAME` | *(from Cloudinary)* |
 | `CLOUDINARY_API_KEY` | *(from Cloudinary)* |
 | `CLOUDINARY_API_SECRET` | *(from Cloudinary)* |

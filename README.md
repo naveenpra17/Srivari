@@ -75,7 +75,7 @@ npm start
 ### Frontend (Vercel)
 | Variable | Description |
 |----------|-------------|
-| `API_URL` | Render backend URL (e.g. `https://motors-backend.onrender.com/api/v1`) |
+| `API_URL` | `https://srivari-1.onrender.com/api/v1` |
 | `APP_NAME` | Optional app display name |
 | `WHATSAPP_PHONE` | Optional default WhatsApp number |
 
