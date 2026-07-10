@@ -4,6 +4,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { filter } from 'rxjs/operators';
 import { SeoService } from './core/services/seo.service';
 import { ThemeService } from './core/services/theme.service';
+import { SwUpdateService } from './core/services/sw-update.service';
 
 @Component({
   selector: 'app-root',
@@ -16,9 +17,13 @@ export class App implements OnInit {
   private readonly seo = inject(SeoService);
   private readonly theme = inject(ThemeService);
   private readonly platformId = inject(PLATFORM_ID);
+  private readonly swUpdate = inject(SwUpdateService);
 
   ngOnInit(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
+    // Auto-detect and activate Service Worker updates
+    this.swUpdate.init();
 
     this.router.events.pipe(
       filter((event): event is NavigationEnd => event instanceof NavigationEnd)
