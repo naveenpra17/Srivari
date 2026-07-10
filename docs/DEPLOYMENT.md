@@ -137,8 +137,8 @@ Copy from `backend/.env.example` and fill in real values:
 | `DATABASE_USERNAME` | `postgres` |
 | `DATABASE_PASSWORD` | *(Supabase password)* |
 | `JWT_SECRET` | *(run `openssl rand -base64 48`)* |
-| `CORS_ALLOWED_ORIGINS` | `https://your-app.vercel.app` |
-| `SITE_FRONTEND_URL` | `https://your-app.vercel.app` |
+| `CORS_ALLOWED_ORIGINS` | `https://srivari-ui.vercel.app,https://*.vercel.app` |
+| `SITE_FRONTEND_URL` | `https://srivari-ui.vercel.app` |
 | `SITE_API_URL` | `https://srivari-1.onrender.com/api` |
 | `CLOUDINARY_CLOUD_NAME` | *(from Cloudinary)* |
 | `CLOUDINARY_API_KEY` | *(from Cloudinary)* |
@@ -198,11 +198,14 @@ After Vercel deploys, copy your Vercel URL (e.g. `https://motors.vercel.app`).
 **Update Render environment variables:**
 
 ```
-CORS_ALLOWED_ORIGINS=https://motors.vercel.app
-SITE_FRONTEND_URL=https://motors.vercel.app
+CORS_ALLOWED_ORIGINS=https://srivari-ui.vercel.app,https://*.vercel.app
+SITE_FRONTEND_URL=https://srivari-ui.vercel.app
+SITE_API_URL=https://srivari-1.onrender.com/api
 ```
 
 Redeploy Render (or use **Manual Deploy**) so CORS picks up the new origin.
+
+> **504 on first request?** Render free tier sleeps after ~15 min. Open `https://srivari-1.onrender.com/api/v1/public/health`, wait 30–60 seconds, then retry. A timeout during wake-up often appears as a CORS error in the browser.
 
 ---
 
@@ -258,6 +261,8 @@ Fresh installs only need `schema.sql` + `seed.sql`.
 | Admin login fails | Re-run `seed.sql` or reset password in DB |
 | Blank homepage | Check browser console; verify `API_URL` on Vercel |
 | Vercel `404: NOT_FOUND` | Set Output Directory to `dist/frontend/browser` (see `frontend/vercel.json`) |
+| CORS blocked from Vercel | Set `CORS_ALLOWED_ORIGINS=https://srivari-ui.vercel.app,https://*.vercel.app` on Render |
+| `504 Gateway Timeout` | Render free tier waking up — hit `/api/v1/public/health`, wait 60s, retry |
 | `jpaAuditingHandler` bean error | Fixed in code — remove duplicate `@EnableJpaAuditing`; redeploy |
 | Profile shows `dev` on Render | Set `SPRING_PROFILES_ACTIVE=prod` in Render env vars (also set in Dockerfile) |
 | `JavaMailSender` bean not found | Mail is optional — redeploy latest code; or set `MAIL_HOST`, `MAIL_USERNAME`, `MAIL_PASSWORD` |
