@@ -1,113 +1,70 @@
-<section class="section contact-section" id="contact">
-  <div class="section-bg" aria-hidden="true"></div>
-  <div class="container position-relative">
-    <div class="section-intro text-center">
-      <span class="eyebrow slide-up">Contact</span>
-      <h2 class="section-title slide-up">Let's Start a Conversation</h2>
-      <p class="section-subtitle slide-up">We're here to help with your industrial needs</p>
-    </div>
+<section class="contact-industrial" id="contact">
+  <div class="container">
+    <app-section-header
+      title="Contact Us"
+      subtitle="Get in touch with our engineering team for product inquiries and support."
+      eyebrow="Contact" />
 
     <div class="row g-4 g-lg-5">
-      <div class="col-lg-5">
-        <div class="contact-panel">
-          <h3 class="panel-title">Get in Touch</h3>
-          <p class="panel-desc">Reach out and our team will respond within one business day.</p>
-
-          <div class="info-list">
-            @if (settings()['company_address']) {
-              <div class="info-item">
-                <div class="info-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                </div>
-                <div>
-                  <h4>Address</h4>
-                  <p>{{ settings()['company_address'] }}</p>
-                </div>
-              </div>
-            }
-            @if (settings()['company_phone']) {
-              <div class="info-item">
-                <div class="info-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                </div>
-                <div>
-                  <h4>Phone</h4>
-                  <p><a [href]="'tel:' + settings()['company_phone']">{{ settings()['company_phone'] }}</a></p>
-                </div>
-              </div>
-            }
-            @if (settings()['company_email']) {
-              <div class="info-item">
-                <div class="info-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                </div>
-                <div>
-                  <h4>Email</h4>
-                  <p><a [href]="'mailto:' + settings()['company_email']">{{ settings()['company_email'] }}</a></p>
-                </div>
-              </div>
-            }
-            @if (settings()['company_working_hours']) {
-              <div class="info-item">
-                <div class="info-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                </div>
-                <div>
-                  <h4>Business Hours</h4>
-                  <p>{{ settings()['company_working_hours'] }}</p>
-                </div>
-              </div>
-            }
-          </div>
-
-          @if (hasSocial()) {
-            <div class="social-row">
-              <span class="social-label">Follow us</span>
-              <div class="social-links">
-                @if (settings()['facebook_url']) {
-                  <a [href]="settings()['facebook_url']" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                  </a>
-                }
-                @if (settings()['linkedin_url']) {
-                  <a [href]="settings()['linkedin_url']" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                  </a>
-                }
-                @if (settings()['twitter_url']) {
-                  <a [href]="settings()['twitter_url']" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                  </a>
-                }
-                @if (settings()['instagram_url']) {
-                  <a [href]="settings()['instagram_url']" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                  </a>
-                }
-              </div>
-            </div>
-          }
-
+      <div class="col-lg-5" appReveal>
+        <div class="contact-info-panel">
           @if (mapUrl()) {
-            <div class="map-container">
+            <div class="map-wrap">
               <iframe
                 [src]="mapUrl()"
                 title="Company location on Google Maps"
                 width="100%"
-                height="260"
+                height="220"
                 allowfullscreen
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           }
+
+          <ul class="info-list">
+            <li>
+              <span class="icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </span>
+              <div>
+                <h4>Address</h4>
+                <p>{{ settings()['company_address'] || '123 Industrial Park, Mumbai, Maharashtra 400001, India' }}</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </span>
+              <div>
+                <h4>Phone</h4>
+                <p><a [href]="'tel:' + (settings()['company_phone'] || '+919876543210')">{{ settings()['company_phone'] || '+91 98765 43210' }}</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </span>
+              <div>
+                <h4>Email</h4>
+                <p><a [href]="'mailto:' + (settings()['company_email'] || 'info@motors.com')">{{ settings()['company_email'] || 'info@motors.com' }}</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              </span>
+              <div>
+                <h4>Working Hours</h4>
+                <p>{{ settings()['company_working_hours'] || 'Mon – Sat: 9:00 AM – 6:00 PM' }}</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="col-lg-7">
-        <form class="contact-form card-custom" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
-          <h3 class="form-title">Send a Message</h3>
-          <p class="form-desc">Fill out the form and we'll get back to you shortly.</p>
-
+      <div class="col-lg-7" appReveal [appRevealDelay]="100">
+        <form class="contact-form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+          <h3>Send a Message</h3>
           <div class="row g-3">
             <div class="col-md-6">
               <label for="contact-name">Name *</label>
@@ -135,13 +92,8 @@
               }
             </div>
             <div class="col-12">
-              <button type="submit" class="btn-secondary-custom submit-btn" [disabled]="submitting()">
-                @if (submitting()) {
-                  Sending...
-                } @else {
-                  Send Message
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
-                }
+              <button type="submit" class="btn-industrial-primary submit-btn" [disabled]="submitting()">
+                @if (submitting()) { Sending... } @else { Send Message }
               </button>
             </div>
           </div>

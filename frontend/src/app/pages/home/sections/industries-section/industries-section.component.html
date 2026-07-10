@@ -1,58 +1,50 @@
-<section class="section industries-section" id="industries">
-  <div class="section-bg" aria-hidden="true"></div>
-  <div class="container position-relative">
-    <div class="section-intro text-center">
-      <span class="eyebrow slide-up">Industries</span>
-      <h2 class="section-title slide-up">Sectors We Power</h2>
-      <p class="section-subtitle slide-up">Delivering reliable solutions across diverse industrial landscapes</p>
-    </div>
+<section class="industries-industrial" id="industries">
+  <div class="container">
+    <app-section-header
+      title="Industries We Serve"
+      subtitle="Delivering engineered solutions across critical industrial sectors worldwide."
+      eyebrow="Industries" />
 
-    @if (industries().length > 0) {
-      <div class="row g-4">
-        @for (industry of industries(); track industry.id; let i = $index) {
-          <div class="col-lg-4 col-md-6">
-            <article
-              class="industry-card card-custom fade-in"
-              [class.visible]="visible()"
-              [style.animation-delay.ms]="i * 100">
-              @if (industry.imageUrl) {
-                <div class="industry-image">
-                  <img [src]="industry.imageUrl" [alt]="industry.name" loading="lazy">
-                </div>
+    <div class="industries-grid">
+      @for (item of displayItems(); track item.id; let i = $index) {
+        <article class="industry-tile" appReveal [appRevealDelay]="i * 60">
+          <div class="industry-icon" aria-hidden="true">
+            @switch (item.icon) {
+              @case ('oil') {
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-1V3H6v2H5c-1.1 0-2 .9-2 2v1c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V7c0-1.1-.9-2-2-2zM5 10v9c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-9H5zm4 3h6v2H9v-2z"/></svg>
               }
-              <div class="industry-body">
-                <div class="industry-icon" [attr.aria-hidden]="true">
-                  @switch (industry.icon) {
-                    @case ('oil_barrel') {
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-1V3H6v2H5c-1.1 0-2 .9-2 2v1c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V7c0-1.1-.9-2-2-2zM5 10v9c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-9H5zm4 3h6v2H9v-2z"/></svg>
-                    }
-                    @case ('pickaxe') {
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.79 10.79L6.79 18.79 5.38 17.38l8-8-1.59-1.59 2.12-2.12 1.59 1.59 2.12-2.12 1.41 1.41-2.12 2.12 1.59 1.59-2.12 2.12zm4.5-4.5l1.41 1.41-2.83 2.83-1.41-1.41 2.83-2.83z"/></svg>
-                    }
-                    @case ('anchor') {
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5 0 3.53-3.28 8.86-5 11.15C10.28 17.86 7 12.53 7 9c0-2.76 2.24-5 5-5z"/></svg>
-                    }
-                    @case ('bolt') {
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66L11 3h1l-1 7h3.5c.49 0 .56.33.47.51L11 21z"/></svg>
-                    }
-                    @case ('science') {
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6 8h1.5v1.5H13V13zm1.5 1.5H16V16h-1.5v-1.5zM16 13h1.5v1.5H16V13zm-3 3h1.5v1.5H13V16zm1.5 1.5H16V19h-1.5v-1.5zM16 16h1.5v1.5H16V16zm1.5-1.5H19V16h-1.5v-1.5zm0 3H19V19h-1.5v-1.5zM22 11h-2V9h-2V7h-2V5h-2V3h-2V1h2v2h2v2h2v2h2v2h2v2z"/></svg>
-                    }
-                    @case ('water_drop') {
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8z"/></svg>
-                    }
-                    @default {
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                    }
-                  }
-                </div>
-                <h3>{{ industry.name }}</h3>
-                <p>{{ industry.description }}</p>
-              </div>
-            </article>
+              @case ('water') {
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8z"/></svg>
+              }
+              @case ('power') {
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66L11 3h1l-1 7h3.5c.49 0 .56.33.47.51L11 21z"/></svg>
+              }
+              @case ('chemical') {
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v2h1v14c0 2.21 1.79 4 4 4s4-1.79 4-4V4h1V2H7zm4 16c-1.1 0-2-.9-2-2h4c0 1.1-.9 2-2 2z"/></svg>
+              }
+              @case ('mining') {
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M14.79 10.79L6.79 18.79 5.38 17.38l8-8-1.59-1.59 2.12-2.12 1.59 1.59 2.12-2.12 1.41 1.41-2.12 2.12 1.59 1.59-2.12 2.12zm4.5-4.5l1.41 1.41-2.83 2.83-1.41-1.41 2.83-2.83z"/></svg>
+              }
+              @case ('marine') {
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78l-3.22-6.4A.998.998 0 0016.79 4H7.21c-.34 0-.65.17-.84.44L3.15 10.94c-.12.24-.14.52-.06.78L3.95 19zM12 6.75c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5S9.5 10.63 9.5 9.25 10.62 6.75 12 6.75z"/></svg>
+              }
+              @case ('food') {
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.46L23 5.05h-5V1h-1.96v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1.01 1H2.01c-.56 0-1.01-.45-1.01-1zm15.03-7c0-8-15.03-8-15.03 0h15.03zM1.02 0h15.96v1.97H1.02V0z"/></svg>
+              }
+              @case ('textile') {
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6z"/></svg>
+              }
+              @default {
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              }
+            }
           </div>
-        }
-      </div>
-    }
+          <h3>{{ item.name }}</h3>
+          @if (item.description) {
+            <p>{{ item.description }}</p>
+          }
+        </article>
+      }
+    </div>
   </div>
 </section>

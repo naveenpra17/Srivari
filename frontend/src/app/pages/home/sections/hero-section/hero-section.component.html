@@ -1,174 +1,61 @@
-<section
-  class="hero-carousel"
-  id="home"
-  role="region"
-  aria-roledescription="carousel"
-  aria-label="Hero carousel"
-  tabindex="0"
-  (mouseenter)="pause()"
-  (mouseleave)="resume()"
-  (touchstart)="onTouchStart($event)"
-  (touchend)="onTouchEnd($event)">
-
-  @if (slides().length > 0) {
-    <div class="carousel-viewport" [attr.aria-live]="paused() ? 'polite' : 'off'">
-      @for (slide of slides(); track slide.id; let i = $index) {
-        <article
-          class="carousel-slide"
-          [class.active]="currentIndex() === i"
-          [attr.aria-hidden]="currentIndex() !== i"
-          [attr.aria-label]="'Slide ' + (i + 1) + ' of ' + slides().length">
-
-          <div class="slide-backdrop" aria-hidden="true">
-            @if (shouldLoadImage(i)) {
-              <img
-                class="slide-backdrop-img"
-                [src]="slide.imageUrl"
-                alt=""
-                [attr.loading]="i === 0 ? 'eager' : 'lazy'"
-                decoding="async">
-            }
-            <div class="slide-backdrop-gradient"></div>
-          </div>
-
-          <div class="slide-shapes" aria-hidden="true">
-            <div class="shape shape-a"></div>
-            <div class="shape shape-b"></div>
-            <div class="shape shape-c"></div>
-          </div>
-
-          <div class="container slide-content">
-            <div class="row align-items-center g-4 g-lg-5">
-              <div class="col-lg-6 order-lg-1 order-2">
-                <div class="hero-glass" [class.is-active]="currentIndex() === i">
-                  @if (slide.subtitle) {
-                    <span class="hero-eyebrow">{{ slide.subtitle }}</span>
-                  }
-                  <h1 class="hero-title">{{ slide.title }}</h1>
-                  @if (slide.description) {
-                    <p class="hero-desc">{{ slide.description }}</p>
-                  }
-                  <div class="hero-actions">
-                    @if (slide.ctaText) {
-                      @if (isExternal(slide.ctaLink)) {
-                        <a [href]="slide.ctaLink" class="btn-hero-primary">
-                          {{ slide.ctaText }}
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-                        </a>
-                      } @else if (isHashOnly(slide.ctaLink)) {
-                        <a [href]="hashTarget(slide.ctaLink)" class="btn-hero-primary">
-                          {{ slide.ctaText }}
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-                        </a>
-                      } @else {
-                        <a
-                          [routerLink]="routePath(slide.ctaLink)"
-                          [fragment]="routeFragment(slide.ctaLink)"
-                          class="btn-hero-primary">
-                          {{ slide.ctaText }}
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-                        </a>
-                      }
+<section class="hero-industrial" id="home" aria-label="Hero carousel">
+  <div class="swiper hero-swiper" #heroSwiper>
+    <div class="swiper-wrapper">
+      @for (slide of displaySlides(); track slide.id) {
+        <div class="swiper-slide">
+          <div class="container h-100">
+            <div class="row align-items-center hero-row">
+              <div class="col-lg-6 order-2 order-lg-1">
+                <div class="hero-copy">
+                  <h1 class="hero-heading">
+                    @for (line of slide.headlineLines; track $index) {
+                      <span class="line">
+                        @if (line.text) { {{ line.text }} }
+                        @if (line.accent) { <span class="accent">{{ line.accent }}</span> }
+                      </span>
                     }
-                    @if (slide.secondaryCtaText) {
-                      @if (isExternal(slide.secondaryCtaLink)) {
-                        <a [href]="slide.secondaryCtaLink" class="btn-hero-secondary">
-                          {{ slide.secondaryCtaText }}
-                        </a>
-                      } @else if (isHashOnly(slide.secondaryCtaLink)) {
-                        <a [href]="hashTarget(slide.secondaryCtaLink)" class="btn-hero-secondary">
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-                          {{ slide.secondaryCtaText }}
-                        </a>
-                      } @else {
-                        <a
-                          [routerLink]="routePath(slide.secondaryCtaLink)"
-                          [fragment]="routeFragment(slide.secondaryCtaLink)"
-                          class="btn-hero-secondary">
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-                          {{ slide.secondaryCtaText }}
-                        </a>
-                      }
+                  </h1>
+                  <p class="hero-desc">{{ slide.description }}</p>
+                  <div class="hero-actions">
+                    <a [routerLink]="routePath(slide.ctaLink)" [fragment]="routeFragment(slide.ctaLink)" class="btn-industrial-primary">
+                      {{ slide.ctaText }}
+                    </a>
+                    @if (isExternal(slide.secondaryCtaLink)) {
+                      <a [href]="slide.secondaryCtaLink" class="btn-industrial-outline" target="_blank" rel="noopener">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                        {{ slide.secondaryCtaText }}
+                      </a>
+                    } @else {
+                      <a [routerLink]="routePath(slide.secondaryCtaLink)" [fragment]="routeFragment(slide.secondaryCtaLink)" class="btn-industrial-outline">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                        {{ slide.secondaryCtaText }}
+                      </a>
                     }
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-6 order-lg-2 order-1">
-                <div class="hero-visual" [class.is-active]="currentIndex() === i">
-                  @if (shouldLoadImage(i)) {
-                    <img
-                      class="hero-visual-img"
-                      [src]="slide.imageUrl"
-                      [alt]="slide.title"
-                      [attr.loading]="i === 0 ? 'eager' : 'lazy'"
-                      decoding="async"
-                      width="640"
-                      height="480">
-                  }
-                  <div class="visual-frame" aria-hidden="true"></div>
-                  <div class="visual-glow" aria-hidden="true"></div>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <div class="hero-visual">
+                  <img
+                    [src]="slide.imageUrl"
+                    alt="Industrial product"
+                    loading="eager"
+                    width="640"
+                    height="480">
                 </div>
               </div>
             </div>
           </div>
-        </article>
+        </div>
       }
     </div>
 
-    @if (slides().length > 1) {
-      <button
-        type="button"
-        class="carousel-arrow carousel-arrow-prev"
-        (click)="prev(true)"
-        aria-label="Previous slide">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-      </button>
-      <button
-        type="button"
-        class="carousel-arrow carousel-arrow-next"
-        (click)="next(true)"
-        aria-label="Next slide">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-      </button>
-
-      <div class="carousel-indicators" role="tablist" aria-label="Slide pagination">
-        @for (slide of slides(); track slide.id; let i = $index) {
-          <button
-            type="button"
-            role="tab"
-            class="indicator"
-            [class.active]="currentIndex() === i"
-            [attr.aria-selected]="currentIndex() === i"
-            [attr.aria-label]="'Go to slide ' + (i + 1)"
-            (click)="goTo(i)"></button>
-        }
-      </div>
-    }
-  } @else {
-    <div class="carousel-viewport">
-      <article class="carousel-slide active">
-        <div class="slide-backdrop">
-          <div class="slide-backdrop-gradient fallback"></div>
-        </div>
-        <div class="container slide-content">
-          <div class="row align-items-center">
-            <div class="col-lg-7">
-              <div class="hero-glass is-active">
-                <span class="hero-eyebrow">Customer Stories</span>
-                <h1 class="hero-title">Every Story Deserves to Be Heard</h1>
-                <p class="hero-desc">Share authentic experiences and discover trusted testimonials from our community.</p>
-                <div class="hero-actions">
-                  <a routerLink="/testimonials" class="btn-hero-primary">
-                    Explore Testimonials
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  }
+    <button type="button" class="hero-nav-prev" aria-label="Previous slide">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+    </button>
+    <button type="button" class="hero-nav-next" aria-label="Next slide">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </button>
+    <div class="hero-pagination" role="tablist" aria-label="Hero slides"></div>
+  </div>
 </section>

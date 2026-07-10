@@ -1,0 +1,56 @@
+@use '../../../../styles/industrial/variables' as *;
+@use '../../../../styles/industrial/mixins' as *;
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+
+  @include respond-to(md) {
+    margin-bottom: 3rem;
+  }
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: $color-secondary;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  @include heading-2;
+  margin: 0;
+  color: $color-primary;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  color: $color-grey;
+  font-size: 1rem;
+  max-width: 520px;
+  line-height: 1.65;
+}
+
+.view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: $color-primary;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color $transition, gap $transition;
+
+  &:hover {
+    color: $color-secondary;
+    gap: 8px;
+  }
+}

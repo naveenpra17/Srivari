@@ -1,0 +1,25 @@
+@use '../../../styles/industrial/variables' as *;
+
+.home-industrial {
+  background: $color-bg;
+}
+
+.home-skeleton {
+  padding-top: $header-height;
+
+  .skeleton-hero {
+    height: 520px;
+    margin-bottom: 3rem;
+    border-radius: 0;
+  }
+
+  .skeleton-title {
+    height: 40px;
+    width: 240px;
+    margin-bottom: 2rem;
+  }
+
+  .skeleton-card {
+    height: 280px;
+  }
+}

@@ -1,61 +1,42 @@
-<section class="section products-section" id="products">
-  <div class="section-bg" aria-hidden="true"></div>
-  <div class="container position-relative">
-    <div class="section-header d-flex justify-content-between align-items-end flex-wrap gap-3 mb-2">
-      <div class="section-intro mb-0 text-start">
-        <span class="eyebrow slide-up">Our Solutions</span>
-        <h2 class="section-title slide-up mb-2">Engineered for Excellence</h2>
-        <p class="section-subtitle mb-0 slide-up">Premium motors, pumps, and industrial equipment built to perform</p>
-      </div>
-      <a routerLink="/products" class="btn-outline-custom view-all-btn slide-up">
-        View All Products
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-      </a>
-    </div>
+<section class="products-industrial" id="products">
+  <div class="container">
+    <app-section-header title="Our Products" link="/products" />
 
-    @if (products().length > 0) {
-      <div class="row g-4">
-        @for (product of products(); track product.id; let i = $index) {
-          <div class="col-lg-3 col-md-6">
-            <article class="card-custom product-card fade-in" [style.animation-delay.ms]="i * 100">
-              <div class="product-image">
-                <img
-                  [src]="product.imageUrl || 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400'"
-                  [alt]="product.name"
-                  loading="lazy"
-                  width="400"
-                  height="280">
-                @if (product.featured) {
-                  <span class="product-badge">Featured</span>
-                }
-                <div class="product-overlay">
-                  <a [routerLink]="['/products', product.slug]" class="btn-secondary-custom btn-sm">
-                    View Details
-                  </a>
-                </div>
-              </div>
-              <div class="product-body">
-                @if (product.categoryName) {
-                  <span class="product-category">{{ product.categoryName }}</span>
-                }
-                <h3>
-                  <a [routerLink]="['/products', product.slug]">{{ product.name }}</a>
-                </h3>
-                <p>{{ product.shortDescription }}</p>
-                <a [routerLink]="['/products', product.slug]" class="product-link">
-                  Learn more
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-                </a>
-              </div>
-            </article>
-          </div>
+    <div class="products-track" appReveal>
+      @if (products().length > 0) {
+        @for (product of products(); track product.id) {
+          <a [routerLink]="['/products', product.slug]" class="product-card">
+            <div class="product-image">
+              <img
+                [src]="product.imageUrl || fallbacks[0].img"
+                [alt]="product.name"
+                loading="lazy"
+                width="320"
+                height="220">
+            </div>
+            <div class="product-body">
+              @if (product.categoryName) {
+                <span class="category">{{ product.categoryName }}</span>
+              }
+              <h3>{{ product.name }}</h3>
+              <p>{{ product.shortDescription }}</p>
+            </div>
+          </a>
         }
-      </div>
-    } @else {
-      <div class="empty-state">
-        <p>Our product catalog is being updated. Check back soon.</p>
-        <a routerLink="/products" class="btn-primary-custom">Browse Products</a>
-      </div>
-    }
+      } @else {
+        @for (item of fallbacks; track item.slug) {
+          <a routerLink="/products" class="product-card">
+            <div class="product-image">
+              <img [src]="item.img" [alt]="item.name" loading="lazy" width="320" height="220">
+            </div>
+            <div class="product-body">
+              <span class="category">{{ item.cat }}</span>
+              <h3>{{ item.name }}</h3>
+              <p>{{ item.desc }}</p>
+            </div>
+          </a>
+        }
+      }
+    </div>
   </div>
 </section>

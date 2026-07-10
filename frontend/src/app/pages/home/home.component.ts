@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroSectionComponent } from './sections/hero-section/hero-section.component';
 import { ProductsSectionComponent } from './sections/products-section/products-section.component';
@@ -20,27 +20,21 @@ import { HomePageData } from '../../models';
     HeroSectionComponent,
     ProductsSectionComponent,
     StatsSectionComponent,
-    IndustriesSectionComponent,
     AboutSectionComponent,
-    GallerySectionComponent,
+    IndustriesSectionComponent,
     TestimonialsSectionComponent,
+    GallerySectionComponent,
     ContactSectionComponent
   ],
-  template: `
-    <app-hero-section [slides]="data()?.heroSlides ?? []" />
-    <app-products-section [products]="data()?.featuredProducts ?? []" />
-    <app-stats-section [settings]="data()?.settings ?? {}" />
-    <app-industries-section [industries]="data()?.industries ?? []" />
-    <app-about-section [settings]="data()?.settings ?? {}" />
-    <app-gallery-section [items]="data()?.gallery ?? []" />
-    <app-testimonials-section [testimonials]="data()?.testimonials ?? []" />
-    <app-contact-section [settings]="data()?.settings ?? {}" />
-  `
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
   private readonly publicService = inject(PublicService);
   private readonly seo = inject(SeoService);
   data = signal<HomePageData | null>(null);
+  loading = signal(true);
 
   ngOnInit(): void {
     this.seo.update({
@@ -50,11 +44,17 @@ export class HomeComponent implements OnInit {
     });
 
     this.publicService.getHomePageData().subscribe({
-      next: (res) => this.data.set(res.data),
-      error: () => this.data.set({
-        heroSlides: [], featuredProducts: [], categories: [],
-        industries: [], testimonials: [], gallery: [], settings: {}
-      })
+      next: (res) => {
+        this.data.set(res.data);
+        this.loading.set(false);
+      },
+      error: () => {
+        this.data.set({
+          heroSlides: [], featuredProducts: [], categories: [],
+          industries: [], testimonials: [], gallery: [], settings: {}
+        });
+        this.loading.set(false);
+      }
     });
   }
 }

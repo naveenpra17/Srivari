@@ -1,0 +1,25 @@
+<div class="home-industrial">
+  @if (loading()) {
+    <div class="home-skeleton" aria-hidden="true">
+      <div class="skeleton skeleton-hero"></div>
+      <div class="container">
+        <div class="skeleton skeleton-title"></div>
+        <div class="row g-3">
+          <div class="col-6 col-lg-3"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-6 col-lg-3"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-6 col-lg-3"><div class="skeleton skeleton-card"></div></div>
+          <div class="col-6 col-lg-3"><div class="skeleton skeleton-card"></div></div>
+        </div>
+      </div>
+    </div>
+  } @else {
+    <app-hero-section [slides]="data()?.heroSlides ?? []" />
+    <app-products-section [products]="data()?.featuredProducts ?? []" />
+    <app-stats-section [settings]="data()?.settings ?? {}" />
+    <app-about-section [settings]="data()?.settings ?? {}" />
+    <app-industries-section [industries]="data()?.industries ?? []" />
+    <app-testimonials-section [testimonials]="data()?.testimonials ?? []" />
+    <app-gallery-section [items]="data()?.gallery ?? []" />
+    <app-contact-section [settings]="data()?.settings ?? {}" />
+  }
+</div>

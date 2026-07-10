@@ -1,3 +1,5 @@
+@use 'styles/industrial/index' as ind;
+
 // Motors Industries - Global Theme
 :root {
   --primary: #0A2B5E;
@@ -5,16 +7,16 @@
   --primary-dark: #061d3f;
   --secondary: #FF6B00;
   --secondary-light: #ff8533;
-  --background: #F8FAFC;
+  --background: #F7F8FA;
   --white: #ffffff;
-  --text-dark: #1a1a2e;
-  --text-muted: #64748b;
-  --border-radius: 18px;
+  --text-dark: #1E293B;
+  --text-muted: #64748B;
+  --border-radius: 16px;
+  --border-color: #E2E8F0;
   --shadow-sm: 0 2px 8px rgba(10, 43, 94, 0.08);
   --shadow-md: 0 4px 20px rgba(10, 43, 94, 0.12);
   --shadow-lg: 0 8px 40px rgba(10, 43, 94, 0.16);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --border-color: #e0e0e0;
   --card-bg: #ffffff;
   --table-header-bg: #f8f9fa;
   --table-row-hover: #fafbfc;
@@ -38,7 +40,7 @@ html[data-theme="dark"] {
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
 
-  .header {
+  .header-industrial {
     background: rgba(22, 27, 34, 0.95) !important;
   }
 
@@ -77,7 +79,8 @@ html {
 }
 
 body {
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   background-color: var(--background);
   color: var(--text-dark);
   line-height: 1.6;

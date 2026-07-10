@@ -1,0 +1,64 @@
+@use 'variables' as *;
+
+@mixin respond-to($bp) {
+  @if $bp == sm {
+    @media (min-width: $bp-sm) { @content; }
+  } @else if $bp == md {
+    @media (min-width: $bp-md) { @content; }
+  } @else if $bp == lg {
+    @media (min-width: $bp-lg) { @content; }
+  } @else if $bp == xl {
+    @media (min-width: $bp-xl) { @content; }
+  }
+}
+
+@mixin card {
+  background: $color-card;
+  border-radius: $radius;
+  border: 1px solid $color-border;
+  box-shadow: $shadow-sm;
+  transition: transform $transition, box-shadow $transition;
+}
+
+@mixin card-hover {
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+@mixin container-pad {
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+}
+
+@mixin heading-1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: $color-text;
+  @include respond-to(md) { font-size: 44px; }
+  @include respond-to(lg) { font-size: 52px; }
+}
+
+@mixin heading-2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-text;
+  @include respond-to(md) { font-size: 34px; }
+  @include respond-to(lg) { font-size: 42px; }
+}
+
+@mixin heading-3 {
+  font-size: 24px;
+  font-weight: 600;
+  @include respond-to(lg) { font-size: 28px; }
+}
+
+@mixin section-padding {
+  padding: $section-py-mobile 0;
+  @include respond-to(lg) {
+    padding: $section-py 0;
+  }
+}

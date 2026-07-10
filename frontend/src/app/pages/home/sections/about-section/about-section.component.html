@@ -1,0 +1,42 @@
+<section class="about-industrial" id="about">
+  <div class="container">
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-lg-6" appReveal>
+        <div class="about-visual">
+          <img
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=720&q=80"
+            alt="Motors Industries manufacturing facility"
+            loading="lazy"
+            width="600"
+            height="480">
+          <div class="experience-badge">
+            <span class="years">{{ settings()['years_experience'] || '25' }}+</span>
+            <span class="label">Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" appReveal [appRevealDelay]="120">
+        <span class="eyebrow">About Us</span>
+        <h2 class="about-title">Engineering Industrial Excellence</h2>
+
+        <div class="about-blocks">
+          <article class="about-block">
+            <h3>Our Mission</h3>
+            <p>{{ settings()['about_mission'] || defaults.mission }}</p>
+          </article>
+          <article class="about-block">
+            <h3>Our Vision</h3>
+            <p>{{ settings()['about_vision'] || defaults.vision }}</p>
+          </article>
+          <article class="about-block">
+            <h3>Our History</h3>
+            <p>{{ settings()['about_history'] || defaults.history }}</p>
+          </article>
+        </div>
+
+        <a routerLink="/about" class="btn-industrial-primary read-more">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>

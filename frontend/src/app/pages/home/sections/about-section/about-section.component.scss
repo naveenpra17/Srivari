@@ -1,0 +1,93 @@
+@use '../../../../../styles/industrial/variables' as *;
+@use '../../../../../styles/industrial/mixins' as *;
+@use '../../../../../styles/industrial/buttons';
+
+.about-industrial {
+  @include section-padding;
+  background: $color-white;
+}
+
+.about-visual {
+  position: relative;
+
+  img {
+    width: 100%;
+    border-radius: $radius;
+    box-shadow: $shadow-lg;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 5 / 4;
+  }
+
+  .experience-badge {
+    position: absolute;
+    bottom: -18px;
+    right: 24px;
+    background: $color-secondary;
+    color: $color-white;
+    padding: 1.25rem 1.5rem;
+    border-radius: $radius;
+    text-align: center;
+    box-shadow: $shadow-md;
+
+    .years {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-top: 0.25rem;
+      display: block;
+    }
+  }
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: $color-secondary;
+  margin-bottom: 0.5rem;
+}
+
+.about-title {
+  @include heading-2;
+  color: $color-primary;
+  margin: 0 0 1.75rem;
+}
+
+.about-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.about-block {
+  padding-left: 1rem;
+  border-left: 3px solid $color-secondary;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-primary;
+    margin: 0 0 0.4rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: $color-grey;
+  }
+}
+
+.read-more {
+  display: inline-flex;
+}

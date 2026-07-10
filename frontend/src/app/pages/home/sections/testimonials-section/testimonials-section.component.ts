@@ -1,67 +1,127 @@
-import { Component, input, signal, OnInit, OnDestroy, PLATFORM_ID, inject } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnDestroy,
+  PLATFORM_ID,
+  computed,
+  inject,
+  input,
+  viewChild
+} from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { RouterLink } from '@angular/router';
-import { TestimonialCardComponent } from '../../../../shared/components/testimonial-card/testimonial-card.component';
-import { TestimonialService } from '../../../../core/services/testimonial.service';
+import Swiper from 'swiper';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Testimonial } from '../../../../models';
+import { SectionHeaderComponent } from '../../../../shared/components/section-header/section-header.component';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 @Component({
   selector: 'app-testimonials-section',
   standalone: true,
-  imports: [CommonModule, RouterLink, TestimonialCardComponent],
+  imports: [CommonModule, SectionHeaderComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './testimonials-section.component.html',
   styleUrl: './testimonials-section.component.scss'
 })
-export class TestimonialsSectionComponent implements OnInit, OnDestroy {
-  private readonly platformId = inject(PLATFORM_ID);
-  private readonly testimonialService = inject(TestimonialService);
-  private intervalId?: ReturnType<typeof setInterval>;
-
+export class TestimonialsSectionComponent implements AfterViewInit, OnDestroy {
   testimonials = input<Testimonial[]>([]);
-  featured = signal<Testimonial[]>([]);
-  currentIndex = signal(0);
+  private readonly platformId = inject(PLATFORM_ID);
+  private readonly swiperContainer = viewChild<ElementRef<HTMLElement>>('testimonialSwiper');
+  private swiper?: Swiper;
 
-  ngOnInit(): void {
-    const items = this.testimonials();
-    this.featured.set(items.filter(t => t.featured).length > 0
-      ? items.filter(t => t.featured).slice(0, 6)
-      : items.slice(0, 6));
-
-    if (isPlatformBrowser(this.platformId) && this.featured().length > 1) {
-      this.intervalId = setInterval(() => this.next(), 6000);
+  readonly items = computed(() => {
+    const list = this.testimonials();
+    if (list.length > 0) {
+      const featured = list.filter(t => t.featured);
+      return (featured.length > 0 ? featured : list).slice(0, 8);
     }
-  }
+    return FALLBACK_TESTIMONIALS;
+  });
 
-  ngOnDestroy(): void {
-    if (this.intervalId) clearInterval(this.intervalId);
-  }
+  ngAfterViewInit(): void {
+    if (!isPlatformBrowser(this.platformId) || this.items().length <= 1) return;
+    const el = this.swiperContainer()?.nativeElement;
+    if (!el) return;
 
-  visibleCards(): Testimonial[] {
-    const items = this.featured();
-    if (items.length <= 3) return items;
-    const idx = this.currentIndex();
-    const result: Testimonial[] = [];
-    for (let i = 0; i < Math.min(3, items.length); i++) {
-      result.push(items[(idx + i) % items.length]);
-    }
-    return result;
-  }
-
-  next(): void {
-    const len = this.featured().length;
-    if (len > 0) this.currentIndex.update(i => (i + 1) % len);
-  }
-
-  goTo(index: number): void {
-    this.currentIndex.set(index);
-  }
-
-  onLike(testimonial: Testimonial): void {
-    this.testimonialService.like(testimonial.id).subscribe({
-      next: (res) => {
-        const updated = res.data;
-        this.featured.update(list => list.map(t => t.id === updated.id ? updated : t));
+    this.swiper = new Swiper(el, {
+      modules: [Autoplay, Navigation, Pagination],
+      loop: true,
+      speed: 700,
+      slidesPerView: 1,
+      spaceBetween: 24,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      pagination: {
+        el: '.testimonial-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.testimonial-nav-next',
+        prevEl: '.testimonial-nav-prev'
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 }
       }
     });
   }
+
+  ngOnDestroy(): void {
+    this.swiper?.destroy(true, true);
+  }
+
+  stars(rating: number): number[] {
+    return Array.from({ length: Math.min(5, Math.max(0, rating)) });
+  }
+
+  formatRole(item: Testimonial): string {
+    return [item.designation, item.company].filter(Boolean).join(', ');
+  }
 }
+
+const FALLBACK_TESTIMONIALS: Testimonial[] = [
+  {
+    id: 1,
+    clientName: 'Rajesh Kumar',
+    designation: 'Plant Manager',
+    company: 'Tata Steel',
+    content: 'Motors Industries delivered exceptional reliability across our production line. Their engineering support and product quality are world-class.',
+    rating: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&q=80',
+    featured: true,
+    sortOrder: 1,
+    active: true
+  },
+  {
+    id: 2,
+    clientName: 'Sarah Mitchell',
+    designation: 'Operations Director',
+    company: 'Grundfos Partner',
+    content: 'We have partnered with Motors Industries for over a decade. Their pumps consistently exceed performance benchmarks in demanding environments.',
+    rating: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&q=80',
+    featured: true,
+    sortOrder: 2,
+    active: true
+  },
+  {
+    id: 3,
+    clientName: 'Ahmed Hassan',
+    designation: 'Chief Engineer',
+    company: 'ADNOC Supply',
+    content: 'From specification to installation, the team demonstrated deep industrial expertise. A trusted supplier for oil & gas applications.',
+    rating: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80',
+    featured: true,
+    sortOrder: 3,
+    active: true
+  }
+];
