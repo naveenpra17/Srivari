@@ -30,22 +30,18 @@
   }
 
   :global(.swiper-wrapper) {
-    align-items: stretch;
+    height: 100%;
   }
 
   :global(.swiper-slide) {
     display: flex;
     width: 100%;
+    height: 100%;
     overflow: hidden;
-    // On mobile fade effect slides must be absolute so they stack
-    // on top of one another rather than pushing each other down.
+    // Fade effect requires ALL slides to be absolutely positioned
+    // so they stack on top of one another rather than pushing each other down.
     position: absolute;
     inset: 0;
-
-    @include respond-to(md) {
-      position: relative;
-      height: 100%;
-    }
   }
 
   &:global(.swiper-fade) :global(.swiper-slide) {
@@ -245,15 +241,14 @@
 
 .hero-pagination {
   position: absolute;
-  bottom: 12px !important;
+  bottom: 60px !important;
   left: 0;
-  right: 60px;
+  right: 0;
   z-index: 5;
   text-align: center;
 
   @include respond-to(md) {
     bottom: 16px !important;
-    right: 0;
   }
 
   :global(.swiper-pagination-bullet) {
