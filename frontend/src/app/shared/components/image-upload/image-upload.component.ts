@@ -1,6 +1,8 @@
-import { Component, input, output, signal, inject } from '@angular/core';
+import { Component, input, output, signal, inject, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpErrorResponse } from '@angular/common/http';
 import { AdminService } from '../../../core/services/admin.service';
+import { AuthService } from '../../../core/services/auth.service';
 import { SnackbarService } from '../../../core/services/ui.service';
 
 @Component({
@@ -15,8 +17,8 @@ import { SnackbarService } from '../../../core/services/ui.service';
           <button type="button" class="remove-btn" (click)="clear()">&times;</button>
         </div>
       }
-      <label class="upload-btn" [class.uploading]="uploading()">
-        <input type="file" accept="image/*" (change)="onFileSelected($event)" [disabled]="uploading()">
+      <label class="upload-btn" [class.uploading]="uploading()" [class.disabled]="!canUpload()">
+        <input type="file" accept="image/*" (change)="onFileSelected($event)" [disabled]="uploading() || !canUpload()">
         @if (uploading()) {
           Uploading...
         } @else {
@@ -43,7 +45,7 @@ import { SnackbarService } from '../../../core/services/ui.service';
       transition: var(--transition); width: fit-content;
       input { display: none; }
       &:hover { background: rgba(10,43,94,0.15); }
-      &.uploading { opacity: 0.6; pointer-events: none; }
+      &.uploading, &.disabled { opacity: 0.6; pointer-events: none; }
     }
   `]
 })
@@ -53,14 +55,22 @@ export class ImageUploadComponent {
   imageUrlChange = output<string>();
 
   private readonly admin = inject(AdminService);
+  private readonly auth = inject(AuthService);
   private readonly snackbar = inject(SnackbarService);
 
   uploading = signal(false);
+  canUpload = computed(() => this.auth.canEdit());
 
   onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
     const file = input.files?.[0];
     if (!file) return;
+
+    if (!this.canUpload()) {
+      this.snackbar.error('You need Editor or Admin access to upload images');
+      input.value = '';
+      return;
+    }
 
     this.uploading.set(true);
     this.admin.uploadImage(file, this.folder()).subscribe({
@@ -69,8 +79,15 @@ export class ImageUploadComponent {
         this.uploading.set(false);
         input.value = '';
       },
-      error: () => {
-        this.snackbar.error('Image upload failed');
+      error: (err: HttpErrorResponse) => {
+        if (err.status === 401 || err.status === 403) {
+          this.snackbar.error('Session expired or insufficient permissions. Please log in again.');
+        } else if (err.status === 413) {
+          this.snackbar.error('Image is too large. Please choose a smaller file.');
+        } else {
+          const message = err.error?.message;
+          this.snackbar.error(message || 'Image upload failed');
+        }
         this.uploading.set(false);
         input.value = '';
       }

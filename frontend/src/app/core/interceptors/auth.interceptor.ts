@@ -3,6 +3,8 @@ import { inject } from '@angular/core';
 import { catchError, switchMap, throwError } from 'rxjs';
 import { AuthService } from '../services/auth.service';
 
+const AUTH_RETRY_HEADER = 'X-Auth-Retry';
+
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const auth = inject(AuthService);
   const token = auth.getToken();
@@ -10,21 +12,30 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
     req.url.includes('/public/') ||
     req.url.includes('/auth/login') ||
     req.url.includes('/auth/refresh');
+  const isRetry = req.headers.has(AUTH_RETRY_HEADER);
 
+  const headers: Record<string, string> = { 'ngsw-bypass': 'true' };
   if (token && !isPublicApi) {
-    req = req.clone({
-      setHeaders: { Authorization: `Bearer ${token}` }
-    });
+    headers['Authorization'] = `Bearer ${token}`;
   }
+
+  req = req.clone({ setHeaders: headers });
+
+  const shouldRefresh = (status: number) =>
+    (status === 401 || status === 403) && auth.getRefreshToken() && !isRetry && !isPublicApi;
 
   return next(req).pipe(
     catchError((error: HttpErrorResponse) => {
-      if (error.status === 401 && auth.getRefreshToken()) {
+      if (shouldRefresh(error.status)) {
         return auth.refreshToken().pipe(
           switchMap(() => {
             const newToken = auth.getToken();
             const retryReq = req.clone({
-              setHeaders: { Authorization: `Bearer ${newToken}` }
+              setHeaders: {
+                'ngsw-bypass': 'true',
+                Authorization: `Bearer ${newToken}`,
+                [AUTH_RETRY_HEADER]: 'true'
+              }
             });
             return next(retryReq);
           }),
