@@ -42,7 +42,8 @@ html[data-theme="dark"] {
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
 
   .header-industrial {
-    background: rgba(22, 27, 34, 0.95) !important;
+    background: var(--primary-dark) !important;
+    color: #ffffff;
   }
 
   .card-custom {

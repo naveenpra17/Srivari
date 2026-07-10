@@ -11,7 +11,7 @@ import { SeoService } from '../../core/services/seo.service';
       <div class="container legal-content">
         <h1>Privacy Policy</h1>
         <p>Last updated: {{ year }}</p>
-        <p>Motors Industries respects your privacy. We collect only information necessary to respond to inquiries and improve our services.</p>
+        <p>Sri Vaari respects your privacy. We collect only information necessary to respond to inquiries and improve our services.</p>
         <h2>Information We Collect</h2>
         <p>Contact form submissions, quote requests, and newsletter sign-ups may include your name, email, phone, and company details.</p>
         <h2>How We Use Data</h2>

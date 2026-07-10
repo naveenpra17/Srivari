@@ -8,13 +8,14 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: $color-white;
+  background: $color-primary;
+  color: $color-white;
   border-bottom: 1px solid transparent;
-  transition: box-shadow $transition, border-color $transition;
+  transition: box-shadow $transition, border-color $transition, background $transition;
 
   &.scrolled {
-    box-shadow: $shadow-sm;
-    border-bottom-color: $color-border;
+    box-shadow: $shadow-md;
+    border-bottom-color: rgba($color-white, 0.12);
   }
 }
 
@@ -35,7 +36,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: $color-primary;
+  color: $color-white;
   text-decoration: none;
   min-width: 0;
   flex: 1;
@@ -67,6 +68,7 @@
       font-weight: 700;
       font-size: clamp(0.85rem, 3.5vw, 1.05rem);
       line-height: 1.2;
+      color: $color-white;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -74,7 +76,7 @@
 
     .tagline {
       font-size: 0.62rem;
-      color: $color-secondary;
+      color: rgba($color-white, 0.82);
       font-weight: 500;
       letter-spacing: 0.3px;
 
@@ -93,7 +95,7 @@
   a {
     font-size: 0.88rem;
     font-weight: 500;
-    color: $color-text;
+    color: rgba($color-white, 0.9);
     text-decoration: none;
     position: relative;
     padding: 4px 0;
@@ -112,7 +114,7 @@
 
     &:hover,
     &.active {
-      color: $color-primary;
+      color: $color-white;
 
       &::after { width: 100%; }
     }
@@ -134,9 +136,9 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid $color-border;
-  background: $color-white;
-  color: $color-primary;
+  border: 1px solid rgba($color-white, 0.35);
+  background: transparent;
+  color: $color-white;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -150,9 +152,9 @@
   }
 
   &:hover {
-    background: $color-primary;
-    color: $color-white;
-    border-color: $color-primary;
+    background: $color-white;
+    color: $color-primary;
+    border-color: $color-white;
   }
 }
 
@@ -163,8 +165,8 @@
   padding: 8px 14px;
   min-height: 40px;
   border-radius: $radius-pill;
-  background: rgba($color-primary, 0.06);
-  color: $color-primary;
+  background: rgba($color-white, 0.1);
+  color: $color-white;
   font-weight: 600;
   font-size: 0.82rem;
   text-decoration: none;
@@ -179,7 +181,7 @@
   }
 
   &:hover {
-    background: $color-primary;
+    background: $color-secondary;
     color: $color-white;
   }
 }
@@ -203,7 +205,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: $color-primary;
+    background: $color-white;
     border-radius: 2px;
     transition: $transition;
   }
@@ -265,7 +267,7 @@
 .nav-mobile {
   display: flex;
   flex-direction: column;
-  background: $color-white;
+  background: $color-primary;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
@@ -276,16 +278,16 @@
   &.open {
     max-height: 80vh;
     overflow-y: auto;
-    border-top-color: $color-border;
+    border-top-color: rgba($color-white, 0.12);
     padding: 0.25rem max(20px, env(safe-area-inset-right)) 1rem max(20px, env(safe-area-inset-left));
   }
 
   a {
     padding: 13px 0;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid rgba($color-white, 0.12);
     font-weight: 500;
     font-size: 0.95rem;
-    color: $color-text;
+    color: $color-white;
     text-decoration: none;
     min-height: 44px;
     display: flex;

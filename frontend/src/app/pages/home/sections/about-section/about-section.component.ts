@@ -18,6 +18,6 @@ export class AboutSectionComponent {
   readonly defaults = {
     mission: 'To deliver world-class industrial motors, pumps and piping solutions that power global manufacturing with reliability and innovation.',
     vision: 'To be the most trusted industrial engineering partner, setting benchmarks in quality, sustainability and customer success.',
-    history: 'Founded over two decades ago, Motors Industries has grown from a regional manufacturer to a global supplier serving critical sectors worldwide.'
+    history: 'Founded over two decades ago, Sri Vaari has grown from a regional manufacturer to a global supplier serving critical sectors worldwide.'
   };
 }

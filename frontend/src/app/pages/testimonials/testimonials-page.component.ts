@@ -34,7 +34,7 @@ export class TestimonialsPageComponent implements OnInit {
   ngOnInit(): void {
     this.seo.update({
       title: 'Customer Testimonials',
-      description: 'Read real stories from industry leaders who trust Motors Industries for premium industrial solutions.',
+      description: 'Read real stories from industry leaders who trust Sri Vaari for premium industrial solutions.',
       keywords: 'testimonials, reviews, customer stories, motors industries'
     });
     this.loadFeatured();
