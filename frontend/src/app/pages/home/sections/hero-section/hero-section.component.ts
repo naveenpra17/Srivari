@@ -26,17 +26,6 @@ interface HeadlineLine {
   accent?: string;
 }
 
-interface IndustrialHeroSlide {
-  id: number;
-  headlineLines: HeadlineLine[];
-  description: string;
-  imageUrl: string;
-  ctaText: string;
-  ctaLink: string;
-  secondaryCtaText: string;
-  secondaryCtaLink: string;
-}
-
 @Component({
   selector: 'app-hero-section',
   standalone: true,
@@ -51,10 +40,10 @@ export class HeroSectionComponent implements AfterViewInit, OnDestroy {
   private readonly swiperContainer = viewChild<ElementRef<HTMLElement>>('heroSwiper');
   private swiper?: Swiper;
 
-  readonly displaySlides = computed(() => {
-    const apiSlides = this.slides().filter((slide) => !this.isTestimonialSlide(slide) && !!slide.imageUrl?.trim());
-    if (apiSlides.length > 0) {
-      return apiSlides.map((slide) => ({
+  readonly displaySlides = computed(() =>
+    this.slides()
+      .filter((slide) => !this.isTestimonialSlide(slide) && !!slide.imageUrl?.trim())
+      .map((slide) => ({
         id: slide.id,
         headlineLines: toHeadlineLines(slide.title, slide.subtitle),
         description: slide.description || slide.subtitle || '',
@@ -63,13 +52,11 @@ export class HeroSectionComponent implements AfterViewInit, OnDestroy {
         ctaLink: slide.ctaLink || '/products',
         secondaryCtaText: slide.secondaryCtaText || 'Contact Us',
         secondaryCtaLink: slide.secondaryCtaLink || slide.videoUrl || '/#contact'
-      }));
-    }
-    return DEFAULT_INDUSTRIAL_SLIDES;
-  });
+      }))
+  );
 
   ngAfterViewInit(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
+    if (!isPlatformBrowser(this.platformId) || this.displaySlides().length === 0) return;
     // Defer init so Angular finishes rendering all @for slides before Swiper measures the DOM.
     requestAnimationFrame(() => this.initSwiper());
   }
@@ -186,34 +173,3 @@ function toHeadlineLines(title: string, subtitle?: string): HeadlineLine[] {
   const accent = words.pop()!;
   return [{ text: `${words.join(' ')} ` }, { accent }];
 }
-
-const DEFAULT_INDUSTRIAL_SLIDES: IndustrialHeroSlide[] = [
-  {
-    id: 1,
-    headlineLines: [
-      { text: 'Where' },
-      { text: 'Innovation' },
-      { text: 'Meets ', accent: 'Reliability' }
-    ],
-    description: 'Premium pumps, motors & pipes engineered for industrial excellence, built for tomorrow.',
-    imageUrl: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80',
-    ctaText: 'Explore Products',
-    ctaLink: '/products',
-    secondaryCtaText: 'Watch Video',
-    secondaryCtaLink: '#gallery'
-  },
-  {
-    id: 2,
-    headlineLines: [
-      { text: 'High-Performance' },
-      { text: 'Industrial' },
-      { accent: 'Motors' }
-    ],
-    description: 'Precision-engineered motors delivering unmatched efficiency for demanding manufacturing environments.',
-    imageUrl: 'https://images.unsplash.com/photo-1565193567171-5a81f4e0f3c7?w=1200&q=80',
-    ctaText: 'View Motors',
-    ctaLink: '/products',
-    secondaryCtaText: 'Get Quote',
-    secondaryCtaLink: '/#contact'
-  }
-];

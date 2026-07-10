@@ -16,8 +16,7 @@
 .hero-swiper {
   position: relative;
   width: 100%;
-  // Fade slides need a container height on mobile too — use min-height
-  // so the swiper-wrapper stretches to accommodate the tallest slide content.
+  overflow: hidden;
   min-height: 420px;
 
   @include respond-to(sm) {
@@ -30,28 +29,16 @@
   }
 
   :global(.swiper-wrapper) {
+    position: relative;
+    width: 100%;
     height: 100%;
   }
 
   :global(.swiper-slide) {
-    display: flex;
+    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    // Fade effect requires ALL slides to be absolutely positioned
-    // so they stack on top of one another rather than pushing each other down.
-    position: absolute;
-    inset: 0;
-  }
-
-  &:global(.swiper-fade) :global(.swiper-slide) {
-    opacity: 0 !important;
-    pointer-events: none;
-  }
-
-  &:global(.swiper-fade) :global(.swiper-slide-active) {
-    opacity: 1 !important;
-    pointer-events: auto;
   }
 }
 
