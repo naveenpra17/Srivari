@@ -20,6 +20,11 @@ import java.util.Set;
 @RequiredArgsConstructor
 public class DataInitializer {
 
+    private static final String INVALID_SEED_PASSWORD_HASH =
+            "$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/X4.G2oXH5qK5qK5qK";
+    private static final String DEFAULT_ADMIN_EMAIL = "admin@motors.com";
+    private static final String DEFAULT_ADMIN_PASSWORD = "Admin@123";
+
     private final RoleRepository roleRepository;
     private final UserRepository userRepository;
     private final SettingRepository settingRepository;
@@ -48,11 +53,17 @@ public class DataInitializer {
     }
 
     private void initAdminUser() {
-        if (userRepository.findByEmail("admin@motors.com").isEmpty()) {
+        userRepository.findByEmail(DEFAULT_ADMIN_EMAIL).ifPresentOrElse(user -> {
+            if (INVALID_SEED_PASSWORD_HASH.equals(user.getPassword())) {
+                user.setPassword(passwordEncoder.encode(DEFAULT_ADMIN_PASSWORD));
+                userRepository.save(user);
+                log.warn("Reset admin password — replaced invalid seed placeholder hash");
+            }
+        }, () -> {
             Role adminRole = roleRepository.findByName("ADMIN").orElseThrow();
             User admin = User.builder()
-                    .email("admin@motors.com")
-                    .password(passwordEncoder.encode("Admin@123"))
+                    .email(DEFAULT_ADMIN_EMAIL)
+                    .password(passwordEncoder.encode(DEFAULT_ADMIN_PASSWORD))
                     .firstName("System")
                     .lastName("Administrator")
                     .phone("+91-9876543210")
@@ -60,8 +71,8 @@ public class DataInitializer {
                     .roles(Set.of(adminRole))
                     .build();
             userRepository.save(admin);
-            log.info("Created default admin user: admin@motors.com");
-        }
+            log.info("Created default admin user: {}", DEFAULT_ADMIN_EMAIL);
+        });
     }
 
     private void initDefaultSettings() {

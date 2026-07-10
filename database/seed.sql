@@ -7,10 +7,9 @@ INSERT INTO roles (name, description) VALUES
     ('VIEWER', 'Read-only admin access');
 
 -- Default admin: admin@motors.com / Admin@123
--- BCrypt hash generated for Admin@123
 INSERT INTO users (email, password, first_name, last_name, phone, active) VALUES
     ('admin@motors.com',
-     '$2a$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/X4.G2oXH5qK5qK5qK',
+     '$2b$12$9tws8X2zoqvakz/d/VpiseNxzGaogWPK.WdHOb9BPa5uQ.km3R.TS',
      'System',
      'Administrator',
      '+91-9876543210',
