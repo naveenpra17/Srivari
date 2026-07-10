@@ -179,60 +179,60 @@ export class HeroSectionComponent implements AfterViewInit, OnDestroy {
 }
 
 const DEFAULT_INDUSTRIAL_SLIDES: IndustrialHeroSlide[] = [
-  {
-    id: 1,
-    headlineLines: [
-      { text: 'Where' },
-      { text: 'Innovation' },
-      { text: 'Meets ', accent: 'Reliability' }
-    ],
-    description: 'Premium pumps, motors & pipes engineered for industrial excellence, built for tomorrow.',
-    imageUrl: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80',
-    ctaText: 'Explore Products',
-    ctaLink: '/products',
-    secondaryCtaText: 'Watch Video',
-    secondaryCtaLink: '#gallery'
-  },
-  {
-    id: 2,
-    headlineLines: [
-      { text: 'High-Performance' },
-      { text: 'Industrial' },
-      { accent: 'Motors' }
-    ],
-    description: 'Precision-engineered motors delivering unmatched efficiency for demanding manufacturing environments.',
-    imageUrl: 'https://images.unsplash.com/photo-1565193567171-5a81f4e0f3c7?w=900&q=80',
-    ctaText: 'View Motors',
-    ctaLink: '/products',
-    secondaryCtaText: 'Get Quote',
-    secondaryCtaLink: '/#contact'
-  },
-  {
-    id: 3,
-    headlineLines: [
-      { text: 'Heavy-Duty' },
-      { text: 'Industrial' },
-      { accent: 'Pumps' }
-    ],
-    description: 'Robust centrifugal and submersible pumps built for continuous operation in critical applications.',
-    imageUrl: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80',
-    ctaText: 'View Pumps',
-    ctaLink: '/products',
-    secondaryCtaText: 'Watch Video',
-    secondaryCtaLink: '#gallery'
-  },
-  {
-    id: 4,
-    headlineLines: [
-      { text: 'Durable' },
-      { text: 'Industrial' },
-      { text: 'Pipes & ', accent: 'Valves' }
-    ],
-    description: 'Corrosion-resistant piping systems and precision valves for oil, gas, water and chemical industries.',
-    imageUrl: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80',
-    ctaText: 'Browse Catalog',
-    ctaLink: '/products',
-    secondaryCtaText: 'Contact Us',
-    secondaryCtaLink: '/#contact'
-  }
+  // {
+  //   id: 1,
+  //   headlineLines: [
+  //     { text: 'Where' },
+  //     { text: 'Innovation' },
+  //     { text: 'Meets ', accent: 'Reliability' }
+  //   ],
+  //   description: 'Premium pumps, motors & pipes engineered for industrial excellence, built for tomorrow.',
+  //   imageUrl: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80',
+  //   ctaText: 'Explore Products',
+  //   ctaLink: '/products',
+  //   secondaryCtaText: 'Watch Video',
+  //   secondaryCtaLink: '#gallery'
+  // },
+  // {
+  //   id: 2,
+  //   headlineLines: [
+  //     { text: 'High-Performance' },
+  //     { text: 'Industrial' },
+  //     { accent: 'Motors' }
+  //   ],
+  //   description: 'Precision-engineered motors delivering unmatched efficiency for demanding manufacturing environments.',
+  //   imageUrl: 'https://images.unsplash.com/photo-1565193567171-5a81f4e0f3c7?w=900&q=80',
+  //   ctaText: 'View Motors',
+  //   ctaLink: '/products',
+  //   secondaryCtaText: 'Get Quote',
+  //   secondaryCtaLink: '/#contact'
+  // },
+  // {
+  //   id: 3,
+  //   headlineLines: [
+  //     { text: 'Heavy-Duty' },
+  //     { text: 'Industrial' },
+  //     { accent: 'Pumps' }
+  //   ],
+  //   description: 'Robust centrifugal and submersible pumps built for continuous operation in critical applications.',
+  //   imageUrl: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80',
+  //   ctaText: 'View Pumps',
+  //   ctaLink: '/products',
+  //   secondaryCtaText: 'Watch Video',
+  //   secondaryCtaLink: '#gallery'
+  // },
+  // {
+  //   id: 4,
+  //   headlineLines: [
+  //     { text: 'Durable' },
+  //     { text: 'Industrial' },
+  //     { text: 'Pipes & ', accent: 'Valves' }
+  //   ],
+  //   description: 'Corrosion-resistant piping systems and precision valves for oil, gas, water and chemical industries.',
+  //   imageUrl: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80',
+  //   ctaText: 'Browse Catalog',
+  //   ctaLink: '/products',
+  //   secondaryCtaText: 'Contact Us',
+  //   secondaryCtaLink: '/#contact'
+  // }
 ];
