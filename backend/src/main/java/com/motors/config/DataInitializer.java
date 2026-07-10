@@ -76,7 +76,7 @@ public class DataInitializer {
     }
 
     private void initDefaultSettings() {
-        createSettingIfNotExists("company_name", "Sri Vaari", "STRING", "Company display name");
+        createSettingIfNotExists("company_name", "Motors Industries", "STRING", "Company display name");
         createSettingIfNotExists("company_tagline", "Where Innovation Meets Reliability", "STRING", "Company tagline");
         createSettingIfNotExists("company_phone", "+91-9876543210", "STRING", "Primary contact phone");
         createSettingIfNotExists("company_email", "info@motors.com", "STRING", "Primary contact email");
@@ -88,7 +88,7 @@ public class DataInitializer {
         createSettingIfNotExists("countries_served", "50", "NUMBER", "Countries served");
         createSettingIfNotExists("about_mission", "To deliver world-class industrial motors and pumps that power industries globally.", "TEXT", "Mission");
         createSettingIfNotExists("about_vision", "To be the most trusted name in industrial motor solutions worldwide.", "TEXT", "Vision");
-        createSettingIfNotExists("about_history", "Founded in 1999, Sri Vaari has grown to a global leader in industrial motor manufacturing.", "TEXT", "History");
+        createSettingIfNotExists("about_history", "Founded in 1999, Motors Industries has grown to a global leader in industrial motor manufacturing.", "TEXT", "History");
         createSettingIfNotExists("about_achievements", "ISO 9001:2015 Certified | CE Marked | 25+ Industry Awards", "TEXT", "Achievements");
         createSettingIfNotExists("chat_provider", "whatsapp", "STRING", "Active chat provider (whatsapp, tawk, crisp, intercom, none)");
         createSettingIfNotExists("chat_widget_enabled", "true", "BOOLEAN", "Show floating chat widget on public site");
@@ -96,7 +96,7 @@ public class DataInitializer {
         createSettingIfNotExists("whatsapp_tooltip", "Chat with us on WhatsApp", "STRING", "Chat widget tooltip text");
         createSettingIfNotExists("whatsapp_message_general", "Hello, I would like to know more about your products.", "TEXT", "Default WhatsApp message");
         createSettingIfNotExists("whatsapp_message_product", "Hello, I am interested in {productName}. Please share more details.", "TEXT", "WhatsApp message on product pages");
-        createSettingIfNotExists("whatsapp_message_contact", "Hello, I would like to get in touch with Sri Vaari.", "TEXT", "WhatsApp message on contact section");
+        createSettingIfNotExists("whatsapp_message_contact", "Hello, I would like to get in touch with Motors Industries.", "TEXT", "WhatsApp message on contact section");
     }
 
     private void createSettingIfNotExists(String key, String value, String type, String description) {

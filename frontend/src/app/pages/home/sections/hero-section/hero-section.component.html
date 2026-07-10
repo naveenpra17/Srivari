@@ -3,45 +3,41 @@
     <div class="swiper-wrapper">
       @for (slide of displaySlides(); track slide.id) {
         <div class="swiper-slide">
+          <div class="hero-slide-bg">
+            <img
+              [src]="slide.imageUrl"
+              alt="Industrial product"
+              loading="eager"
+              width="640"
+              height="480">
+            <div class="hero-slide-overlay"></div>
+          </div>
           <div class="container hero-container">
-            <div class="hero-grid">
-              <div class="hero-copy">
-                <h1 class="hero-heading">
-                  @for (line of slide.headlineLines; track $index) {
-                    <span class="line">
-                      @if (line.text) { {{ line.text }} }
-                      @if (line.accent) { <span class="accent">{{ line.accent }}</span> }
-                    </span>
-                  }
-                </h1>
-                <p class="hero-desc">{{ slide.description }}</p>
-                <div class="hero-actions">
-                  <a [routerLink]="routePath(slide.ctaLink)" [fragment]="routeFragment(slide.ctaLink)" class="btn-industrial-primary">
-                    {{ slide.ctaText }}
+            <div class="hero-copy">
+              <h1 class="hero-heading">
+                @for (line of slide.headlineLines; track $index) {
+                  <span class="line">
+                    @if (line.text) { {{ line.text }} }
+                    @if (line.accent) { <span class="accent">{{ line.accent }}</span> }
+                  </span>
+                }
+              </h1>
+              <p class="hero-desc">{{ slide.description }}</p>
+              <div class="hero-actions">
+                <a [routerLink]="routePath(slide.ctaLink)" [fragment]="routeFragment(slide.ctaLink)" class="btn-industrial-primary">
+                  {{ slide.ctaText }}
+                </a>
+                @if (isExternal(slide.secondaryCtaLink)) {
+                  <a [href]="slide.secondaryCtaLink" class="btn-industrial-outline" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    {{ slide.secondaryCtaText }}
                   </a>
-                  @if (isExternal(slide.secondaryCtaLink)) {
-                    <a [href]="slide.secondaryCtaLink" class="btn-industrial-outline" target="_blank" rel="noopener">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-                      {{ slide.secondaryCtaText }}
-                    </a>
-                  } @else {
-                    <a [routerLink]="routePath(slide.secondaryCtaLink)" [fragment]="routeFragment(slide.secondaryCtaLink)" class="btn-industrial-outline">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-                      {{ slide.secondaryCtaText }}
-                    </a>
-                  }
-                </div>
-              </div>
-
-              <div class="hero-media">
-                <div class="hero-visual">
-                  <img
-                    [src]="slide.imageUrl"
-                    alt="Industrial product"
-                    loading="eager"
-                    width="640"
-                    height="480">
-                </div>
+                } @else {
+                  <a [routerLink]="routePath(slide.secondaryCtaLink)" [fragment]="routeFragment(slide.secondaryCtaLink)" class="btn-industrial-outline">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    {{ slide.secondaryCtaText }}
+                  </a>
+                }
               </div>
             </div>
           </div>
