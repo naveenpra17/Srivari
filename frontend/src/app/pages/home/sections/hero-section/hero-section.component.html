@@ -4,12 +4,14 @@
       @for (slide of displaySlides(); track slide.id) {
         <div class="swiper-slide">
           <div class="hero-slide-bg">
-            <img
-              [src]="slide.imageUrl"
-              alt="Industrial product"
-              loading="eager"
-              width="640"
-              height="480">
+            @if (slide.imageUrl) {
+              <img
+                [src]="slide.imageUrl"
+                [alt]="slide.headlineLines[0]?.text || 'Hero slide'"
+                loading="eager"
+                width="1920"
+                height="1080">
+            }
             <div class="hero-slide-overlay"></div>
           </div>
           <div class="container hero-container">

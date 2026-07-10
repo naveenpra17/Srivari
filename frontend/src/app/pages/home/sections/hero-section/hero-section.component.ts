@@ -52,24 +52,20 @@ export class HeroSectionComponent implements AfterViewInit, OnDestroy {
   private swiper?: Swiper;
 
   readonly displaySlides = computed(() => {
-    const api = this.slides().filter((slide) => !this.isTestimonialSlide(slide));
-    if (api.length === 0) {
-      return DEFAULT_INDUSTRIAL_SLIDES;
+    const apiSlides = this.slides().filter((slide) => !this.isTestimonialSlide(slide) && !!slide.imageUrl?.trim());
+    if (apiSlides.length > 0) {
+      return apiSlides.map((slide) => ({
+        id: slide.id,
+        headlineLines: toHeadlineLines(slide.title, slide.subtitle),
+        description: slide.description || slide.subtitle || '',
+        imageUrl: slide.imageUrl,
+        ctaText: slide.ctaText || 'Explore Products',
+        ctaLink: slide.ctaLink || '/products',
+        secondaryCtaText: slide.secondaryCtaText || 'Contact Us',
+        secondaryCtaLink: slide.secondaryCtaLink || slide.videoUrl || '/#contact'
+      }));
     }
-
-    return api.map((apiSlide, index) => {
-      const fallback = DEFAULT_INDUSTRIAL_SLIDES[index] ?? DEFAULT_INDUSTRIAL_SLIDES[0];
-      return {
-        id: apiSlide.id,
-        headlineLines: fallback.headlineLines,
-        description: apiSlide.description || apiSlide.subtitle || fallback.description,
-        imageUrl: apiSlide.imageUrl || fallback.imageUrl,
-        ctaText: apiSlide.ctaText || fallback.ctaText,
-        ctaLink: apiSlide.ctaLink || fallback.ctaLink,
-        secondaryCtaText: apiSlide.secondaryCtaText || fallback.secondaryCtaText,
-        secondaryCtaLink: apiSlide.secondaryCtaLink || apiSlide.videoUrl || fallback.secondaryCtaLink
-      };
-    });
+    return DEFAULT_INDUSTRIAL_SLIDES;
   });
 
   ngAfterViewInit(): void {
@@ -178,61 +174,46 @@ export class HeroSectionComponent implements AfterViewInit, OnDestroy {
   }
 }
 
+function toHeadlineLines(title: string, subtitle?: string): HeadlineLine[] {
+  const trimmed = title.trim();
+  if (!trimmed) {
+    return subtitle ? [{ accent: subtitle }] : [{ text: 'Welcome' }];
+  }
+  const words = trimmed.split(/\s+/);
+  if (words.length === 1) {
+    return subtitle ? [{ text: trimmed }, { accent: subtitle }] : [{ text: trimmed }];
+  }
+  const accent = words.pop()!;
+  return [{ text: `${words.join(' ')} ` }, { accent }];
+}
+
 const DEFAULT_INDUSTRIAL_SLIDES: IndustrialHeroSlide[] = [
-  // {
-  //   id: 1,
-  //   headlineLines: [
-  //     { text: 'Where' },
-  //     { text: 'Innovation' },
-  //     { text: 'Meets ', accent: 'Reliability' }
-  //   ],
-  //   description: 'Premium pumps, motors & pipes engineered for industrial excellence, built for tomorrow.',
-  //   imageUrl: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80',
-  //   ctaText: 'Explore Products',
-  //   ctaLink: '/products',
-  //   secondaryCtaText: 'Watch Video',
-  //   secondaryCtaLink: '#gallery'
-  // },
-  // {
-  //   id: 2,
-  //   headlineLines: [
-  //     { text: 'High-Performance' },
-  //     { text: 'Industrial' },
-  //     { accent: 'Motors' }
-  //   ],
-  //   description: 'Precision-engineered motors delivering unmatched efficiency for demanding manufacturing environments.',
-  //   imageUrl: 'https://images.unsplash.com/photo-1565193567171-5a81f4e0f3c7?w=900&q=80',
-  //   ctaText: 'View Motors',
-  //   ctaLink: '/products',
-  //   secondaryCtaText: 'Get Quote',
-  //   secondaryCtaLink: '/#contact'
-  // },
-  // {
-  //   id: 3,
-  //   headlineLines: [
-  //     { text: 'Heavy-Duty' },
-  //     { text: 'Industrial' },
-  //     { accent: 'Pumps' }
-  //   ],
-  //   description: 'Robust centrifugal and submersible pumps built for continuous operation in critical applications.',
-  //   imageUrl: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80',
-  //   ctaText: 'View Pumps',
-  //   ctaLink: '/products',
-  //   secondaryCtaText: 'Watch Video',
-  //   secondaryCtaLink: '#gallery'
-  // },
-  // {
-  //   id: 4,
-  //   headlineLines: [
-  //     { text: 'Durable' },
-  //     { text: 'Industrial' },
-  //     { text: 'Pipes & ', accent: 'Valves' }
-  //   ],
-  //   description: 'Corrosion-resistant piping systems and precision valves for oil, gas, water and chemical industries.',
-  //   imageUrl: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80',
-  //   ctaText: 'Browse Catalog',
-  //   ctaLink: '/products',
-  //   secondaryCtaText: 'Contact Us',
-  //   secondaryCtaLink: '/#contact'
-  // }
+  {
+    id: 1,
+    headlineLines: [
+      { text: 'Where' },
+      { text: 'Innovation' },
+      { text: 'Meets ', accent: 'Reliability' }
+    ],
+    description: 'Premium pumps, motors & pipes engineered for industrial excellence, built for tomorrow.',
+    imageUrl: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80',
+    ctaText: 'Explore Products',
+    ctaLink: '/products',
+    secondaryCtaText: 'Watch Video',
+    secondaryCtaLink: '#gallery'
+  },
+  {
+    id: 2,
+    headlineLines: [
+      { text: 'High-Performance' },
+      { text: 'Industrial' },
+      { accent: 'Motors' }
+    ],
+    description: 'Precision-engineered motors delivering unmatched efficiency for demanding manufacturing environments.',
+    imageUrl: 'https://images.unsplash.com/photo-1565193567171-5a81f4e0f3c7?w=1200&q=80',
+    ctaText: 'View Motors',
+    ctaLink: '/products',
+    secondaryCtaText: 'Get Quote',
+    secondaryCtaLink: '/#contact'
+  }
 ];
