@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: '/api/v1',
+  apiUrl: 'https://srivari-1.onrender.com/api/v1',
   appName: 'Sri Vaari',
   tagline: 'Where Innovation Meets Reliability',
   whatsapp: {
