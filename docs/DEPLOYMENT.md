@@ -171,9 +171,13 @@ Copy from `backend/.env.example` and fill in real values:
 | Setting | Value |
 |---------|-------|
 | Root Directory | `frontend` |
-| Framework Preset | Angular |
+| Framework Preset | Other (or Angular) |
 | Build Command | `npm run build` |
-| Output Directory | `dist/frontend/browser` |
+| **Output Directory** | **`dist/frontend/browser`** |
+
+> **Important:** Angular 17+ outputs to `dist/frontend/browser`, not `dist/frontend`. Wrong output path causes Vercel `404: NOT_FOUND`.
+
+`frontend/vercel.json` includes the correct `outputDirectory` and SPA rewrites.
 
 4. Add **Environment Variables** (Production):
 
@@ -253,6 +257,7 @@ Fresh installs only need `schema.sql` + `seed.sql`.
 | 502 on first API call | Render free tier waking up — wait and retry |
 | Admin login fails | Re-run `seed.sql` or reset password in DB |
 | Blank homepage | Check browser console; verify `API_URL` on Vercel |
+| Vercel `404: NOT_FOUND` | Set Output Directory to `dist/frontend/browser` (see `frontend/vercel.json`) |
 | `jpaAuditingHandler` bean error | Fixed in code — remove duplicate `@EnableJpaAuditing`; redeploy |
 | Profile shows `dev` on Render | Set `SPRING_PROFILES_ACTIVE=prod` in Render env vars (also set in Dockerfile) |
 | `JavaMailSender` bean not found | Mail is optional — redeploy latest code; or set `MAIL_HOST`, `MAIL_USERNAME`, `MAIL_PASSWORD` |
