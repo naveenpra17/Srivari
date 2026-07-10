@@ -1,10 +1,10 @@
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   ElementRef,
   OnDestroy,
   PLATFORM_ID,
+  afterNextRender,
   computed,
   inject,
   input,
@@ -15,11 +15,6 @@ import { RouterLink } from '@angular/router';
 import Swiper from 'swiper';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { HeroSlide } from '../../../../models';
-
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 interface HeadlineLine {
   text?: string;
@@ -34,7 +29,7 @@ interface HeadlineLine {
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss'
 })
-export class HeroSectionComponent implements AfterViewInit, OnDestroy {
+export class HeroSectionComponent implements OnDestroy {
   slides = input<HeroSlide[]>([]);
   private readonly platformId = inject(PLATFORM_ID);
   private readonly swiperContainer = viewChild<ElementRef<HTMLElement>>('heroSwiper');
@@ -55,10 +50,12 @@ export class HeroSectionComponent implements AfterViewInit, OnDestroy {
       }))
   );
 
-  ngAfterViewInit(): void {
-    if (!isPlatformBrowser(this.platformId) || this.displaySlides().length === 0) return;
-    // Defer init so Angular finishes rendering all @for slides before Swiper measures the DOM.
-    requestAnimationFrame(() => this.initSwiper());
+  constructor() {
+    afterNextRender(() => {
+      if (!isPlatformBrowser(this.platformId) || this.displaySlides().length === 0) return;
+      // Extra frame helps production builds where layout/CSS settle after first paint.
+      requestAnimationFrame(() => this.initSwiper());
+    });
   }
 
   ngOnDestroy(): void {
