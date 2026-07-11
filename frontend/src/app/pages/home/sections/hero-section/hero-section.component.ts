@@ -72,6 +72,7 @@ export class HeroSectionComponent implements OnDestroy {
       modules: [Autoplay, EffectFade, Navigation, Pagination],
       effect: 'fade',
       fadeEffect: { crossFade: true },
+      autoHeight: false,
       slidesPerView: 1,
       // Loop clones DOM nodes; Angular bindings do not carry over to clones (blank slides).
       loop: false,

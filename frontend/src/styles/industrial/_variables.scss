@@ -28,9 +28,17 @@ $section-py: 80px;
 $section-py-mobile: 48px;
 
 $hero-height: 650px;
-$hero-height-mobile: auto;
+$hero-swiper-height-mobile: 420px;
+$hero-swiper-height-sm: 480px;
 $header-height: 72px;
 $header-height-mobile: 64px;
+
+@function header-offset($mobile: true) {
+  @if $mobile {
+    @return calc(#{$header-height-mobile} + env(safe-area-inset-top, 0px));
+  }
+  @return calc(#{$header-height} + env(safe-area-inset-top, 0px));
+}
 
 $container-px: 20px;
 $container-px-md: 24px;
