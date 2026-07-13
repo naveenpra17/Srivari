@@ -112,9 +112,9 @@ INSERT INTO gallery (title, description, image_url, category, sort_order, active
 INSERT INTO settings (setting_key, setting_value, setting_type, description) VALUES
     ('company_name',        'Sri Vaari Traders', 'STRING', 'Company display name'),
     ('company_tagline',     'Where Innovation Meets Reliability', 'STRING', 'Company tagline'),
-    ('company_phone',       '+91-9842231111', 'STRING', 'Primary contact phone'),
-    ('company_email',       'info@motors.com', 'STRING', 'Primary contact email'),
-    ('company_address',     '123 Industrial Estate, Mumbai, Maharashtra 400001, India', 'STRING', 'Company address'),
+    ('company_phone',       '+91-98422 31111', 'STRING', 'Primary contact phone'),
+    ('company_email',       'srivaaritraderss@gmail.com', 'STRING', 'Primary contact email'),
+    ('company_address',     '25 First floor Chellapa Nagar, Ram Nagar Coimbatore, Coimbatore 641009, Tamil Nadu, India', 'STRING', 'Company address'),
     ('company_working_hours', 'Mon - Sat: 9:00 AM - 6:00 PM', 'STRING', 'Working hours'),
     ('google_maps_embed',   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0!2d72.8777!3d19.0760', 'STRING', 'Google Maps embed URL'),
     ('facebook_url',        'https://facebook.com/motors', 'STRING', 'Facebook page URL'),
