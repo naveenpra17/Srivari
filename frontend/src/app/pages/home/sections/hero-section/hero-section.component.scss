@@ -146,9 +146,10 @@
 .hero-desc {
   font-size: 0.9rem;
   line-height: 1.65;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.96);
   margin: 0 0 1.25rem;
   max-width: 480px;
+   white-space: pre-line;
 
   @include respond-to(md) {
     font-size: 0.98rem;
@@ -159,6 +160,38 @@
   @include respond-to(lg) {
     font-size: 1.05rem;
   }
+}
+
+.hero-gem-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1.5rem;
+
+  background: rgba(8, 18, 35, 0.9);
+  border: 2px solid #ff7a00;
+  border-radius: 50px;
+
+  width: fit-content;
+
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,.35);
+}
+
+.gem-label{
+    color:#ffffff;
+    font-size:.85rem;
+    font-weight:600;
+    letter-spacing:.08em;
+}
+
+.gem-number{
+    color:#ff9f1a;
+    font-size:.95rem;
+    font-weight:800;
+    letter-spacing:.08em;
 }
 
 .hero-actions {
