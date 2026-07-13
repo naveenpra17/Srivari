@@ -24,15 +24,13 @@
             <a
               routerLink="/"
               [fragment]="link.fragment"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: link.exact }">
+              [class.active]="isNavActive(link)">
               {{ link.label }}
             </a>
           } @else {
             <a
               [routerLink]="link.path"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: link.exact }">
+              [class.active]="isNavActive(link)">
               {{ link.label }}
             </a>
           }
@@ -75,9 +73,9 @@
   <nav class="nav-mobile" [class.open]="isMenuOpen()" aria-label="Mobile navigation">
     @for (link of navLinks; track link.label) {
       @if (link.fragment) {
-        <a routerLink="/" [fragment]="link.fragment" (click)="closeMenu()">{{ link.label }}</a>
+        <a routerLink="/" [fragment]="link.fragment" [class.active]="isNavActive(link)" (click)="closeMenu()">{{ link.label }}</a>
       } @else {
-        <a [routerLink]="link.path" (click)="closeMenu()">{{ link.label }}</a>
+        <a [routerLink]="link.path" [class.active]="isNavActive(link)" (click)="closeMenu()">{{ link.label }}</a>
       }
     }
     <a routerLink="/admin/login" (click)="closeMenu()" class="admin-link">Admin Login</a>

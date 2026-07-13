@@ -296,6 +296,11 @@
 
     &:hover { color: $color-secondary; }
 
+    &.active {
+      color: $color-secondary;
+      font-weight: 600;
+    }
+
     &.admin-link {
       color: $color-secondary;
       font-weight: 600;
