@@ -16,7 +16,7 @@ import { WhatsappChatProvider } from './providers/whatsapp-chat.provider';
 const DEFAULT_MESSAGES: Record<ChatMessageContext, string> = {
   general: 'Hello, I would like to know more about your products.',
   product: 'Hello, I am interested in {productName}. Please share more details.',
-  contact: 'Hello, I would like to get in touch with Sri Vaari.'
+  contact: 'Hello, I would like to get in touch with Sri Vaari Traders.'
 };
 
 @Injectable({ providedIn: 'root' })

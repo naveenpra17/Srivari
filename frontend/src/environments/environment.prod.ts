@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   apiUrl: 'https://srivari-1.onrender.com/api/v1',
-  appName: 'Sri Vaari',
+  appName: 'Sri Vaari Traders',
   tagline: 'Where Innovation Meets Reliability',
   whatsapp: {
     enabled: true,
@@ -11,7 +11,7 @@ export const environment = {
     messages: {
       general: 'Hello, I would like to know more about your products.',
       product: 'Hello, I am interested in {productName}. Please share more details.',
-      contact: 'Hello, I would like to get in touch with Sri Vaari.'
+      contact: 'Hello, I would like to get in touch with Sri Vaari Traders.'
     }
   }
 };

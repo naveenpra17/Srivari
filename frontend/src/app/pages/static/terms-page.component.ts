@@ -11,11 +11,11 @@ import { SeoService } from '../../core/services/seo.service';
       <div class="container legal-content">
         <h1>Terms of Service</h1>
         <p>Last updated: {{ year }}</p>
-        <p>By using the Sri Vaari website, you agree to these terms. Product specifications and availability are subject to change.</p>
+        <p>By using the Sri Vaari Traders website, you agree to these terms. Product specifications and availability are subject to change.</p>
         <h2>Use of Website</h2>
         <p>Content is provided for informational purposes. Unauthorized reproduction of materials is prohibited.</p>
         <h2>Limitation of Liability</h2>
-        <p>Sri Vaari is not liable for indirect damages arising from use of this website or its content.</p>
+        <p>Sri Vaari Traders is not liable for indirect damages arising from use of this website or its content.</p>
         <a routerLink="/" class="btn-outline-custom mt-4">Back to Home</a>
       </div>
     </section>

@@ -121,7 +121,7 @@ export class ProductDetailComponent implements OnInit {
     this.chat.setPageContext({ type: 'product', productName: product.name });
     this.seo.update({
       title: product.name,
-      description: product.shortDescription ?? `Explore ${product.name} from Sri Vaari`,
+      description: product.shortDescription ?? `Explore ${product.name} from Sri Vaari Traders`,
       keywords: `${product.name}, ${product.categoryName ?? 'industrial'}, motors, pumps`,
       image: product.imageUrl,
       type: 'product'

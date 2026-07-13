@@ -16,11 +16,11 @@ public class OpenApiConfig {
     public OpenAPI motorsOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Sri Vaari API")
+                        .title("Sri Vaari Traders API")
                         .description("REST API for Motors Industrial Website")
                         .version("1.0.0")
                         .contact(new Contact()
-                                .name("Sri Vaari")
+                                .name("Sri Vaari Traders")
                                 .email("info@motors.com")))
                 .addSecurityItem(new SecurityRequirement().addList("Bearer Authentication"))
                 .components(new Components()

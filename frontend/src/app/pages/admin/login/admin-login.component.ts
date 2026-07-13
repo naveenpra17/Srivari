@@ -19,7 +19,7 @@ import { SnackbarService } from '../../../core/services/ui.service';
               <circle cx="20" cy="20" r="8" fill="#0A2B5E"/>
             </svg>
           </div>
-          <h1>Sri Vaari Admin</h1>
+          <h1>Sri Vaari Traders Admin</h1>
           <p>Sign in to manage your website</p>
         </div>
         <form [formGroup]="form" (ngSubmit)="onSubmit()">

@@ -83,12 +83,12 @@ INSERT INTO hero_slider (title, subtitle, description, image_url, cta_text, cta_
 
 INSERT INTO testimonials (client_name, designation, company, content, full_story, rating, sort_order, active, slug, category, featured, verified, likes) VALUES
     ('Rajesh Kumar', 'Plant Manager', 'Tata Steel',
-     'Sri Vaari delivered exceptional quality motors that exceeded our performance expectations. Their support team is outstanding.',
-     'Sri Vaari delivered exceptional quality motors that exceeded our performance expectations. Their support team is outstanding. We integrated their solutions across three production lines and saw measurable uptime improvements within the first quarter.',
+     'Sri Vaari Traders delivered exceptional quality motors that exceeded our performance expectations. Their support team is outstanding.',
+     'Sri Vaari Traders delivered exceptional quality motors that exceeded our performance expectations. Their support team is outstanding. We integrated their solutions across three production lines and saw measurable uptime improvements within the first quarter.',
      5, 1, TRUE, 'rajesh-kumar', 'Manufacturing', TRUE, TRUE, 42),
     ('Sarah Mitchell', 'Operations Director', 'Shell Energy',
-     'We have been partnering with Sri Vaari for over 5 years. Their products are reliable and their service is world-class.',
-     'We have been partnering with Sri Vaari for over 5 years. Their products are reliable and their service is world-class. From procurement to after-sales support, every interaction reflects their commitment to partnership.',
+     'We have been partnering with Sri Vaari Traders for over 5 years. Their products are reliable and their service is world-class.',
+     'We have been partnering with Sri Vaari Traders for over 5 years. Their products are reliable and their service is world-class. From procurement to after-sales support, every interaction reflects their commitment to partnership.',
      5, 2, TRUE, 'sarah-mitchell', 'Energy', TRUE, TRUE, 38),
     ('Ahmed Hassan', 'Chief Engineer', 'ADNOC',
      'The industrial pumps we procured have significantly improved our operational efficiency. Highly recommended.',
@@ -102,7 +102,7 @@ INSERT INTO gallery (title, description, image_url, category, sort_order, active
     ('Global Shipping', 'Worldwide delivery network', 'https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg', 'Logistics', 4, TRUE);
 
 INSERT INTO settings (setting_key, setting_value, setting_type, description) VALUES
-    ('company_name',        'Sri Vaari', 'STRING', 'Company display name'),
+    ('company_name',        'Sri Vaari Traders', 'STRING', 'Company display name'),
     ('company_tagline',     'Where Innovation Meets Reliability', 'STRING', 'Company tagline'),
     ('company_phone',       '+91-9876543210', 'STRING', 'Primary contact phone'),
     ('company_email',       'info@motors.com', 'STRING', 'Primary contact email'),
@@ -119,7 +119,7 @@ INSERT INTO settings (setting_key, setting_value, setting_type, description) VAL
     ('countries_served',    '50', 'NUMBER', 'Countries served stat'),
     ('about_mission',       'To deliver world-class industrial motors and pumps that power industries globally with innovation and reliability.', 'TEXT', 'Company mission'),
     ('about_vision',        'To be the most trusted name in industrial motor solutions across emerging and developed markets.', 'TEXT', 'Company vision'),
-    ('about_history',       'Founded in 1999, Sri Vaari has grown from a small workshop to a global leader in industrial motor manufacturing, serving clients in over 50 countries.', 'TEXT', 'Company history'),
+    ('about_history',       'Founded in 1999, Sri Vaari Traders has grown from a small workshop to a global leader in industrial motor manufacturing, serving clients in over 50 countries.', 'TEXT', 'Company history'),
     ('about_achievements',  'ISO 9001:2015 Certified | CE Marked Products | 25+ Industry Awards | Export Excellence Award 2023', 'TEXT', 'Company achievements'),
     ('chat_provider',       'whatsapp', 'STRING', 'Active chat provider'),
     ('chat_widget_enabled', 'true', 'BOOLEAN', 'Show floating chat widget'),
@@ -127,4 +127,4 @@ INSERT INTO settings (setting_key, setting_value, setting_type, description) VAL
     ('whatsapp_tooltip',    'Chat with us on WhatsApp', 'STRING', 'Chat widget tooltip'),
     ('whatsapp_message_general', 'Hello, I would like to know more about your products.', 'TEXT', 'Default WhatsApp message'),
     ('whatsapp_message_product', 'Hello, I am interested in {productName}. Please share more details.', 'TEXT', 'Product page WhatsApp message'),
-    ('whatsapp_message_contact', 'Hello, I would like to get in touch with Sri Vaari.', 'TEXT', 'Contact WhatsApp message');
+    ('whatsapp_message_contact', 'Hello, I would like to get in touch with Sri Vaari Traders.', 'TEXT', 'Contact WhatsApp message');

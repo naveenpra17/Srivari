@@ -19,7 +19,7 @@ import { SeoService } from '../../core/services/seo.service';
         <div class="row g-5 align-items-center">
           <div class="col-lg-6">
             <h2>Where Innovation Meets Reliability</h2>
-            <p class="lead">Sri Vaari designs and delivers world-class industrial equipment engineered for demanding environments.</p>
+            <p class="lead">Sri Vaari Traders designs and delivers world-class industrial equipment engineered for demanding environments.</p>
             <p>From manufacturing plants to energy facilities, our products power critical operations with unmatched durability and performance.</p>
             <a routerLink="/testimonials" class="btn-primary-custom mt-3">Read Customer Stories</a>
           </div>
@@ -54,6 +54,6 @@ import { SeoService } from '../../core/services/seo.service';
 export class AboutPageComponent implements OnInit {
   private readonly seo = inject(SeoService);
   ngOnInit(): void {
-    this.seo.update({ title: 'About Us', description: 'Learn about Sri Vaari — engineering excellence since 1999.' });
+    this.seo.update({ title: 'About Us', description: 'Learn about Sri Vaari Traders — engineering excellence since 1999.' });
   }
 }

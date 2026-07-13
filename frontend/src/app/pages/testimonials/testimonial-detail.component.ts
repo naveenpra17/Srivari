@@ -63,7 +63,7 @@ export class TestimonialDetailComponent implements OnInit {
     const t = this.testimonial();
     if (!t) return;
     const url = window.location.href;
-    const text = `Read how ${t.clientName} from ${t.company || 'Sri Vaari'} shared their experience`;
+    const text = `Read how ${t.clientName} from ${t.company || 'Sri Vaari Traders'} shared their experience`;
     if (platform === 'twitter') {
       window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
     } else if (platform === 'linkedin') {

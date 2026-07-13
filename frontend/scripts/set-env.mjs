@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const outPath = join(__dirname, '../src/environments/environment.prod.ts');
 
 const apiUrl = process.env.API_URL || 'https://srivari-1.onrender.com/api/v1';
-const appName = process.env.APP_NAME || 'Sri Vaari';
+const appName = process.env.APP_NAME || 'Sri Vaari Traders';
 const tagline = process.env.APP_TAGLINE || 'Where Innovation Meets Reliability';
 const whatsappPhone = process.env.WHATSAPP_PHONE || '919876543210';
 
@@ -27,7 +27,7 @@ const content = `export const environment = {
     messages: {
       general: 'Hello, I would like to know more about your products.',
       product: 'Hello, I am interested in {productName}. Please share more details.',
-      contact: 'Hello, I would like to get in touch with Sri Vaari.'
+      contact: 'Hello, I would like to get in touch with Sri Vaari Traders.'
     }
   }
 };

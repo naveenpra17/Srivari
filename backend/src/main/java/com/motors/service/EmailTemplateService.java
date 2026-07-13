@@ -14,7 +14,7 @@ public class EmailTemplateService {
               <div style="max-width: 560px; margin: 0 auto; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(10,43,94,0.12);">
                 <div style="background: #0A2B5E; padding: 24px; color: #ffffff;">
                   <h1 style="margin: 0; font-size: 20px;">New Contact Message</h1>
-                  <p style="margin: 8px 0 0; opacity: 0.85; font-size: 14px;">Sri Vaari Website</p>
+                  <p style="margin: 8px 0 0; opacity: 0.85; font-size: 14px;">Sri Vaari Traders Website</p>
                 </div>
                 <div style="padding: 24px; color: #1a1a2e; line-height: 1.6;">
                   <p><strong>Name:</strong> %s</p>
