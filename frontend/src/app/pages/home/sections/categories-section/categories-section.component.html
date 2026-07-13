@@ -1,0 +1,73 @@
+<section class="categories-premium" id="categories">
+  <!-- Background decorative elements -->
+  <div class="categories-bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-gear gear-1"></div>
+    <div class="bg-gear gear-2"></div>
+    <div class="bg-gear gear-3"></div>
+  </div>
+
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-heading" appReveal>
+      <span class="eyebrow">Our Categories</span>
+      <h2 class="heading-title">Explore Our Product Categories</h2>
+      <p class="heading-subtitle">Complete Industrial Pumping & Fluid Management Solutions</p>
+      <div class="heading-divider">
+        <span class="divider-line"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-line"></span>
+      </div>
+    </div>
+
+    <!-- Category Cards Grid -->
+    <div class="categories-grid">
+      @for (card of categoryCards(); track card.title; let i = $index) {
+        <a
+          [routerLink]="'/products'"
+          [queryParams]="queryParamsFor(card)"
+          class="category-card"
+          appReveal
+          [appRevealDelay]="i * 150"
+        >
+          <div class="card-image-wrap">
+            <img
+              [src]="card.image"
+              [alt]="card.title"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+            @if (card.badge) {
+              <span class="card-badge" [class.badge-new]="card.badge === 'NEW'">
+                {{ card.badge }}
+              </span>
+            }
+            <div class="card-image-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">{{ card.title }}</h3>
+            <p class="card-desc">{{ card.description }}</p>
+            <span class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+        </a>
+      }
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-wrap" appReveal>
+      <a routerLink="/products" class="btn-cta">
+        View Complete Product Catalog
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

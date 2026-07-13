@@ -6,6 +6,7 @@ import com.motors.dto.response.ProductResponse;
 import com.motors.entity.Category;
 import com.motors.entity.Product;
 import com.motors.exception.ResourceNotFoundException;
+import com.motors.mapper.ProductMapper;
 import com.motors.repository.CategoryRepository;
 import com.motors.repository.ProductRepository;
 import com.motors.util.ProductResponseEnricher;
@@ -27,28 +28,33 @@ public class ProductService {
 
     private final ProductRepository productRepository;
     private final CategoryRepository categoryRepository;
+    private final ProductMapper productMapper;
     private final ProductResponseEnricher productEnricher;
     private final AuditLogService auditLogService;
 
+    @Transactional(readOnly = true)
     @Cacheable("featuredProducts")
     public List<ProductResponse> getFeaturedProducts() {
-        return productEnricher.toResponseList(
+        return productMapper.toResponseList(
                 productRepository.findByFeaturedTrueAndActiveTrueOrderBySortOrderAsc());
     }
 
+    @Transactional(readOnly = true)
     public PageResponse<ProductResponse> getActiveProducts(Pageable pageable) {
         Page<Product> page = productRepository.findByActiveTrue(pageable);
-        return PageResponse.from(page.map(productEnricher::toResponse));
+        return PageResponse.from(page.map(productMapper::toResponse));
     }
 
+    @Transactional(readOnly = true)
     public PageResponse<ProductResponse> getProductsByCategory(Long categoryId, Pageable pageable) {
         Page<Product> page = productRepository.findByCategoryIdAndActiveTrue(categoryId, pageable);
-        return PageResponse.from(page.map(productEnricher::toResponse));
+        return PageResponse.from(page.map(productMapper::toResponse));
     }
 
+    @Transactional(readOnly = true)
     public PageResponse<ProductResponse> searchProducts(String query, Pageable pageable) {
-        Page<Product> page = productRepository.searchActive(query, pageable);
-        return PageResponse.from(page.map(productEnricher::toResponse));
+        Page<Product> page = productRepository.searchActive(query.trim(), pageable);
+        return PageResponse.from(page.map(productMapper::toResponse));
     }
 
     @Transactional(readOnly = true)
@@ -58,12 +64,14 @@ public class ProductService {
         return productEnricher.toResponse(product);
     }
 
+    @Transactional(readOnly = true)
     public ProductResponse getById(Long id) {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Product not found: " + id));
         return productEnricher.toResponse(product);
     }
 
+    @Transactional(readOnly = true)
     public PageResponse<ProductResponse> getAllProducts(Pageable pageable) {
         return PageResponse.from(productRepository.findAll(pageable).map(productEnricher::toResponse));
     }

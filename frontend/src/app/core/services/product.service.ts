@@ -11,9 +11,15 @@ export class ProductService {
   }
 
   getProducts(page = 0, size = 12, search?: string, categoryId?: number) {
-    return this.api.get<PageResponse<Product>>('/products', {
-      page, size, search: search ?? '', categoryId: categoryId ?? ''
-    });
+    const params: Record<string, string | number | boolean> = { page, size };
+    const trimmedSearch = search?.trim();
+    if (trimmedSearch) {
+      params['search'] = trimmedSearch;
+    }
+    if (categoryId != null) {
+      params['categoryId'] = categoryId;
+    }
+    return this.api.get<PageResponse<Product>>('/products', params);
   }
 
   getBySlug(slug: string) {

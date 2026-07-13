@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroSectionComponent } from './sections/hero-section/hero-section.component';
-import { ProductsSectionComponent } from './sections/products-section/products-section.component';
+import { CategoriesSectionComponent } from './sections/categories-section/categories-section.component';
 import { StatsSectionComponent } from './sections/stats-section/stats-section.component';
 import { IndustriesSectionComponent } from './sections/industries-section/industries-section.component';
 import { AboutSectionComponent } from './sections/about-section/about-section.component';
@@ -18,7 +18,7 @@ import { HomePageData } from '../../models';
   imports: [
     CommonModule,
     HeroSectionComponent,
-    ProductsSectionComponent,
+    CategoriesSectionComponent,
     StatsSectionComponent,
     AboutSectionComponent,
     IndustriesSectionComponent,

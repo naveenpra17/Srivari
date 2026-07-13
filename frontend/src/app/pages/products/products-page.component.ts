@@ -1,6 +1,6 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ProductService } from '../../core/services/product.service';
 import { SeoService } from '../../core/services/seo.service';
@@ -20,7 +20,12 @@ import { Product } from '../../models';
       </div>
       <div class="container section">
         <div class="filters mb-4">
-          <input type="text" [(ngModel)]="searchQuery" (ngModelChange)="onSearch()" placeholder="Search products..." class="search-input">
+          <input
+            type="text"
+            [(ngModel)]="searchQuery"
+            (ngModelChange)="onSearch()"
+            placeholder="Search products..."
+            class="search-input">
         </div>
         <div class="row g-4">
           @for (product of products(); track product.id) {
@@ -32,7 +37,10 @@ import { Product } from '../../models';
                 <div class="product-body p-3">
                   <h3>{{ product.name }}</h3>
                   <p>{{ product.shortDescription }}</p>
-                  <a [routerLink]="['/products', product.slug]" class="btn-primary-custom btn-sm mt-2">View Details</a>
+                  <div class="product-card-actions">
+                    <a [routerLink]="['/products', product.slug]" class="btn-primary-custom btn-sm">View Details</a>
+                    <a [routerLink]="['/products', product.slug]" class="btn-outline-custom btn-sm">Request Quote</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,15 +86,23 @@ import { Product } from '../../models';
       p { font-size: 0.9rem; color: var(--text-muted); }
     }
     .btn-sm { padding: 8px 20px !important; font-size: 0.85rem !important; }
+    .product-card-actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.75rem;
+    }
   `]
 })
 export class ProductsPageComponent implements OnInit {
   private readonly productService = inject(ProductService);
   private readonly seo = inject(SeoService);
+  private readonly route = inject(ActivatedRoute);
   products = signal<Product[]>([]);
   currentPage = signal(0);
   totalPages = signal(0);
   searchQuery = '';
+  categoryId?: number;
   private searchTimeout?: ReturnType<typeof setTimeout>;
 
   ngOnInit(): void {
@@ -95,12 +111,27 @@ export class ProductsPageComponent implements OnInit {
       description: 'Browse our full range of industrial motors, pumps, pipes and accessories.',
       keywords: 'industrial motors, pumps, pipes, product catalog, motors industries'
     });
-    this.loadProducts();
+
+    this.route.queryParams.subscribe(params => {
+      const categoryParam = params['categoryId'];
+      if (categoryParam) {
+        this.categoryId = Number(categoryParam);
+        this.searchQuery = '';
+      } else if (params['search']) {
+        this.searchQuery = params['search'];
+        this.categoryId = undefined;
+      } else {
+        this.categoryId = undefined;
+      }
+      this.currentPage.set(0);
+      this.loadProducts();
+    });
   }
 
   onSearch(): void {
     clearTimeout(this.searchTimeout);
     this.searchTimeout = setTimeout(() => {
+      this.categoryId = undefined;
       this.currentPage.set(0);
       this.loadProducts();
     }, 400);
@@ -113,10 +144,14 @@ export class ProductsPageComponent implements OnInit {
   }
 
   private loadProducts(): void {
-    this.productService.getProducts(this.currentPage(), 12, this.searchQuery).subscribe({
+    this.productService.getProducts(this.currentPage(), 12, this.searchQuery, this.categoryId).subscribe({
       next: (res) => {
         this.products.set(res.data.content);
         this.totalPages.set(res.data.totalPages);
+      },
+      error: () => {
+        this.products.set([]);
+        this.totalPages.set(0);
       }
     });
   }
