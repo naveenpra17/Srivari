@@ -164,34 +164,32 @@
 
 .hero-gem-badge {
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
+  flex-shrink: 0;
   gap: 0.75rem;
-
   padding: 0.7rem 1.2rem;
-  margin-bottom: 1.5rem;
-
+  margin: 0 0 1.5rem;
   background: rgba(8, 18, 35, 0.9);
   border: 2px solid #ff7a00;
   border-radius: 50px;
-
   width: fit-content;
-
   backdrop-filter: blur(8px);
-  box-shadow: 0 8px 25px rgba(0,0,0,.35);
-}
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
 
-.gem-label{
-    color:#ffffff;
-    font-size:.85rem;
-    font-weight:600;
-    letter-spacing:.08em;
-}
+  .gem-label {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
 
-.gem-number{
-    color:#ff9f1a;
-    font-size:.95rem;
-    font-weight:800;
-    letter-spacing:.08em;
+  .gem-number {
+    color: #ff9f1a;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
 }
 
 .hero-actions {
