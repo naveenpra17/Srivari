@@ -1,5 +1,5 @@
 import { Component, OnInit, inject, signal, computed } from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { ProductService, QuoteService } from '../../core/services/product.service';
@@ -8,10 +8,13 @@ import { SeoService } from '../../core/services/seo.service';
 import { ChatWidgetService } from '../../core/chat/chat-widget.service';
 import { Product, ProductImage } from '../../models';
 
+const FALLBACK_PRODUCT_IMAGE =
+  'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=85';
+
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage, RouterLink, ReactiveFormsModule],
+  imports: [CommonModule, RouterLink, ReactiveFormsModule],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss'
 })
@@ -37,7 +40,7 @@ export class ProductDetailComponent implements OnInit {
     if (p.imageUrl) {
       return [{ id: 0, imageUrl: p.imageUrl, altText: p.name, sortOrder: 0, isPrimary: true }];
     }
-    return [];
+    return [{ id: 0, imageUrl: FALLBACK_PRODUCT_IMAGE, altText: p.name, sortOrder: 0, isPrimary: true }];
   });
 
   selectedImage = computed(() => {
@@ -123,7 +126,7 @@ export class ProductDetailComponent implements OnInit {
       title: product.name,
       description: product.shortDescription ?? `Explore ${product.name} from Sri Vaari Traders`,
       keywords: `${product.name}, ${product.categoryName ?? 'industrial'}, motors, pumps`,
-      image: product.imageUrl,
+      image: product.imageUrl ?? FALLBACK_PRODUCT_IMAGE,
       type: 'product'
     });
   }

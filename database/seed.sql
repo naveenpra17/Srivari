@@ -25,23 +25,31 @@ INSERT INTO categories (name, slug, description, sort_order, active) VALUES
     ('Pipes',       'pipes',       'Durable industrial piping solutions', 3, TRUE),
     ('Accessories', 'accessories', 'Motor and pump accessories',         4, TRUE);
 
-INSERT INTO products (category_id, name, slug, short_description, description, featured, active, sort_order) VALUES
+INSERT INTO products (category_id, name, slug, short_description, description, image_url, featured, active, sort_order, specifications) VALUES
     (1, 'Industrial AC Motor', 'industrial-ac-motor',
      'High-efficiency AC motors for heavy-duty applications.',
-     'Our industrial AC motors deliver exceptional performance, energy efficiency, and reliability for demanding manufacturing environments.',
-     TRUE, TRUE, 1),
+     'Our industrial AC motors deliver exceptional performance, energy efficiency, and reliability for demanding manufacturing environments. Built with precision engineering and premium materials, these motors are ideal for compressors, conveyors, machine tools, and process equipment.',
+     'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=85',
+     TRUE, TRUE, 1,
+     '{"Motor Type":"Three Phase Induction Motor","Power Range":"1 HP to 50 HP","Voltage":"415V AC, 3 Phase","Frequency":"50 Hz","Speed":"1440 RPM (4 Pole)","Efficiency Class":"IE2 / IE3","Enclosure":"TEFC (Totally Enclosed Fan Cooled)","Mounting":"Foot / Flange (B3 / B5)","Insulation Class":"Class F","Protection":"IP55","Ambient Temperature":"Up to 45°C","Application":"Compressors, conveyors, machine tools, industrial drives"}'::jsonb),
     (2, 'Centrifugal Pump', 'centrifugal-pump',
      'Robust centrifugal pumps for fluid transfer.',
      'Engineered for maximum flow rate and minimal maintenance in industrial fluid handling systems.',
-     TRUE, TRUE, 2),
+     'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=85',
+     TRUE, TRUE, 2,
+     '{"Pump Type":"Centrifugal End Suction Pump","Flow Rate":"Up to 120 m³/hr","Head":"Up to 60 meters","Power":"1 HP to 15 HP","Inlet/Outlet":"1.5\" to 4\"","Material":"Cast Iron with SS Impeller option","Seal Type":"Mechanical Seal","Application":"Water transfer, irrigation, HVAC, industrial circulation"}'::jsonb),
     (3, 'Stainless Steel Pipes', 'stainless-steel-pipes',
      'Corrosion-resistant piping for harsh environments.',
      'Premium grade stainless steel pipes designed for chemical, marine, and industrial applications.',
-     TRUE, TRUE, 3),
+     'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&q=85',
+     TRUE, TRUE, 3,
+     '{"Material Grade":"SS 304 / SS 316","Diameter Range":"1/2\" to 8\"","Wall Thickness":"Schedule 10 / 40 / 80","Standard":"ASTM A312","Finish":"Pickled & Annealed","Application":"Chemical processing, marine, food grade, industrial piping"}'::jsonb),
     (4, 'Motor Couplings', 'motor-couplings',
      'Precision couplings for seamless power transmission.',
      'High-torque couplings ensuring smooth and efficient power transfer between motors and driven equipment.',
-     TRUE, TRUE, 4);
+     'https://images.unsplash.com/photo-1581092162384-89889c1a33f0?w=1200&q=85',
+     TRUE, TRUE, 4,
+     '{"Type":"Flexible Jaw / Gear Coupling","Torque Range":"10 Nm to 5000 Nm","Bore Range":"10 mm to 120 mm","Material":"Aluminium / Steel Hub with PU Spider","Max RPM":"Up to 6000 RPM","Application":"Motor to pump, gearbox, and compressor connections"}'::jsonb);
 
 INSERT INTO industries (name, slug, description, icon, sort_order, active) VALUES
     ('Oil & Gas', 'oil-gas',       'Solutions for upstream and downstream operations', 'oil_barrel',  1, TRUE),
