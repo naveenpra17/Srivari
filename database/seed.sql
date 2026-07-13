@@ -12,7 +12,7 @@ INSERT INTO users (email, password, first_name, last_name, phone, active) VALUES
      '$2b$12$9tws8X2zoqvakz/d/VpiseNxzGaogWPK.WdHOb9BPa5uQ.km3R.TS',
      'System',
      'Administrator',
-     '+91-9876543210',
+     '+91-9842231111',
      TRUE);
 
 INSERT INTO user_roles (user_id, role_id)
@@ -104,7 +104,7 @@ INSERT INTO gallery (title, description, image_url, category, sort_order, active
 INSERT INTO settings (setting_key, setting_value, setting_type, description) VALUES
     ('company_name',        'Sri Vaari Traders', 'STRING', 'Company display name'),
     ('company_tagline',     'Where Innovation Meets Reliability', 'STRING', 'Company tagline'),
-    ('company_phone',       '+91-9876543210', 'STRING', 'Primary contact phone'),
+    ('company_phone',       '+91-9842231111', 'STRING', 'Primary contact phone'),
     ('company_email',       'info@motors.com', 'STRING', 'Primary contact email'),
     ('company_address',     '123 Industrial Estate, Mumbai, Maharashtra 400001, India', 'STRING', 'Company address'),
     ('company_working_hours', 'Mon - Sat: 9:00 AM - 6:00 PM', 'STRING', 'Working hours'),

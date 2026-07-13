@@ -12,7 +12,7 @@ const outPath = join(__dirname, '../src/environments/environment.prod.ts');
 const apiUrl = process.env.API_URL || 'https://srivari-1.onrender.com/api/v1';
 const appName = process.env.APP_NAME || 'Sri Vaari Traders';
 const tagline = process.env.APP_TAGLINE || 'Where Innovation Meets Reliability';
-const whatsappPhone = process.env.WHATSAPP_PHONE || '919876543210';
+const whatsappPhone = process.env.WHATSAPP_PHONE || '919842231111';
 
 const content = `export const environment = {
   production: true,

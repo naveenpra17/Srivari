@@ -126,7 +126,7 @@
             "header": [{ "key": "Content-Type", "value": "application/json" }],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"+919876543210\",\n  \"message\": \"I would like to inquire about your industrial motors.\"\n}"
+              "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"+919842231111\",\n  \"message\": \"I would like to inquire about your industrial motors.\"\n}"
             },
             "url": "{{baseUrl}}/v1/contact"
           }

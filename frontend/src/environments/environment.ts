@@ -6,7 +6,7 @@ export const environment = {
   whatsapp: {
     enabled: true,
     provider: 'whatsapp' as const,
-    phone: '919876543210',
+    phone: '919842231111',
     tooltip: 'Chat with us on WhatsApp',
     messages: {
       general: 'Hello, I would like to know more about your products.',

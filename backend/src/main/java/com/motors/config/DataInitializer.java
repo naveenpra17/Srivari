@@ -66,7 +66,7 @@ public class DataInitializer {
                     .password(passwordEncoder.encode(DEFAULT_ADMIN_PASSWORD))
                     .firstName("System")
                     .lastName("Administrator")
-                    .phone("+91-9876543210")
+                    .phone("+91-9842231111")
                     .active(true)
                     .roles(Set.of(adminRole))
                     .build();
@@ -78,7 +78,7 @@ public class DataInitializer {
     private void initDefaultSettings() {
         createSettingIfNotExists("company_name", "Motors Industries", "STRING", "Company display name");
         createSettingIfNotExists("company_tagline", "Where Innovation Meets Reliability", "STRING", "Company tagline");
-        createSettingIfNotExists("company_phone", "+91-9876543210", "STRING", "Primary contact phone");
+        createSettingIfNotExists("company_phone", "+91-9842231111", "STRING", "Primary contact phone");
         createSettingIfNotExists("company_email", "info@motors.com", "STRING", "Primary contact email");
         createSettingIfNotExists("company_address", "123 Industrial Estate, Mumbai, Maharashtra 400001, India", "STRING", "Company address");
         createSettingIfNotExists("company_working_hours", "Mon - Sat: 9:00 AM - 6:00 PM", "STRING", "Working hours");
