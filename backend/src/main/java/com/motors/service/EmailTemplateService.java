@@ -28,10 +28,10 @@ public class EmailTemplateService {
             </body>
             </html>
             """.formatted(
-                escape(name), escape(email), escape(email),
-                escape(phone != null ? phone : "N/A"),
-                escape(subject != null ? subject : "General Inquiry"),
-                escape(message));
+                formatValue(name), formatValue(email), formatValue(email),
+                formatValue(phone != null ? phone : "N/A"),
+                formatValue(subject != null ? subject : "General Inquiry"),
+                formatValue(message));
     }
 
     public String quoteNotificationHtml(String productName, String name, String email,
@@ -59,16 +59,25 @@ public class EmailTemplateService {
             </body>
             </html>
             """.formatted(
-                escape(productName != null ? productName : "General Inquiry"),
-                escape(name), escape(email), escape(email),
-                escape(phone != null ? phone : "N/A"),
-                escape(company != null ? company : "N/A"),
+                formatValue(productName != null ? productName : "General Inquiry"),
+                formatValue(name), formatValue(email), formatValue(email),
+                formatValue(phone != null ? phone : "N/A"),
+                formatValue(company != null ? company : "N/A"),
                 quantity != null ? quantity.toString() : "N/A",
-                escape(message != null ? message : "No additional message"));
+                formatValue(message != null ? message : "No additional message"));
+    }
+
+    private String formatValue(String input) {
+        if (input == null) {
+            return "";
+        }
+        // Prevent String.formatted() from treating user text as format specifiers.
+        return escape(input).replace("%", "%%");
     }
 
     private String escape(String input) {
-        if (input == null) return "";
+        if (input == null) {
+            return "";
+        }
         return input.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;");
     }
-}

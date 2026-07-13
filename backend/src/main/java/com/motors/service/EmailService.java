@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.mail.MailException;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
@@ -57,8 +58,11 @@ public class EmailService {
             helper.setSubject(subject);
             helper.setText(htmlContent, true);
             mailSender.send(mimeMessage);
-        } catch (MessagingException e) {
+            log.info("Notification email sent: {}", subject);
+        } catch (MessagingException | MailException e) {
             log.warn("Failed to send HTML email: {}", e.getMessage());
+        } catch (Exception e) {
+            log.warn("Unexpected error sending email: {}", e.getMessage());
         }
     }
 }

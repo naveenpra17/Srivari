@@ -38,7 +38,11 @@ public class ContactService {
         ContactMessage saved = contactMessageRepository.save(message);
         log.info("New contact message from: {}", request.getEmail());
 
-        emailService.sendContactNotification(saved);
+        try {
+            emailService.sendContactNotification(saved);
+        } catch (Exception e) {
+            log.warn("Contact message saved but email notification failed for {}: {}", request.getEmail(), e.getMessage());
+        }
 
         return entityMapper.toResponse(saved);
     }

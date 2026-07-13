@@ -46,7 +46,11 @@ public class QuoteService {
 
         QuoteRequest saved = quoteRequestRepository.save(quote);
         log.info("New quote request from {} for product {}", dto.getEmail(), quote.getProductName());
-        emailService.sendQuoteNotification(saved);
+        try {
+            emailService.sendQuoteNotification(saved);
+        } catch (Exception e) {
+            log.warn("Quote saved but email notification failed for {}: {}", dto.getEmail(), e.getMessage());
+        }
         return toResponse(saved);
     }
 
