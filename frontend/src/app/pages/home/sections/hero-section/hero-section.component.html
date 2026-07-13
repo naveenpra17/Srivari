@@ -25,11 +25,7 @@
                   </span>
                 }
               </h1>
-            <p class="hero-desc" [innerHTML]="slide.description"></p>
-            <p class="hero-gem-badge">
-              <span class="gem-label">🛡 GeM Registered Seller</span><br>
-              <span class="gem-number">YUK426004466922</span>
-          </p>
+              <p class="hero-desc">{{ slide.description }}</p>
               <div class="hero-actions">
                 <a [routerLink]="routePath(slide.ctaLink)" [fragment]="routeFragment(slide.ctaLink)" class="btn-industrial-primary">
                   {{ slide.ctaText }}
