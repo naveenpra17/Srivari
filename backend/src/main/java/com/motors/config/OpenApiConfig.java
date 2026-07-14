@@ -21,7 +21,7 @@ public class OpenApiConfig {
                         .version("1.0.0")
                         .contact(new Contact()
                                 .name("Sri Vaari Traders")
-                                .email("info@motors.com")))
+                                .email("srivaaritraderss@gmail.com")))
                 .addSecurityItem(new SecurityRequirement().addList("Bearer Authentication"))
                 .components(new Components()
                         .addSecuritySchemes("Bearer Authentication",
