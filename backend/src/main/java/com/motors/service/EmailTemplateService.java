@@ -81,3 +81,4 @@ public class EmailTemplateService {
         }
         return input.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;");
     }
+}
