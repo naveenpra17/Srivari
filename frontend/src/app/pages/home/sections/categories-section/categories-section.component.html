@@ -22,10 +22,10 @@
 
     <!-- Category Cards Grid -->
     <div class="categories-grid">
-      @for (card of categoryCards(); track card.title; let i = $index) {
+      @for (card of categoryCards(); track card.id; let i = $index) {
         <a
           [routerLink]="'/products'"
-          [queryParams]="queryParamsFor(card)"
+          [queryParams]="{ categoryId: card.categoryId }"
           class="category-card"
           appReveal
           [appRevealDelay]="i * 150"
@@ -38,11 +38,6 @@
               width="600"
               height="400"
             />
-            @if (card.badge) {
-              <span class="card-badge" [class.badge-new]="card.badge === 'NEW'">
-                {{ card.badge }}
-              </span>
-            }
             <div class="card-image-overlay"></div>
           </div>
           <div class="card-body">

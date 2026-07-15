@@ -80,7 +80,7 @@ import { Product } from '../../models';
     .product-card {
       height: 100%;
       .product-image { height: 200px; overflow: hidden;
-        img { width: 100%; height: 100%; object-fit: cover; }
+        img { width: 100%;  object-fit: cover; }
       }
       h3 { font-size: 1.1rem; color: var(--primary); }
       p { font-size: 0.9rem; color: var(--text-muted); }

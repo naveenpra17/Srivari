@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class EmailService {
 
+    private final BrevoEmailSender brevoEmailSender;
     private final ObjectProvider<JavaMailSender> mailSenderProvider;
     private final EmailTemplateService emailTemplateService;
 
@@ -26,6 +27,9 @@ public class EmailService {
 
     @Value("${app.mail.admin:admin@motors.com}")
     private String adminEmail;
+
+    @Value("${app.mail.sender-name:Sri Vaari}")
+    private String senderName;
 
     public void sendContactNotification(ContactMessage message) {
         String subject = "New Contact: " + (message.getSubject() != null ? message.getSubject() : "General Inquiry");
@@ -44,6 +48,22 @@ public class EmailService {
     }
 
     private void sendHtmlEmail(String subject, String htmlContent) {
+        if (brevoEmailSender.isConfigured()) {
+            sendViaBrevo(subject, htmlContent);
+            return;
+        }
+        sendViaSmtp(subject, htmlContent);
+    }
+
+    private void sendViaBrevo(String subject, String htmlContent) {
+        try {
+            brevoEmailSender.sendHtmlEmail(fromEmail, senderName, adminEmail, subject, htmlContent);
+        } catch (Exception e) {
+            log.warn("Failed to send email via Brevo: {}", e.getMessage());
+        }
+    }
+
+    private void sendViaSmtp(String subject, String htmlContent) {
         JavaMailSender mailSender = mailSenderProvider.getIfAvailable();
         if (mailSender == null) {
             log.info("Mail not configured — skipping notification: {}", subject);
@@ -58,11 +78,11 @@ public class EmailService {
             helper.setSubject(subject);
             helper.setText(htmlContent, true);
             mailSender.send(mimeMessage);
-            log.info("Notification email sent: {}", subject);
+            log.info("SMTP notification email sent: {}", subject);
         } catch (MessagingException | MailException e) {
-            log.warn("Failed to send HTML email: {}", e.getMessage());
+            log.warn("Failed to send HTML email via SMTP: {}", e.getMessage());
         } catch (Exception e) {
-            log.warn("Unexpected error sending email: {}", e.getMessage());
+            log.warn("Unexpected error sending email via SMTP: {}", e.getMessage());
         }
     }
 }

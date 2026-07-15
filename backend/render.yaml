@@ -28,15 +28,11 @@ services:
         sync: false
       - key: CLOUDINARY_API_SECRET
         sync: false
-      - key: MAIL_HOST
-        sync: false
-      - key: MAIL_PORT
-        value: "587"
-      - key: MAIL_USERNAME
-        sync: false
-      - key: MAIL_PASSWORD
+      - key: BREVO_API_KEY
         sync: false
       - key: MAIL_FROM
         sync: false
       - key: MAIL_ADMIN
         sync: false
+      - key: MAIL_SENDER_NAME
+        value: Sri Vaari
