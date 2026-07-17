@@ -15,6 +15,8 @@ import Swiper from 'swiper';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Testimonial } from '../../../../models';
 import { SectionHeaderComponent } from '../../../../shared/components/section-header/section-header.component';
+import { RevealDirective } from '../../../../shared/directives/reveal.directive';
+import { StarRatingComponent } from '../../../../shared/components/star-rating/star-rating.component';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -23,7 +25,7 @@ import 'swiper/css/pagination';
 @Component({
   selector: 'app-testimonials-section',
   standalone: true,
-  imports: [CommonModule, SectionHeaderComponent],
+  imports: [CommonModule, SectionHeaderComponent, RevealDirective, StarRatingComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './testimonials-section.component.html',
   styleUrl: './testimonials-section.component.scss'

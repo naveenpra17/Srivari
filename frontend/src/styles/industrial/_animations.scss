@@ -1,51 +1,253 @@
 @use 'variables' as *;
 
+// ─── Keyframes ───────────────────────────────────────────────
+
 @keyframes ind-fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ind-fade-down {
+  from { opacity: 0; transform: translateY(-30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ind-fade-left {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes ind-fade-right {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes ind-fade-in {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
 @keyframes ind-scale-in {
-  from {
-    opacity: 0;
-    transform: scale(0.92);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
 }
+
+@keyframes ind-zoom-in {
+  from { opacity: 0; transform: scale(0.6); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes ind-rotate-in {
+  from { opacity: 0; transform: rotate(-8deg) scale(0.9); }
+  to   { opacity: 1; transform: rotate(0) scale(1); }
+}
+
+@keyframes ind-flip-in {
+  from { opacity: 0; transform: perspective(600px) rotateX(-15deg); }
+  to   { opacity: 1; transform: perspective(600px) rotateX(0); }
+}
+
+@keyframes ind-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes ind-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.5; }
+}
+
+@keyframes ind-bounce-in {
+  0%   { opacity: 0; transform: scale(0.3); }
+  50%  { transform: scale(1.05); }
+  70%  { transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes ind-slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes ind-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@keyframes ind-ripple {
+  to { transform: scale(4); opacity: 0; }
+}
+
+@keyframes ind-count-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ind-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ind-wiggle {
+  0%, 100% { transform: rotate(0); }
+  25%      { transform: rotate(-3deg); }
+  75%      { transform: rotate(3deg); }
+}
+
+// ─── Reveal Classes (scroll-triggered) ──────────────────────
 
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   &.is-visible {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+  }
+}
+
+.reveal-up    { transform: translateY(30px); }
+.reveal-down  { transform: translateY(-30px); }
+.reveal-left  { transform: translateX(-30px); }
+.reveal-right { transform: translateX(30px); }
+.reveal-scale { transform: scale(0.92); }
+.reveal-zoom  { transform: scale(0.6); }
+
+// ─── Stagger Children ────────────────────────────────────────
+
+.stagger-children {
+  > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  &.is-visible > * {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+@for $i from 1 through 12 {
+  .stagger-children.is-visible > *:nth-child(#{$i}) {
+    transition-delay: #{$i * 0.08}s;
+  }
+}
+
+// ─── Skeleton Loading ────────────────────────────────────────
+
 .skeleton {
   background: linear-gradient(90deg, #eef1f5 25%, #f8f9fb 50%, #eef1f5 75%);
   background-size: 200% 100%;
-  animation: skeleton-shimmer 1.4s infinite;
+  animation: ind-shimmer 1.4s infinite;
   border-radius: $radius;
 }
 
-@keyframes skeleton-shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+// ─── Animation Utility Classes ───────────────────────────────
+
+.anim-fade-up      { animation: ind-fade-up 0.6s ease both; }
+.anim-fade-down    { animation: ind-fade-down 0.6s ease both; }
+.anim-fade-left    { animation: ind-fade-left 0.6s ease both; }
+.anim-fade-right   { animation: ind-fade-right 0.6s ease both; }
+.anim-fade-in      { animation: ind-fade-in 0.5s ease both; }
+.anim-scale-in     { animation: ind-scale-in 0.5s ease both; }
+.anim-zoom-in      { animation: ind-zoom-in 0.5s ease both; }
+.anim-bounce-in    { animation: ind-bounce-in 0.6s ease both; }
+.anim-rotate-in    { animation: ind-rotate-in 0.6s ease both; }
+.anim-flip-in      { animation: ind-flip-in 0.6s ease both; }
+.anim-float        { animation: ind-float 3s ease-in-out infinite; }
+.anim-pulse        { animation: ind-pulse 2s ease-in-out infinite; }
+.anim-spin         { animation: ind-spin 1s linear infinite; }
+.anim-wiggle       { animation: ind-wiggle 0.4s ease both; }
+
+// Delay utilities
+@for $i from 1 through 10 {
+  .anim-delay-#{$i * 100} { animation-delay: #{$i * 0.1}s; }
+}
+
+// Duration utilities
+.anim-duration-fast { animation-duration: 0.3s; }
+.anim-duration-slow { animation-duration: 1s; }
+
+// ─── Hover Effects ───────────────────────────────────────────
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba($color-secondary, 0.3);
+  }
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.hover-img-zoom {
+  overflow: hidden;
+
+  img {
+    transition: transform 0.5s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.hover-border-glow {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, $color-primary, $color-secondary) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+// ─── Button Ripple ───────────────────────────────────────────
+
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  &:active::after {
+    animation: ind-ripple 0.6s ease-out;
+  }
 }

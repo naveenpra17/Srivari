@@ -1,0 +1,32 @@
+[
+  {
+    "page": "home",
+    "violations": 0,
+    "details": []
+  },
+  {
+    "page": "products",
+    "violations": 0,
+    "details": []
+  },
+  {
+    "page": "product-detail",
+    "violations": 0,
+    "details": []
+  },
+  {
+    "page": "testimonials",
+    "violations": 0,
+    "details": []
+  },
+  {
+    "page": "about",
+    "violations": 0,
+    "details": []
+  },
+  {
+    "page": "admin-login",
+    "violations": 0,
+    "details": []
+  }
+]

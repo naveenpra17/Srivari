@@ -1,74 +1,150 @@
-@use 'sass:color';
-@use 'variables' as *;
-@use 'mixins' as *;
-
-.btn-industrial {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 46px;
-  padding: 11px 24px;
-  border-radius: $radius-pill;
-  font-family: $font-family;
-  font-size: 0.95rem;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  transition: transform $transition, box-shadow $transition, background $transition;
-  touch-action: manipulation;
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-
-  &:hover {
-    transform: translateY(-2px);
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
-}
-
-.btn-industrial-primary {
-  @extend .btn-industrial;
-  background: $color-secondary;
-  color: $color-white;
-  box-shadow: 0 4px 16px rgba(255, 107, 0, 0.3);
-
-  &:hover {
-    background: color.adjust($color-secondary, $lightness: 6%);
-    box-shadow: 0 8px 24px rgba(255, 107, 0, 0.35);
-    color: $color-white;
-  }
-}
-
-.btn-industrial-outline {
-  @extend .btn-industrial;
-  background: transparent;
-  color: $color-primary;
-  border: 2px solid $color-primary;
-
-  &:hover {
-    background: $color-primary;
-    color: $color-white;
-  }
-}
-
-.btn-industrial-ghost {
-  @extend .btn-industrial;
-  background: $color-white;
-  color: $color-primary;
-  border: 1px solid $color-border;
-
-  &:hover {
-    border-color: $color-primary;
-    color: $color-primary;
-  }
-}
-
-.btn-block {
-  width: 100%;
-}
-
+@use 'sass:color';
+
+@use 'variables' as *;
+
+@use 'mixins' as *;
+
+
+
+.btn-industrial {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  min-height: 46px;
+
+  padding: 11px 24px;
+
+  border-radius: $radius-pill;
+
+  font-family: $font-family;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  border: none;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  transition: transform $transition, box-shadow $transition, background $transition;
+
+  touch-action: manipulation;
+
+  position: relative;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+
+
+  &:hover {
+
+    transform: translateY(-2px);
+
+  }
+
+
+
+  &:active {
+
+    transform: translateY(0);
+
+  }
+
+}
+
+
+
+.btn-industrial-primary {
+
+  @extend .btn-industrial;
+
+  background: $color-secondary;
+
+  color: #0a2b5e;
+
+  font-weight: 700;
+
+  box-shadow: 0 4px 16px rgba(255, 107, 0, 0.3);
+
+
+
+  &:hover,
+  &:focus-visible {
+
+    background: color.adjust($color-secondary, $lightness: -6%);
+
+    box-shadow: 0 8px 24px rgba(255, 107, 0, 0.35);
+
+    color: #061d3f;
+
+  }
+
+}
+
+
+
+.btn-industrial-outline {
+
+  @extend .btn-industrial;
+
+  background: transparent;
+
+  color: $color-primary;
+
+  border: 2px solid $color-primary;
+
+
+
+  &:hover {
+
+    background: $color-primary;
+
+    color: $color-white;
+
+  }
+
+}
+
+
+
+.btn-industrial-ghost {
+
+  @extend .btn-industrial;
+
+  background: $color-white;
+
+  color: $color-primary;
+
+  border: 1px solid $color-border;
+
+
+
+  &:hover {
+
+    border-color: $color-primary;
+
+    color: $color-primary;
+
+  }
+
+}
+
+
+
+.btn-block {
+
+  width: 100%;
+
+}
+
+

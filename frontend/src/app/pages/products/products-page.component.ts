@@ -11,7 +11,7 @@ import { Product } from '../../models';
   standalone: true,
   imports: [CommonModule, RouterLink, FormsModule],
   template: `
-    <main class="products-page">
+    <div class="products-page">
       <div class="page-hero">
         <div class="container">
           <h1>Our Products</h1>
@@ -35,7 +35,7 @@ import { Product } from '../../models';
                   <img [src]="product.imageUrl || 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400'" [alt]="product.name" loading="lazy">
                 </div>
                 <div class="product-body p-3">
-                  <h3>{{ product.name }}</h3>
+                  <h2 class="product-name">{{ product.name }}</h2>
                   <p>{{ product.shortDescription }}</p>
                   <div class="product-card-actions">
                     <a [routerLink]="['/products', product.slug]" class="btn-primary-custom btn-sm">View Details</a>
@@ -58,13 +58,16 @@ import { Product } from '../../models';
           </div>
         }
       </div>
-    </main>
+    </div>
   `,
   styles: [`
     .page-hero {
-      background: var(--primary); color: white; padding: 120px 0 60px; text-align: center;
-      h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-      p { opacity: 0.8; font-size: 1.1rem; }
+      background: #0a2b5e;
+      color: #ffffff;
+      padding: 120px 0 60px;
+      text-align: center;
+      h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #ffffff; }
+      p { color: #e2e8f0; font-size: 1.1rem; }
     }
     .search-input {
       width: 100%; max-width: 100%; padding: 12px 20px; min-height: 44px;
@@ -82,7 +85,7 @@ import { Product } from '../../models';
       .product-image { height: 200px; overflow: hidden;
         img { width: 100%;  object-fit: cover; }
       }
-      h3 { font-size: 1.1rem; color: var(--primary); }
+      .product-name { font-size: 1.1rem; color: var(--primary); margin: 0; }
       p { font-size: 0.9rem; color: var(--text-muted); }
     }
     .btn-sm { padding: 8px 20px !important; font-size: 0.85rem !important; }

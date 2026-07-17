@@ -1,8 +1,8 @@
-<section class="stats-industrial" [class.animated]="animated()" aria-label="Company statistics">
+<section class="stats-industrial" [class.animated]="animated()" [class.cards-visible]="cardsVisible()" aria-label="Company statistics">
   <div class="container">
-    <div class="stats-grid">
+    <div class="stats-grid stagger-children" [class.is-visible]="cardsVisible()">
       @for (stat of stats; track stat.key; let i = $index) {
-        <div class="stat-card" appReveal [appRevealDelay]="i * 80">
+        <div class="stat-card" [style.transition-delay.ms]="i * 80">
           <div class="stat-icon" aria-hidden="true">
             @switch (stat.icon) {
               @case ('years') {

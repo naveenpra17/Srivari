@@ -3,9 +3,8 @@ import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RouterLink, RouterOutlet } from '@angular/router';
-
 import { AuthService } from '../../core/services/auth.service';
-import { ThemeService } from '../../core/services/theme.service';
+import { ThemeToggleComponent } from '../../shared/components/theme-toggle/theme-toggle.component';
 
 
 
@@ -15,7 +14,7 @@ import { ThemeService } from '../../core/services/theme.service';
 
   standalone: true,
 
-  imports: [CommonModule, RouterLink, RouterOutlet],
+  imports: [CommonModule, RouterLink, RouterOutlet, ThemeToggleComponent],
 
   templateUrl: './admin-layout.component.html',
 
@@ -26,7 +25,6 @@ import { ThemeService } from '../../core/services/theme.service';
 export class AdminLayoutComponent {
 
   readonly auth = inject(AuthService);
-  readonly theme = inject(ThemeService);
   sidebarOpen = signal(false);
 
 

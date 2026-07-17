@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row g-4 g-lg-5">
       <div class="col-lg-4 col-md-6">
-        <div class="footer-brand">
+        <div class="footer-brand" appReveal>
           <h3>{{ settings()['company_name'] || 'Sri Vaari Traders' }}</h3>
           <p>{{ settings()['company_tagline'] || 'Where Innovation Meets Reliability' }}</p>
           <div class="social-links">
@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <div class="col-lg-2 col-md-6">
+      <div class="col-lg-2 col-md-6" appReveal [appRevealDelay]="100">
         <h4>Quick Links</h4>
         <ul>
           <li><a routerLink="/">Home</a></li>
@@ -41,7 +41,7 @@
         </ul>
       </div>
 
-      <div class="col-lg-2 col-md-6">
+      <div class="col-lg-2 col-md-6" appReveal [appRevealDelay]="200">
         <h4>Products</h4>
         <ul>
           <li><a routerLink="/products">Motors</a></li>
@@ -51,7 +51,7 @@
         </ul>
       </div>
 
-      <div class="col-lg-2 col-md-6">
+      <div class="col-lg-2 col-md-6" appReveal [appRevealDelay]="300">
         <h4>Industries</h4>
         <ul>
           <li><a routerLink="/" fragment="industries">Oil &amp; Gas</a></li>
@@ -61,7 +61,7 @@
         </ul>
       </div>
 
-      <div class="col-lg-2 col-md-6">
+      <div class="col-lg-2 col-md-6" appReveal [appRevealDelay]="400">
         <h4>Newsletter</h4>
         <p class="newsletter-text">Subscribe for product updates and industry insights.</p>
         <form class="newsletter-form" (submit)="$event.preventDefault()">

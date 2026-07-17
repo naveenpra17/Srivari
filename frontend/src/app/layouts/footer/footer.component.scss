@@ -126,6 +126,8 @@
     padding: 11px 18px;
     font-size: 0.85rem;
     width: 100%;
+    color: #0a2b5e;
+    font-weight: 700;
 
     @include respond-to(sm) {
       width: auto;

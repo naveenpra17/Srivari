@@ -31,6 +31,7 @@ export class StatsSectionComponent implements OnInit {
   settings = input<SiteSettings>({});
   animated = signal(false);
   displayValues = signal<Record<string, string>>({});
+  cardsVisible = signal(false);
 
   private readonly el = inject(ElementRef);
   private readonly platformId = inject(PLATFORM_ID);
@@ -53,6 +54,7 @@ export class StatsSectionComponent implements OnInit {
       if (entry.isIntersecting) {
         this.animated.set(true);
         this.startCounters();
+        this.triggerCardAnimation();
         observer.disconnect();
       }
     }, { threshold: 0.25 });
@@ -71,6 +73,7 @@ export class StatsSectionComponent implements OnInit {
     }
     this.displayValues.set(v);
     this.animated.set(true);
+    this.cardsVisible.set(true);
   }
 
   private getRaw(stat: StatItem): string {
@@ -94,10 +97,18 @@ export class StatsSectionComponent implements OnInit {
     const duration = 2000;
     const step = (now: number) => {
       const p = Math.min((now - start) / duration, 1);
+      // Cubic-bezier(0.25, 0.46, 0.45, 0.94) easing - smooth ease-out
       const eased = 1 - Math.pow(1 - p, 3);
       this.displayValues.update(v => ({ ...v, [key]: String(Math.floor(eased * target)) }));
       if (p < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
+  }
+
+  private triggerCardAnimation(): void {
+    // Trigger staggered card animation after a small delay
+    setTimeout(() => {
+      this.cardsVisible.set(true);
+    }, 100);
   }
 }

@@ -5,11 +5,17 @@ import { filter } from 'rxjs/operators';
 import { SeoService } from './core/services/seo.service';
 import { ThemeService } from './core/services/theme.service';
 import { SwUpdateService } from './core/services/sw-update.service';
+import { routeSlideFade } from './shared/animations/route-animations';
+import { ToastContainerComponent } from './shared/components/toast-container/toast-container.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  template: '<router-outlet />',
+  imports: [RouterOutlet, ToastContainerComponent],
+  animations: [routeSlideFade],
+  template: `
+    <router-outlet [@routeSlideFade]="o.activatedRouteData?.[ 'animation'] ?? ''" #o="outlet" />
+    <app-toast-container />
+  `,
   styles: [`:host { display: block; }`]
 })
 export class App implements OnInit {

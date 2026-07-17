@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, signal, computed } from '@angular/core';
+import { Component, OnInit, inject, signal, computed, HostListener, ElementRef, viewChild, afterNextRender } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
@@ -7,6 +7,7 @@ import { SnackbarService } from '../../core/services/ui.service';
 import { SeoService } from '../../core/services/seo.service';
 import { ChatWidgetService } from '../../core/chat/chat-widget.service';
 import { Product, ProductImage } from '../../models';
+import { RevealDirective } from '../../shared/directives/reveal.directive';
 
 const FALLBACK_PRODUCT_IMAGE =
   'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=85';
@@ -14,7 +15,7 @@ const FALLBACK_PRODUCT_IMAGE =
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink, ReactiveFormsModule],
+  imports: [CommonModule, RouterLink, ReactiveFormsModule, RevealDirective],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss'
 })
@@ -26,12 +27,27 @@ export class ProductDetailComponent implements OnInit {
   private readonly seo = inject(SeoService);
   private readonly chat = inject(ChatWidgetService);
   private readonly fb = inject(FormBuilder);
+  private readonly el = inject(ElementRef);
 
+  // Lightbox state
+  lightboxOpen = signal(false);
+  lightboxIndex = signal(0);
+  lightboxTransform = signal({ scale: 1, x: 0, y: 0 });
+  isDragging = signal(false);
+  dragStart = signal({ x: 0, y: 0 });
+
+  // Touch/swipe support
+  touchStartX = signal(0);
+  touchStartY = signal(0);
+
+  // Form state
   product = signal<Product | null>(null);
   loading = signal(true);
   quoteSubmitting = signal(false);
   showQuoteForm = signal(false);
   selectedImageIndex = signal(0);
+  formSubmitted = signal(false);
+  formErrors = signal<Record<string, string>>({});
 
   galleryImages = computed(() => {
     const p = this.product();
@@ -46,6 +62,12 @@ export class ProductDetailComponent implements OnInit {
   selectedImage = computed(() => {
     const images = this.galleryImages();
     const idx = this.selectedImageIndex();
+    return images[idx] ?? images[0];
+  });
+
+  lightboxImage = computed(() => {
+    const images = this.galleryImages();
+    const idx = this.lightboxIndex();
     return images[idx] ?? images[0];
   });
 
@@ -72,19 +94,191 @@ export class ProductDetailComponent implements OnInit {
     }
   }
 
+  // Keyboard navigation for lightbox and thumbnails
+  @HostListener('document:keydown', ['$event'])
+  handleKeydown(event: KeyboardEvent): void {
+    if (this.lightboxOpen()) {
+      switch (event.key) {
+        case 'Escape':
+          this.closeLightbox();
+          break;
+        case 'ArrowLeft':
+          this.prevLightboxImage();
+          break;
+        case 'ArrowRight':
+          this.nextLightboxImage();
+          break;
+      }
+    } else if (this.galleryImages().length > 1) {
+      // Thumbnail keyboard navigation when focused
+      const activeEl = document.activeElement;
+      if (activeEl?.classList.contains('thumbnail')) {
+        const index = Array.from(activeEl.parentElement?.children || []).indexOf(activeEl);
+        if (event.key === 'ArrowRight' && index < this.galleryImages().length - 1) {
+          event.preventDefault();
+          this.selectImage(index + 1);
+          this.focusThumbnail(index + 1);
+        } else if (event.key === 'ArrowLeft' && index > 0) {
+          event.preventDefault();
+          this.selectImage(index - 1);
+          this.focusThumbnail(index - 1);
+        } else if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          this.openLightbox(index);
+        }
+      }
+    }
+  }
+
+  // Touch/swipe support for lightbox
+  onTouchStart(event: TouchEvent): void {
+    this.touchStartX.set(event.touches[0].clientX);
+    this.touchStartY.set(event.touches[0].clientY);
+  }
+
+  onTouchEnd(event: TouchEvent): void {
+    const endX = event.changedTouches[0].clientX;
+    const endY = event.changedTouches[0].clientY;
+    const diffX = this.touchStartX() - endX;
+    const diffY = this.touchStartY() - endY;
+
+    // Only handle horizontal swipes
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        this.nextLightboxImage();
+      } else {
+        this.prevLightboxImage();
+      }
+    }
+  }
+
+  // Lightbox methods
+  openLightbox(index: number): void {
+    this.lightboxIndex.set(index);
+    this.lightboxOpen.set(true);
+    this.lightboxTransform.set({ scale: 1, x: 0, y: 0 });
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeLightbox(): void {
+    this.lightboxOpen.set(false);
+    this.lightboxTransform.set({ scale: 1, x: 0, y: 0 });
+    document.body.style.overflow = '';
+  }
+
+  prevLightboxImage(): void {
+    const images = this.galleryImages();
+    if (images.length <= 1) return;
+    const newIndex = (this.lightboxIndex() - 1 + images.length) % images.length;
+    this.lightboxIndex.set(newIndex);
+    this.lightboxTransform.set({ scale: 1, x: 0, y: 0 });
+  }
+
+  nextLightboxImage(): void {
+    const images = this.galleryImages();
+    if (images.length <= 1) return;
+    const newIndex = (this.lightboxIndex() + 1) % images.length;
+    this.lightboxIndex.set(newIndex);
+    this.lightboxTransform.set({ scale: 1, x: 0, y: 0 });
+  }
+
+  // Zoom/pan functionality
+  onWheel(event: WheelEvent): void {
+    event.preventDefault();
+    const current = this.lightboxTransform();
+    const delta = event.deltaY > 0 ? -0.1 : 0.1;
+    const newScale = Math.min(Math.max(current.scale + delta, 1), 4);
+    this.lightboxTransform.set({ ...current, scale: newScale });
+  }
+
+  onMouseDown(event: MouseEvent): void {
+    if (this.lightboxTransform().scale <= 1) return;
+    this.isDragging.set(true);
+    this.dragStart.set({ x: event.clientX - this.lightboxTransform().x, y: event.clientY - this.lightboxTransform().y });
+  }
+
+  @HostListener('document:mousemove', ['$event'])
+  onMouseMove(event: MouseEvent): void {
+    if (!this.isDragging()) return;
+    const start = this.dragStart();
+    this.lightboxTransform.update(t => ({
+      ...t,
+      x: event.clientX - start.x,
+      y: event.clientY - start.y
+    }));
+  }
+
+  @HostListener('document:mouseup')
+  onMouseUp(): void {
+    this.isDragging.set(false);
+  }
+
+  onTouchMove(event: TouchEvent): void {
+    if (this.lightboxTransform().scale <= 1) return;
+    event.preventDefault();
+    const touch = event.touches[0];
+    const start = this.dragStart();
+    this.lightboxTransform.update(t => ({
+      ...t,
+      x: touch.clientX - start.x,
+      y: touch.clientY - start.y
+    }));
+  }
+
+  onDoubleClick(): void {
+    const current = this.lightboxTransform();
+    this.lightboxTransform.set({
+      ...current,
+      scale: current.scale > 1 ? 1 : 2,
+      x: 0,
+      y: 0
+    });
+  }
+
+  // Thumbnail methods
   selectImage(index: number): void {
     this.selectedImageIndex.set(index);
   }
 
+  focusThumbnail(index: number): void {
+    const thumbnails = this.el.nativeElement.querySelectorAll('.thumbnail');
+    if (thumbnails[index]) {
+      (thumbnails[index] as HTMLElement).focus();
+    }
+  }
+
+  // Form methods
   toggleQuoteForm(): void {
     this.showQuoteForm.update(v => !v);
+    if (!this.showQuoteForm()) {
+      this.formSubmitted.set(false);
+      this.formErrors.set({});
+      this.quoteForm.reset({ quantity: 1 });
+    }
+  }
+
+  validateForm(): boolean {
+    const errors: Record<string, string> = {};
+    const controls = this.quoteForm.controls;
+
+    if (controls.name.invalid && (controls.name.touched || this.formSubmitted())) {
+      errors['name'] = 'Name is required';
+    }
+    if (controls.email.invalid && (controls.email.touched || this.formSubmitted())) {
+      errors['email'] = controls.email.errors?.['email'] ? 'Invalid email format' : 'Email is required';
+    }
+    if (controls.quantity.invalid && (controls.quantity.touched || this.formSubmitted())) {
+      errors['quantity'] = 'Quantity must be at least 1';
+    }
+
+    this.formErrors.set(errors);
+    return Object.keys(errors).length === 0;
   }
 
   submitQuote(): void {
-    if (this.quoteForm.invalid) {
-      this.quoteForm.markAllAsTouched();
-      return;
-    }
+    this.formSubmitted.set(true);
+    if (!this.validateForm()) return;
+
     const p = this.product();
     if (!p) return;
 
@@ -97,10 +291,12 @@ export class ProductDetailComponent implements OnInit {
         this.snackbar.success('Quote request submitted! We will contact you shortly.');
         this.quoteForm.reset({ quantity: 1 });
         this.showQuoteForm.set(false);
+        this.formSubmitted.set(false);
+        this.formErrors.set({});
         this.quoteSubmitting.set(false);
       },
       error: () => {
-        this.snackbar.error('Failed to submit quote request');
+        this.snackbar.error('Failed to submit quote request. Please try again.');
         this.quoteSubmitting.set(false);
       }
     });

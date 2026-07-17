@@ -5,6 +5,8 @@ import { filter, map, startWith } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { SiteSettings } from '../../models';
 import { PublicService } from '../../core/services/public.service';
+import { RevealDirective } from '../../shared/directives/reveal.directive';
+import { ThemeToggleComponent } from '../../shared/components/theme-toggle/theme-toggle.component';
 
 interface NavLink {
   path: string;
@@ -16,7 +18,7 @@ interface NavLink {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, RevealDirective, ThemeToggleComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

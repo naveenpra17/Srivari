@@ -135,9 +135,9 @@
             @if (imagesLoading()) {
               <p class="text-muted">Loading gallery...</p>
             } @else if (productImages().length > 0) {
-              <div class="gallery-list">
+              <div class="gallery-list" cdkDropList [cdkDropListData]="productImages()" (cdkDropListDropped)="onImageDrop($event)">
                 @for (image of productImages(); track image.id) {
-                  <div class="gallery-item" [class.primary]="image.isPrimary">
+                  <div class="gallery-item" [class.primary]="image.isPrimary" cdkDrag>
                     <img [src]="image.imageUrl" [alt]="image.altText || 'Product image'">
                     <div class="gallery-item-actions">
                       @if (!image.isPrimary && auth.canEdit()) {
@@ -147,10 +147,13 @@
                         <span class="badge active">Primary</span>
                       }
                       @if (auth.canEdit()) {
-                        <button type="button" class="btn-edit" (click)="moveImage(image, -1)">↑</button>
-                        <button type="button" class="btn-edit" (click)="moveImage(image, 1)">↓</button>
-                        <button type="button" class="btn-delete" (click)="deleteGalleryImage(image)">Delete</button>
+                        <button type="button" class="btn-edit" (click)="deleteGalleryImage(image)">Delete</button>
                       }
+                    </div>
+                    <div class="drag-handle" cdkDragHandle aria-label="Drag to reorder">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12h18M3 6h18M3 18h18"/>
+                      </svg>
                     </div>
                   </div>
                 }

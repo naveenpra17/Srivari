@@ -54,6 +54,7 @@
   inset: 0;
   z-index: 0;
   min-height: 100%;
+  overflow: hidden;
 
   img {
     display: block;
@@ -62,6 +63,12 @@
     min-height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+  }
+
+  &.parallax-active img {
+    transform: scale(1.08);
   }
 
   .hero-slide-overlay {
@@ -111,6 +118,29 @@
     max-width: 50%;
     padding: 3rem 0;
   }
+
+  // Stagger animation for child elements
+  &.stagger-children {
+    > * {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    &.is-visible > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // Stagger delays for each child
+  &.stagger-children.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+  &.stagger-children.is-visible > *:nth-child(2) { transition-delay: 100ms; }
+  &.stagger-children.is-visible > *:nth-child(3) { transition-delay: 200ms; }
+  &.stagger-children.is-visible > *:nth-child(4) { transition-delay: 300ms; }
+  &.stagger-children.is-visible > *:nth-child(5) { transition-delay: 400ms; }
+  &.stagger-children.is-visible > *:nth-child(6) { transition-delay: 500ms; }
 }
 
 .hero-heading {
@@ -220,6 +250,17 @@
     }
   }
 
+  .btn-industrial-primary {
+    color: #0a2b5e;
+    background: $color-secondary;
+    font-weight: 700;
+
+    &:hover,
+    &:focus-visible {
+      color: #061d3f;
+    }
+  }
+
   .btn-industrial-outline {
     color: #ffffff;
     border-color: rgba(255, 255, 255, 0.7);
@@ -303,5 +344,89 @@
     width: 22px;
     border-radius: 4px;
     background: $color-secondary;
+  }
+}
+
+/* ==========================================================================
+   Animation Utilities for Hero Section
+   ========================================================================== */
+
+// Fade up animation for headline lines
+.anim-fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.anim-fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// Scale in animation for buttons
+.anim-scale-in {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.anim-scale-in.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+// Parallax background effect
+.hero-slide-bg {
+  overflow: hidden;
+
+  img {
+    transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+  }
+
+  &.parallax-active img {
+    transform: scale(1.08) translateY(0);
+  }
+}
+
+// Stagger children container
+.stagger-children {
+  > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  &.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  // Stagger delays
+  &.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+  &.is-visible > *:nth-child(2) { transition-delay: 80ms; }
+  &.stagger-children.is-visible > *:nth-child(3) { transition-delay: 160ms; }
+  &.stagger-children.is-visible > *:nth-child(4) { transition-delay: 240ms; }
+  &.stagger-children.is-visible > *:nth-child(5) { transition-delay: 320ms; }
+  &.stagger-children.is-visible > *:nth-child(6) { transition-delay: 400ms; }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-up,
+  .anim-scale-in,
+  .hero-slide-bg img,
+  .stagger-children > *,
+  .stagger-children > * {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-slide-bg.parallax-active img {
+    transform: none !important;
   }
 }

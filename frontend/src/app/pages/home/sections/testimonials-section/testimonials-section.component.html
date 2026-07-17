@@ -11,7 +11,7 @@
       <div class="swiper-wrapper">
         @for (item of items(); track item.id) {
           <div class="swiper-slide">
-            <article class="testimonial-card">
+            <article class="testimonial-card" appReveal [appRevealDelay]="$index * 100">
               <div class="testimonial-top">
                 <img
                   [src]="item.imageUrl || 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=120&q=80'"
@@ -19,13 +19,7 @@
                   loading="lazy"
                   width="64"
                   height="64">
-                <div class="stars" aria-label="{{ item.rating }} out of 5 stars">
-                  @for (s of stars(item.rating); track $index) {
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                    </svg>
-                  }
-                </div>
+                <app-star-rating [rating]="item.rating" />
               </div>
               <blockquote>"{{ item.content }}"</blockquote>
               <footer>

@@ -1,6 +1,7 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+import { CdkDragDrop, DragDropModule, moveItemInArray } from '@angular/cdk/drag-drop';
 import { AdminService } from '../../../core/services/admin.service';
 import { AuthService } from '../../../core/services/auth.service';
 import { SnackbarService } from '../../../core/services/ui.service';
@@ -10,7 +11,7 @@ import { Category, Product, ProductImage } from '../../../models';
 @Component({
   selector: 'app-admin-products',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, ImageUploadComponent],
+  imports: [CommonModule, ReactiveFormsModule, DragDropModule, ImageUploadComponent],
   templateUrl: './admin-products.component.html',
   styleUrl: '../admin-shared.scss'
 })
@@ -200,24 +201,44 @@ export class AdminProductsComponent implements OnInit {
     });
   }
 
-  moveImage(image: ProductImage, direction: -1 | 1): void {
+  onImageDrop(event: CdkDragDrop<ProductImage[]>): void {
     const productId = this.editingId();
     if (!productId) return;
-    const images = [...this.productImages()].sort((a, b) => a.sortOrder - b.sortOrder);
-    const index = images.findIndex(i => i.id === image.id);
-    const targetIndex = index + direction;
-    if (targetIndex < 0 || targetIndex >= images.length) return;
 
-    const current = images[index];
-    const swap = images[targetIndex];
-    this.admin.updateProductImage(productId, current.id, { sortOrder: swap.sortOrder }).subscribe({
-      next: () => {
-        this.admin.updateProductImage(productId, swap.id, { sortOrder: current.sortOrder }).subscribe({
-          next: () => this.loadProductImages(productId),
-          error: () => this.snackbar.error('Failed to reorder images')
-        });
-      },
-      error: () => this.snackbar.error('Failed to reorder images')
+    const images = [...this.productImages()].sort((a, b) => a.sortOrder - b.sortOrder);
+    moveItemInArray(images, event.previousIndex, event.currentIndex);
+
+    // Update sortOrder for all affected images
+    const updates = images.map((img, index) => ({
+      id: img.id,
+      sortOrder: index
+    }));
+
+    // Send updates to server
+    this.saveImageOrder(productId, updates);
+  }
+
+  private saveImageOrder(productId: number, updates: { id: number; sortOrder: number }[]): void {
+    let completed = 0;
+    const total = updates.length;
+    let hasError = false;
+
+    updates.forEach(update => {
+      this.admin.updateProductImage(productId, update.id, { sortOrder: update.sortOrder }).subscribe({
+        next: () => {
+          completed++;
+          if (completed === total && !hasError) {
+            this.snackbar.success('Image order updated');
+            this.loadProductImages(productId);
+          }
+        },
+        error: () => {
+          if (!hasError) {
+            hasError = true;
+            this.snackbar.error('Failed to reorder images');
+          }
+        }
+      });
     });
   }
 

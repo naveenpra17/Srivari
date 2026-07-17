@@ -6,8 +6,10 @@ import {
   PLATFORM_ID,
   afterNextRender,
   computed,
+  effect,
   inject,
   input,
+  signal,
   viewChild
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
@@ -15,16 +17,28 @@ import { RouterLink } from '@angular/router';
 import Swiper from 'swiper';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { HeroSlide } from '../../../../models';
+import { RevealDirective } from '../../../../shared/directives/reveal.directive';
 
 interface HeadlineLine {
   text?: string;
   accent?: string;
 }
 
+interface DisplaySlide {
+  id: number;
+  headlineLines: HeadlineLine[];
+  description: string;
+  imageUrl: string;
+  ctaText: string;
+  ctaLink: string;
+  secondaryCtaText: string;
+  secondaryCtaLink: string;
+}
+
 @Component({
   selector: 'app-hero-section',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, RevealDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss'
@@ -34,6 +48,11 @@ export class HeroSectionComponent implements OnDestroy {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly swiperContainer = viewChild<ElementRef<HTMLElement>>('heroSwiper');
   private swiper?: Swiper;
+
+  // Animation state signals
+  readonly activeSlideIndex = signal(0);
+  readonly isAnimating = signal(false);
+  readonly slideContentVisible = signal(false);
 
   readonly displaySlides = computed(() =>
     this.slides()
@@ -53,8 +72,15 @@ export class HeroSectionComponent implements OnDestroy {
   constructor() {
     afterNextRender(() => {
       if (!isPlatformBrowser(this.platformId) || this.displaySlides().length === 0) return;
-      // Extra frame helps production builds where layout/CSS settle after first paint.
       requestAnimationFrame(() => this.initSwiper());
+    });
+
+    // Effect to trigger content animation when slide changes
+    effect(() => {
+      const index = this.activeSlideIndex();
+      if (index >= 0 && this.displaySlides().length > 0) {
+        this.triggerContentAnimation();
+      }
     });
   }
 
@@ -74,7 +100,6 @@ export class HeroSectionComponent implements OnDestroy {
       fadeEffect: { crossFade: true },
       autoHeight: false,
       slidesPerView: 1,
-      // Loop clones DOM nodes; Angular bindings do not carry over to clones (blank slides).
       loop: false,
       rewind: true,
       speed: 800,
@@ -96,7 +121,20 @@ export class HeroSectionComponent implements OnDestroy {
         prevEl: el.querySelector<HTMLElement>('.hero-nav-prev')
       },
       on: {
-        init: (swiper) => this.ensureAutoplay(swiper)
+        init: (swiper) => {
+          this.ensureAutoplay(swiper);
+          this.activeSlideIndex.set(swiper.realIndex);
+          this.triggerContentAnimation();
+        },
+        slideChangeTransitionStart: (swiper) => {
+          this.isAnimating.set(true);
+          this.slideContentVisible.set(false);
+        },
+        slideChangeTransitionEnd: (swiper) => {
+          this.activeSlideIndex.set(swiper.realIndex);
+          this.isAnimating.set(false);
+          this.triggerContentAnimation();
+        }
       }
     });
 
@@ -137,6 +175,14 @@ export class HeroSectionComponent implements OnDestroy {
     });
   }
 
+  private triggerContentAnimation(): void {
+    // Reset and trigger animation
+    this.slideContentVisible.set(false);
+    requestAnimationFrame(() => {
+      this.slideContentVisible.set(true);
+    });
+  }
+
   isExternal(link: string): boolean {
     return /^https?:\/\//i.test(link);
   }
@@ -156,6 +202,15 @@ export class HeroSectionComponent implements OnDestroy {
   private isTestimonialSlide(slide: HeroSlide): boolean {
     const blob = `${slide.title} ${slide.subtitle ?? ''} ${slide.description ?? ''} ${slide.ctaLink ?? ''} ${slide.secondaryCtaLink ?? ''}`.toLowerCase();
     return blob.includes('/testimonials') || /testimonial|stories|share your story|community trust|every story/.test(blob);
+  }
+
+  // Track by function for ngFor performance
+  trackBySlideId(index: number, slide: DisplaySlide): string {
+    return String(slide.id);
+  }
+
+  trackByLineIndex(index: number, line: HeadlineLine): number {
+    return index;
   }
 }
 

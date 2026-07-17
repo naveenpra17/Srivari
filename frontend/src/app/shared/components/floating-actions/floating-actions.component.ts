@@ -5,7 +5,7 @@ import { ChatWidgetService } from '../../../core/chat/chat-widget.service';
   selector: 'app-floating-actions',
   standalone: true,
   template: `
-    <div class="floating-actions" role="group" aria-label="Quick actions">
+    <nav class="floating-actions" aria-label="Quick actions">
       @if (showScrollTop()) {
         <button type="button" class="fab fab-scroll" (click)="scrollToTop()" aria-label="Back to top">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
@@ -24,7 +24,7 @@ import { ChatWidgetService } from '../../../core/chat/chat-widget.service';
           </svg>
         </button>
       }
-    </div>
+    </nav>
   `,
   styles: [`
     .floating-actions {

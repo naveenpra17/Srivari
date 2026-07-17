@@ -295,6 +295,47 @@
   align-items: center;
 }
 
+.drag-handle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: grab;
+  transition: var(--transition);
+  margin-left: auto;
+
+  &:hover {
+    background: var(--border-color, #eee);
+    color: var(--primary);
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  svg {
+    pointer-events: none;
+  }
+}
+
+.cdk-drag-preview {
+  box-shadow: var(--shadow-lg);
+  border-radius: 8px;
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.3;
+  border: 2px dashed var(--secondary);
+  background: rgba(255, 107, 0, 0.05);
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
 .gallery-hint {
   margin-top: 1rem;
   font-size: 0.9rem;

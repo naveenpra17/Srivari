@@ -1,6 +1,7 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+import { DragDropModule, CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { AdminService } from '../../../core/services/admin.service';
 import { SnackbarService } from '../../../core/services/ui.service';
 import { ImageUploadComponent } from '../../../shared/components/image-upload/image-upload.component';
@@ -9,7 +10,7 @@ import { Category } from '../../../models';
 @Component({
   selector: 'app-admin-categories',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, ImageUploadComponent],
+  imports: [CommonModule, ReactiveFormsModule, DragDropModule, ImageUploadComponent],
   templateUrl: './admin-categories.component.html',
   styleUrl: '../admin-shared.scss'
 })
@@ -78,6 +79,43 @@ export class AdminCategoriesComponent implements OnInit {
     this.admin.deleteCategory(item.id).subscribe({
       next: () => { this.snackbar.success('Deleted'); this.load(); },
       error: () => this.snackbar.error('Failed to delete')
+    });
+  }
+
+  onCategoryDrop(event: CdkDragDrop<Category[]>): void {
+    const items = [...this.items()];
+    moveItemInArray(items, event.previousIndex, event.currentIndex);
+
+    // Update sortOrder for all affected items
+    const updates = items.map((item, index) => ({
+      id: item.id,
+      sortOrder: index
+    }));
+
+    this.saveCategoryOrder(updates);
+  }
+
+  private saveCategoryOrder(updates: { id: number; sortOrder: number }[]): void {
+    let completed = 0;
+    const total = updates.length;
+    let hasError = false;
+
+    updates.forEach(update => {
+      this.admin.updateCategory(update.id, { sortOrder: update.sortOrder }).subscribe({
+        next: () => {
+          completed++;
+          if (completed === total && !hasError) {
+            this.snackbar.success('Category order updated');
+            this.load();
+          }
+        },
+        error: () => {
+          if (!hasError) {
+            hasError = true;
+            this.snackbar.error('Failed to reorder categories');
+          }
+        }
+      });
     });
   }
 }

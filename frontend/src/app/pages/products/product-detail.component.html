@@ -1,10 +1,11 @@
-<main class="product-detail-page">
+<div class="product-detail-page">
   @if (loading()) {
     <div class="container section text-center">
-      <p class="text-muted">Loading product...</p>
+      <h1 class="visually-hidden">Product details</h1>
+      <p class="text-muted" aria-live="polite">Loading product...</p>
     </div>
   } @else if (product(); as p) {
-    <div class="page-hero">
+    <div class="page-hero" appReveal>
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a routerLink="/">Home</a> /
@@ -21,8 +22,8 @@
     <div class="container section">
       <div class="row g-5">
         <div class="col-lg-6">
-          <div class="product-gallery">
-            <div class="product-image-main card-custom">
+          <div class="product-gallery" appReveal [appRevealDelay]="100">
+            <div class="product-image-main card-custom" (click)="openLightbox(selectedImageIndex())" role="button" tabindex="0" (keydown.enter)="openLightbox(selectedImageIndex())" (keydown.space)="openLightbox(selectedImageIndex())" aria-label="Open image gallery">
               @if (selectedImage(); as img) {
                 <img [src]="img.imageUrl"
                      [alt]="img.altText || p.name"
@@ -31,15 +32,27 @@
                      class="main-image"
                      loading="eager">
               }
+              <div class="zoom-hint" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Click to zoom</span>
+              </div>
             </div>
             @if (galleryImages().length > 1) {
-              <div class="thumbnail-row">
+              <div class="thumbnail-row" role="tablist" aria-label="Product images">
                 @for (img of galleryImages(); track img.id; let i = $index) {
                   <button type="button"
                     class="thumbnail"
+                    role="tab"
                     [class.active]="selectedImageIndex() === i"
+                    [attr.aria-selected]="selectedImageIndex() === i"
+                    [attr.aria-label]="'View image ' + (i + 1) + ' of ' + galleryImages().length"
                     (click)="selectImage(i)"
-                    [attr.aria-label]="'View image ' + (i + 1)">
+                    (keydown.enter)="selectImage(i)"
+                    (keydown.space)="selectImage(i)"
+                    tabindex="{{ selectedImageIndex() === i ? 0 : -1 }}">
                     <img [src]="img.imageUrl" [alt]="img.altText || p.name" width="100" height="80" loading="lazy">
                   </button>
                 }
@@ -48,14 +61,14 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="product-info">
+          <div class="product-info" appReveal [appRevealDelay]="200">
             <p class="short-desc">{{ p.shortDescription }}</p>
             @if (p.description) {
               <div class="description">{{ p.description }}</div>
             }
             @if (specEntries(p).length > 0) {
               <div class="specifications card-custom">
-                <h3>Specifications</h3>
+                <h2>Specifications</h2>
                 <dl>
                   @for (spec of specEntries(p); track spec.key) {
                     <div class="spec-row">
@@ -71,39 +84,50 @@
             }
 
             <div class="action-buttons">
-              <button class="btn-secondary-custom" (click)="toggleQuoteForm()">Request Quote</button>
+              <button class="btn-secondary-custom" (click)="toggleQuoteForm()" [attr.aria-expanded]="showQuoteForm()">
+                {{ showQuoteForm() ? 'Hide Quote Form' : 'Request Quote' }}
+              </button>
               @if (p.brochureUrl) {
                 <button class="btn-outline-custom" (click)="downloadBrochure()">Download Brochure</button>
               }
             </div>
 
             @if (showQuoteForm()) {
-              <form class="quote-form card-custom" [formGroup]="quoteForm" (ngSubmit)="submitQuote()">
-                <h3>Request a Quote</h3>
+              <form class="quote-form card-custom" [formGroup]="quoteForm" (ngSubmit)="submitQuote()" novalidate>
+                <h2>Request a Quote</h2>
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label>Name *</label>
-                    <input formControlName="name" placeholder="Your name">
+                    <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+                    <input id="name" formControlName="name" placeholder="Your name" [class.error]="formErrors()['name']" [attr.aria-invalid]="formErrors()['name'] ? 'true' : 'false'" [attr.aria-describedby]="formErrors()['name'] ? 'name-error' : null">
+                    @if (formErrors()['name']) {
+                      <span class="error-message" id="name-error" role="alert">{{ formErrors()['name'] }}</span>
+                    }
                   </div>
                   <div class="col-md-6">
-                    <label>Email *</label>
-                    <input type="email" formControlName="email" placeholder="your@email.com">
+                    <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+                    <input id="email" type="email" formControlName="email" placeholder="your@email.com" [class.error]="formErrors()['email']" [attr.aria-invalid]="formErrors()['email'] ? 'true' : 'false'" [attr.aria-describedby]="formErrors()['email'] ? 'email-error' : null">
+                    @if (formErrors()['email']) {
+                      <span class="error-message" id="email-error" role="alert">{{ formErrors()['email'] }}</span>
+                    }
                   </div>
                   <div class="col-md-6">
-                    <label>Phone</label>
-                    <input formControlName="phone" placeholder="+91-9842231111">
+                    <label for="phone">Phone</label>
+                    <input id="phone" formControlName="phone" placeholder="+91-9842231111">
                   </div>
                   <div class="col-md-6">
-                    <label>Company</label>
-                    <input formControlName="company" placeholder="Company name">
+                    <label for="company">Company</label>
+                    <input id="company" formControlName="company" placeholder="Company name">
                   </div>
                   <div class="col-md-6">
-                    <label>Quantity *</label>
-                    <input type="number" formControlName="quantity" min="1">
+                    <label for="quantity">Quantity <span class="required" aria-hidden="true">*</span></label>
+                    <input id="quantity" type="number" formControlName="quantity" min="1" [class.error]="formErrors()['quantity']" [attr.aria-invalid]="formErrors()['quantity'] ? 'true' : 'false'" [attr.aria-describedby]="formErrors()['quantity'] ? 'quantity-error' : null">
+                    @if (formErrors()['quantity']) {
+                      <span class="error-message" id="quantity-error" role="alert">{{ formErrors()['quantity'] }}</span>
+                    }
                   </div>
                   <div class="col-12">
-                    <label>Message</label>
-                    <textarea formControlName="message" rows="3" placeholder="Additional requirements..."></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" formControlName="message" rows="3" placeholder="Additional requirements..."></textarea>
                   </div>
                   <div class="col-12">
                     <button type="submit" class="btn-secondary-custom" [disabled]="quoteSubmitting()">
@@ -119,8 +143,67 @@
     </div>
   } @else {
     <div class="container section text-center">
-      <h2>Product not found</h2>
+      <h1>Product not found</h1>
       <a routerLink="/products" class="btn-secondary-custom mt-3">Back to Products</a>
     </div>
   }
-</main>
+
+  <!-- Lightbox Modal -->
+  @if (lightboxOpen()) {
+    <div class="lightbox-overlay" (click)="closeLightbox()" role="dialog" aria-modal="true" aria-label="Image gallery">
+      <div class="lightbox-container" (click)="$event.stopPropagation()">
+        <button class="lightbox-close" (click)="closeLightbox()" aria-label="Close gallery">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" (click)="prevLightboxImage()" aria-label="Previous image" [disabled]="galleryImages().length <= 1">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" (click)="nextLightboxImage()" aria-label="Next image" [disabled]="galleryImages().length <= 1">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <div class="lightbox-image-wrapper"
+             (wheel)="onWheel($event)"
+             (mousedown)="onMouseDown($event)"
+             (touchstart)="onTouchStart($event)"
+             (touchmove)="onTouchMove($event)"
+             (touchend)="onTouchEnd($event)"
+             (dblclick)="onDoubleClick()"
+             (touchstart)="onTouchStart($event)"
+             (touchend)="onTouchEnd($event)">
+          @if (lightboxImage(); as img) {
+            <img [src]="img.imageUrl"
+                 [alt]="img.altText || product()?.name"
+                 class="lightbox-image"
+                 [style.transform]="'translate(' + lightboxTransform().x + 'px, ' + lightboxTransform().y + 'px) scale(' + lightboxTransform().scale + ')'"
+                 [style.cursor]="lightboxTransform().scale > 1 ? 'grabbing' : 'grab'">
+          }
+        </div>
+        <div class="lightbox-counter" aria-live="polite">
+          {{ lightboxIndex() + 1 }} / {{ galleryImages().length }}
+        </div>
+        @if (galleryImages().length > 1) {
+          <div class="lightbox-thumbnails" role="tablist" aria-label="Gallery thumbnails">
+            @for (img of galleryImages(); track img.id; let i = $index) {
+              <button type="button"
+                class="lightbox-thumbnail"
+                role="tab"
+                [class.active]="lightboxIndex() === i"
+                [attr.aria-selected]="lightboxIndex() === i"
+                [attr.aria-label]="'Go to image ' + (i + 1)"
+                (click)="lightboxIndex.set(i)">
+                <img [src]="img.imageUrl" [alt]="img.altText || product()?.name" width="60" height="45" loading="lazy">
+              </button>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

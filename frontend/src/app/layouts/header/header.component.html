@@ -1,7 +1,7 @@
 <header class="header-industrial" [class.scrolled]="isScrolled()" [class.menu-open]="isMenuOpen()">
   <div class="container">
     <div class="header-inner">
-      <a routerLink="/" class="brand" (click)="closeMenu()" aria-label="Home">
+      <a routerLink="/" class="brand" (click)="closeMenu()" aria-label="Home" appReveal>
         <span class="brand-icon" aria-hidden="true">
           <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
@@ -18,7 +18,7 @@
         </span>
       </a>
 
-      <nav class="nav-desktop" aria-label="Main navigation">
+      <nav class="nav-desktop" aria-label="Main navigation" appReveal [appRevealDelay]="100">
         @for (link of navLinks; track link.label) {
           @if (link.fragment) {
             <a
@@ -37,7 +37,8 @@
         }
       </nav>
 
-      <div class="header-actions">
+      <div class="header-actions" appReveal [appRevealDelay]="200">
+        <app-theme-toggle></app-theme-toggle>
         <button type="button" class="icon-btn" (click)="toggleSearch()" aria-label="Search products">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
         </button>

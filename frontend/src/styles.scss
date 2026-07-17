@@ -1,4 +1,5 @@
 @use 'styles/industrial/index' as ind;
+@use 'styles/industrial/buttons';
 @use 'styles/industrial/utilities';
 
 // Motors Industries - Global Theme
@@ -199,7 +200,7 @@ img {
 
 .btn-secondary-custom {
   background: var(--secondary);
-  color: var(--white);
+  color: #0a2b5e;
   border: none;
   padding: 12px 32px;
   min-height: 44px;
@@ -221,7 +222,7 @@ img {
     background: var(--secondary-light);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    color: var(--white);
+    color: #061d3f;
   }
 }
 
