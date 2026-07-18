@@ -7,18 +7,18 @@ import { SeoService } from '../../core/services/seo.service';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <div class="not-found">
+    <main class="not-found">
       <h1>404</h1>
       <p>Page not found</p>
       <a routerLink="/" class="btn-secondary-custom">Back to Home</a>
-    </div>
+    </main>
   `,
   styles: [`
     .not-found {
       min-height: 100vh; display: flex; flex-direction: column;
       align-items: center; justify-content: center; text-align: center;
       h1 { font-size: 6rem; color: var(--primary); line-height: 1; }
-      p { color: var(--text-muted); font-size: 1.2rem; margin-bottom: 2rem; }
+      p { color: var(--text-dark); font-size: 1.2rem; margin-bottom: 2rem; }
     }
   `]
 })

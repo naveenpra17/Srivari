@@ -1,4 +1,4 @@
-<div class="home-industrial">
+<main class="home-industrial">
   @if (loading()) {
     <div class="home-skeleton" aria-hidden="true">
       <div class="skeleton skeleton-hero"></div>
@@ -22,4 +22,4 @@
     <app-gallery-section [items]="data()?.gallery ?? []" />
     <app-contact-section [settings]="data()?.settings ?? {}" />
   }
-</div>
+</main>

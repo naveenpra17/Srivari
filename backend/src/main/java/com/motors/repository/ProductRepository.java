@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
@@ -44,6 +45,17 @@ public interface ProductRepository extends JpaRepository<Product, Long>, JpaSpec
     Page<Product> searchActive(@Param("search") String search, Pageable pageable);
 
     long countByActiveTrue();
+
+    long countByActiveFalse();
+
+    @Query("""
+            SELECT c.name, COUNT(p)
+            FROM Product p
+            JOIN p.category c
+            GROUP BY c.name
+            ORDER BY COUNT(p) DESC
+            """)
+    List<Object[]> countProductsByCategoryName();
 
     boolean existsBySlug(String slug);
 }

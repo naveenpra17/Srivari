@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2026-07-17T11:21:32.302Z",
+  "timestamp": "2026-07-17T18:23:33.899Z",
   "url": "http://localhost:4200/",
   "toolOptions": {
     "reporter": "v1"
@@ -1006,7 +1006,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -1039,7 +1039,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -1072,7 +1072,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -1910,7 +1910,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -1928,7 +1928,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -1946,7 +1946,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -2496,7 +2496,7 @@
           "impact": null,
           "html": "<svg _ngcontent-ng-c1263253663=\"\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path _ngcontent-ng-c1263253663=\"\" d=\"M8 5v14l11-7z\"></path></svg>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"] > svg[width=\"18\"][height=\"18\"][aria-hidden=\"true\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"] > svg[width=\"18\"][height=\"18\"][aria-hidden=\"true\"]"
           ]
         },
         {
@@ -2528,7 +2528,7 @@
           "impact": null,
           "html": "<svg _ngcontent-ng-c1263253663=\"\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path _ngcontent-ng-c1263253663=\"\" d=\"M8 5v14l11-7z\"></path></svg>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"] > svg[width=\"18\"][height=\"18\"][aria-hidden=\"true\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"] > svg[width=\"18\"][height=\"18\"][aria-hidden=\"true\"]"
           ]
         },
         {
@@ -4174,7 +4174,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -4206,7 +4206,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -4238,7 +4238,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -4990,7 +4990,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -5008,7 +5008,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -5026,7 +5026,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -5616,9 +5616,41 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-slide ng-star-inserted swiper-slide-visible swiper-slide-fully-visible swiper-slide-active\" style=\"width: 1280px; opacity: 1; transform: translate3d(0px, 0px, 0px);\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-wrapper\" style=\"transition-duration: 800ms;\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1)"
+            ".swiper-wrapper[_ngcontent-ng-c1263253663=\"\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-slide ng-star-inserted swiper-slide-prev\" style=\"width: 1280px; opacity: 0; transform: translate3d(0px, 0px, 0px); transition-duration: 800ms;\">",
+          "target": [
+            ".swiper-slide-prev"
           ]
         },
         {
@@ -5650,7 +5682,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 0ms;\"> CRI  <!--container--><!--container--></span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(1)"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -5682,7 +5714,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 150ms;\"><!--container--><span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span><!--container--></span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(2)"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -5714,7 +5746,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" class=\"hero-desc anim-fade-up\" style=\"animation-delay: 300ms;\">CRI Groups is one of the leading pump manufacturers in India. We offer a wide range of Pumps, Pipes, Wires, Cables &amp;amp; Valves for special applications</p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-desc.anim-fade-up"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-desc.anim-fade-up"
           ]
         },
         {
@@ -5746,7 +5778,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -5778,7 +5810,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
           ]
         },
         {
@@ -5810,7 +5842,231 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-outline anim-scale-in ng-star-inserted\" style=\"animation-delay: 550ms;\" href=\"/#contact\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-slide ng-star-inserted swiper-slide-visible swiper-slide-fully-visible swiper-slide-active\" style=\"width: 1280px; opacity: 1; transform: translate3d(-1280px, 0px, 0px); transition-duration: 800ms;\">",
+          "target": [
+            ".swiper-slide-visible"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 0ms;\"> TARO  <!--container--><!--container--></span>",
+          "target": [
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(1)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 150ms;\"><!--container--><span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span><!--container--></span>",
+          "target": [
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c1263253663=\"\" class=\"hero-desc anim-fade-up\" style=\"animation-delay: 300ms;\">Taro Motors combine advanced engineering, superior build quality, and proven reliability to power industries with unmatched efficiency, precision, and long-term performance.</p>",
+          "target": [
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-desc.anim-fade-up"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
+          "target": [
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
+          "target": [
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-outline anim-scale-in ng-star-inserted\" style=\"animation-delay: 550ms;\" href=\"/#contact\">",
+          "target": [
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
           ]
         },
         {
@@ -6552,19 +6808,19 @@
                 {
                   "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
                   "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+                    ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
                   ]
                 },
                 {
                   "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
                   "target": [
-                    ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+                    ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
                   ]
                 },
                 {
                   "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
                   "target": [
-                    ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+                    ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
                   ]
                 },
                 {
@@ -6595,6 +6851,18 @@
                   "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">Accessories</h3>",
                   "target": [
                     "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
+                  ]
+                },
+                {
+                  "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">cables</h3>",
+                  "target": [
+                    "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
+                  ]
+                },
+                {
+                  "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">Water meter</h3>",
+                  "target": [
+                    "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
                   ]
                 },
                 {
@@ -6712,9 +6980,9 @@
                   ]
                 },
                 {
-                  "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+                  "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
                   "target": [
-                    ".footer-brand > h3"
+                    ".footer-brand > h2"
                   ]
                 },
                 {
@@ -7001,31 +7269,6 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#0a2b5e",
-                "bgColor": "#ff6b00",
-                "contrastRatio": 4.83,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 4.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
-          "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
                 "messageKey": "hidden"
               },
               "relatedNodes": [],
@@ -7106,24 +7349,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#ffffff",
+                "fgColor": "#dadfe7",
                 "bgColor": "#0a2b5e",
-                "contrastRatio": 13.81,
-                "fontSize": "12.6pt (16.8px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
+                "contrastRatio": 10.32,
+                "fontSize": "30.0pt (40px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 13.81"
+              "message": "Element has sufficient color contrast of 10.32"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            ".footer-brand > h3"
+            ".footer-brand > h2"
           ]
         },
         {
@@ -7833,7 +8076,7 @@
           "impact": null,
           "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
           ]
         },
         {
@@ -7851,7 +8094,7 @@
           "impact": null,
           "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
           ]
         },
         {
@@ -7869,7 +8112,7 @@
           "impact": null,
           "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
           ]
         },
         {
@@ -7960,6 +8203,42 @@
           "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">Accessories</h3>",
           "target": [
             "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">cables</h3>",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">Water meter</h3>",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
           ]
         },
         {
@@ -8317,9 +8596,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            ".footer-brand > h3"
+            ".footer-brand > h2"
           ]
         },
         {
@@ -8646,7 +8925,7 @@
     },
     {
       "id": "heading-order",
-      "impact": null,
+      "impact": "moderate",
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -8706,6 +8985,18 @@
                   {
                     "ancestry": [
                       "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-home:nth-child(2) > div > app-categories-section:nth-child(2) > section > div:nth-child(2) > div:nth-child(2) > a:nth-child(4) > div:nth-child(2) > h3:nth-child(1)"
+                    ],
+                    "level": 3
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-home:nth-child(2) > div > app-categories-section:nth-child(2) > section > div:nth-child(2) > div:nth-child(2) > a:nth-child(5) > div:nth-child(2) > h3:nth-child(1)"
+                    ],
+                    "level": 3
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-home:nth-child(2) > div > app-categories-section:nth-child(2) > section > div:nth-child(2) > div:nth-child(2) > a:nth-child(6) > div:nth-child(2) > h3:nth-child(1)"
                     ],
                     "level": 3
                   },
@@ -8831,9 +9122,9 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > app-footer:nth-child(3) > footer > div > div:nth-child(1) > div:nth-child(1) > div > h3:nth-child(1)"
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > app-footer:nth-child(3) > footer > div > div:nth-child(1) > div:nth-child(1) > div > h2:nth-child(1)"
                     ],
-                    "level": 3
+                    "level": 2
                   },
                   {
                     "ancestry": [
@@ -8871,7 +9162,7 @@
           "impact": null,
           "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
           ]
         },
         {
@@ -8889,7 +9180,7 @@
           "impact": null,
           "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
           ]
         },
         {
@@ -8907,7 +9198,7 @@
           "impact": null,
           "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
           ]
         },
         {
@@ -8998,6 +9289,42 @@
           "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">Accessories</h3>",
           "target": [
             "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">cables</h3>",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">Water meter</h3>",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
           ]
         },
         {
@@ -9355,27 +9682,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            ".footer-brand > h3"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h4 _ngcontent-ng-c2773334426=\"\">Quick Links</h4>",
-          "target": [
-            ".col-lg-2.col-md-6.is-visible:nth-child(2) > h4"
+            ".footer-brand > h2"
           ]
         },
         {
@@ -9557,7 +9866,7 @@
           "impact": null,
           "html": "<img _ngcontent-ng-c1263253663=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"1920\" height=\"1080\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1783707023/motors/hero/bheivaj5tujbuszixgoe.png\" alt=\"CRI \">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > img[alt=\"CRI \"][loading=\"eager\"][fetchpriority=\"high\"]"
+            ".swiper-slide-prev > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > img[alt=\"CRI \"][loading=\"eager\"][fetchpriority=\"high\"]"
           ]
         },
         {
@@ -9750,6 +10059,76 @@
           "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1565193567171-5a81f4e0f3c7?w=600&amp;q=85\">",
           "target": [
             "a[href=\"/products?categoryId=4\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": {
+                "role": "presentation"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were overridden with role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\">",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": {
+                "role": "presentation"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were overridden with role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\">",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
           ]
         },
         {
@@ -9998,7 +10377,7 @@
           "impact": null,
           "html": "<img _ngcontent-ng-c1263253663=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"1920\" height=\"1080\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1783707023/motors/hero/bheivaj5tujbuszixgoe.png\" alt=\"CRI \">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > img[alt=\"CRI \"][loading=\"eager\"][fetchpriority=\"high\"]"
+            ".swiper-slide-prev > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > img[alt=\"CRI \"][loading=\"eager\"][fetchpriority=\"high\"]"
           ]
         },
         {
@@ -10107,6 +10486,42 @@
           "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1565193567171-5a81f4e0f3c7?w=600&amp;q=85\">",
           "target": [
             "a[href=\"/products?categoryId=4\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\">",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\">",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
           ]
         },
         {
@@ -11235,7 +11650,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
           ]
         },
         {
@@ -11261,7 +11676,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-outline anim-scale-in ng-star-inserted\" style=\"animation-delay: 550ms;\" href=\"/#contact\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
           ]
         },
         {
@@ -11287,7 +11702,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
           ]
         },
         {
@@ -11313,7 +11728,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-outline anim-scale-in ng-star-inserted\" style=\"animation-delay: 550ms;\" href=\"/#contact\">",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
           ]
         },
         {
@@ -11339,7 +11754,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
           ]
         },
         {
@@ -11470,6 +11885,58 @@
           "html": "<a _ngcontent-ng-c1556990460=\"\" appreveal=\"\" class=\"category-card reveal ng-star-inserted\" href=\"/products?categoryId=4\" style=\"transition-delay: 450ms;\">",
           "target": [
             "a[href=\"/products?categoryId=4\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c1556990460=\"\" appreveal=\"\" class=\"category-card reveal ng-star-inserted\" href=\"/products?categoryId=5\" style=\"transition-delay: 600ms;\">",
+          "target": [
+            "a[href=\"/products?categoryId=5\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c1556990460=\"\" appreveal=\"\" class=\"category-card reveal ng-star-inserted\" href=\"/products?categoryId=6\" style=\"transition-delay: 750ms;\">",
+          "target": [
+            "a[href=\"/products?categoryId=6\"]"
           ]
         },
         {
@@ -12597,7 +13064,7 @@
           "impact": null,
           "html": "<img _ngcontent-ng-c1263253663=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"1920\" height=\"1080\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1783707023/motors/hero/bheivaj5tujbuszixgoe.png\" alt=\"CRI \">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > img[alt=\"CRI \"][loading=\"eager\"][fetchpriority=\"high\"]"
+            ".swiper-slide-prev > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > img[alt=\"CRI \"][loading=\"eager\"][fetchpriority=\"high\"]"
           ]
         },
         {
@@ -12911,19 +13378,19 @@
                 {
                   "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
                   "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+                    ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
                   ]
                 },
                 {
                   "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
                   "target": [
-                    ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+                    ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
                   ]
                 },
                 {
                   "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
                   "target": [
-                    ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+                    ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
                   ]
                 }
               ],
@@ -13069,6 +13536,56 @@
           "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1565193567171-5a81f4e0f3c7?w=600&amp;q=85\">",
           "target": [
             "a[href=\"/products?categoryId=4\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "is-element-focusable",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element is focusable."
+            },
+            {
+              "id": "has-global-aria-attribute",
+              "data": [],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has global ARIA attributes: "
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\">",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "is-element-focusable",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element is focusable."
+            },
+            {
+              "id": "has-global-aria-attribute",
+              "data": [],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has global ARIA attributes: "
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\">",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
           ]
         },
         {
@@ -13961,7 +14478,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-wrapper\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-wrapper\" style=\"transition-duration: 800ms;\">",
           "target": [
             ".swiper-wrapper[_ngcontent-ng-c1263253663=\"\"]"
           ]
@@ -13981,9 +14498,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-slide ng-star-inserted swiper-slide-visible swiper-slide-fully-visible swiper-slide-active\" style=\"width: 1280px; opacity: 1; transform: translate3d(0px, 0px, 0px);\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-slide ng-star-inserted swiper-slide-prev\" style=\"width: 1280px; opacity: 0; transform: translate3d(0px, 0px, 0px); transition-duration: 800ms;\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1)"
+            ".swiper-slide-prev"
           ]
         },
         {
@@ -14001,9 +14518,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-bg parallax-active\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-bg\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"]"
+            ".swiper-slide-prev > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14023,7 +14540,7 @@
           "impact": null,
           "html": "<img _ngcontent-ng-c1263253663=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"1920\" height=\"1080\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1783707023/motors/hero/bheivaj5tujbuszixgoe.png\" alt=\"CRI \">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > img[alt=\"CRI \"][loading=\"eager\"][fetchpriority=\"high\"]"
+            ".swiper-slide-prev > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > img[alt=\"CRI \"][loading=\"eager\"][fetchpriority=\"high\"]"
           ]
         },
         {
@@ -14043,7 +14560,7 @@
           "impact": null,
           "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-overlay\"></div>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
+            ".swiper-slide-prev > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14063,7 +14580,7 @@
           "impact": null,
           "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"container hero-container\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14081,9 +14598,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-copy stagger-children is-visible\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-copy stagger-children\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible"
           ]
         },
         {
@@ -14103,7 +14620,7 @@
           "impact": null,
           "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
           ]
         },
         {
@@ -14123,7 +14640,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 0ms;\"> CRI  <!--container--><!--container--></span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(1)"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -14143,7 +14660,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 150ms;\"><!--container--><span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span><!--container--></span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(2)"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -14163,7 +14680,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(2) > .accent"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2) > .accent[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14183,7 +14700,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" class=\"hero-desc anim-fade-up\" style=\"animation-delay: 300ms;\">CRI Groups is one of the leading pump manufacturers in India. We offer a wide range of Pumps, Pipes, Wires, Cables &amp;amp; Valves for special applications</p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-desc.anim-fade-up"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-desc.anim-fade-up"
           ]
         },
         {
@@ -14203,7 +14720,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -14223,7 +14740,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-label"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-label[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14243,7 +14760,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-number"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-number[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14261,9 +14778,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-actions stagger-children is-visible\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-actions stagger-children\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible"
           ]
         },
         {
@@ -14283,7 +14800,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
           ]
         },
         {
@@ -14303,7 +14820,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-outline anim-scale-in ng-star-inserted\" style=\"animation-delay: 550ms;\" href=\"/#contact\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
           ]
         },
         {
@@ -14321,7 +14838,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-slide ng-star-inserted swiper-slide-next\" style=\"width: 1280px; opacity: 0; transform: translate3d(-1280px, 0px, 0px);\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-slide ng-star-inserted swiper-slide-visible swiper-slide-fully-visible swiper-slide-active\" style=\"width: 1280px; opacity: 1; transform: translate3d(-1280px, 0px, 0px); transition-duration: 800ms;\">",
           "target": [
             ".swiper-slide-visible"
           ]
@@ -14341,7 +14858,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-bg parallax-active\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-bg\">",
           "target": [
             ".swiper-slide-visible > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"]"
           ]
@@ -14421,9 +14938,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-copy stagger-children is-visible\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-copy stagger-children\">",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible"
           ]
         },
         {
@@ -14443,7 +14960,7 @@
           "impact": null,
           "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
           ]
         },
         {
@@ -14463,7 +14980,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 0ms;\"> TARO  <!--container--><!--container--></span>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(1)"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -14483,7 +15000,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 150ms;\"><!--container--><span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span><!--container--></span>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(2)"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -14503,7 +15020,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(2) > .accent"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2) > .accent[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14523,7 +15040,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" class=\"hero-desc anim-fade-up\" style=\"animation-delay: 300ms;\">Taro Motors combine advanced engineering, superior build quality, and proven reliability to power industries with unmatched efficiency, precision, and long-term performance.</p>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-desc.anim-fade-up"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-desc.anim-fade-up"
           ]
         },
         {
@@ -14543,7 +15060,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -14563,7 +15080,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-label"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-label[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14583,7 +15100,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-number"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-number[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14601,9 +15118,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-actions stagger-children is-visible\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-actions stagger-children\">",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible"
           ]
         },
         {
@@ -14623,7 +15140,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
           ]
         },
         {
@@ -14643,7 +15160,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-outline anim-scale-in ng-star-inserted\" style=\"animation-delay: 550ms;\" href=\"/#contact\">",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
           ]
         },
         {
@@ -14661,7 +15178,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-slide ng-star-inserted\" style=\"width: 1280px; opacity: 0; transform: translate3d(-2560px, 0px, 0px);\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"swiper-slide ng-star-inserted swiper-slide-next\" style=\"width: 1280px; opacity: 0; transform: translate3d(-2560px, 0px, 0px); transition-duration: 800ms;\">",
           "target": [
             ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"]"
           ]
@@ -14681,7 +15198,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-bg parallax-active\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-bg\">",
           "target": [
             ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"]"
           ]
@@ -14761,9 +15278,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-copy stagger-children is-visible\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-copy stagger-children\">",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible"
           ]
         },
         {
@@ -14783,7 +15300,7 @@
           "impact": null,
           "html": "<h1 _ngcontent-ng-c1263253663=\"\" class=\"hero-heading\">",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1"
           ]
         },
         {
@@ -14803,7 +15320,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 0ms;\"> CRI  <!--container--><!--container--></span>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(1)"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -14823,7 +15340,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 150ms;\"><!--container--><span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span><!--container--></span>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(2)"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -14843,7 +15360,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(2) > .accent"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2) > .accent[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14863,7 +15380,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" class=\"hero-desc anim-fade-up\" style=\"animation-delay: 300ms;\">",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-desc.anim-fade-up"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-desc.anim-fade-up"
           ]
         },
         {
@@ -14883,7 +15400,7 @@
           "impact": null,
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ]
         },
         {
@@ -14903,7 +15420,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-label"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-label[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14923,7 +15440,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-number"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-number[_ngcontent-ng-c1263253663=\"\"]"
           ]
         },
         {
@@ -14941,9 +15458,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-actions stagger-children is-visible\">",
+          "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-actions stagger-children\">",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible"
           ]
         },
         {
@@ -14963,7 +15480,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
           ]
         },
         {
@@ -15141,7 +15658,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span>",
+          "html": "<span class=\"swiper-pagination-bullet\"></span>",
           "target": [
             ".hero-pagination > .swiper-pagination-bullet:nth-child(1)"
           ]
@@ -15161,7 +15678,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"swiper-pagination-bullet\"></span>",
+          "html": "<span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span>",
           "target": [
             ".hero-pagination > .swiper-pagination-bullet-active.swiper-pagination-bullet"
           ]
@@ -15283,7 +15800,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1556990460=\"\" class=\"eyebrow\">Our Categories</span>",
           "target": [
-            ".eyebrow[_ngcontent-ng-c1556990460=\"\"]"
+            ".section-heading > .eyebrow"
           ]
         },
         {
@@ -15363,7 +15880,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1556990460=\"\" class=\"divider-line\"></span>",
           "target": [
-            ".divider-line[_ngcontent-ng-c1556990460=\"\"]:nth-child(1)"
+            ".divider-line:nth-child(1)"
           ]
         },
         {
@@ -15403,7 +15920,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1556990460=\"\" class=\"divider-line\"></span>",
           "target": [
-            ".divider-line[_ngcontent-ng-c1556990460=\"\"]:nth-child(3)"
+            ".divider-line:nth-child(3)"
           ]
         },
         {
@@ -15583,7 +16100,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1556990460=\"\" class=\"card-arrow\">",
           "target": [
-            "a[href=\"/products?categoryId=1\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"]"
+            "a[href=\"/products?categoryId=1\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow"
           ]
         },
         {
@@ -15603,7 +16120,7 @@
           "impact": null,
           "html": "<svg _ngcontent-ng-c1556990460=\"\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">",
           "target": [
-            "a[href=\"/products?categoryId=1\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
+            "a[href=\"/products?categoryId=1\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
           ]
         },
         {
@@ -15623,7 +16140,7 @@
           "impact": null,
           "html": "<line _ngcontent-ng-c1556990460=\"\" x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>",
           "target": [
-            "a[href=\"/products?categoryId=1\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
+            "a[href=\"/products?categoryId=1\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
           ]
         },
         {
@@ -15643,7 +16160,7 @@
           "impact": null,
           "html": "<polyline _ngcontent-ng-c1556990460=\"\" points=\"12 5 19 12 12 19\"></polyline>",
           "target": [
-            "a[href=\"/products?categoryId=1\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
+            "a[href=\"/products?categoryId=1\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
           ]
         },
         {
@@ -15803,7 +16320,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1556990460=\"\" class=\"card-arrow\">",
           "target": [
-            "a[href=\"/products?categoryId=2\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"]"
+            "a[href=\"/products?categoryId=2\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow"
           ]
         },
         {
@@ -15823,7 +16340,7 @@
           "impact": null,
           "html": "<svg _ngcontent-ng-c1556990460=\"\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">",
           "target": [
-            "a[href=\"/products?categoryId=2\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
+            "a[href=\"/products?categoryId=2\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
           ]
         },
         {
@@ -15843,7 +16360,7 @@
           "impact": null,
           "html": "<line _ngcontent-ng-c1556990460=\"\" x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>",
           "target": [
-            "a[href=\"/products?categoryId=2\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
+            "a[href=\"/products?categoryId=2\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
           ]
         },
         {
@@ -15863,7 +16380,7 @@
           "impact": null,
           "html": "<polyline _ngcontent-ng-c1556990460=\"\" points=\"12 5 19 12 12 19\"></polyline>",
           "target": [
-            "a[href=\"/products?categoryId=2\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
+            "a[href=\"/products?categoryId=2\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
           ]
         },
         {
@@ -16023,7 +16540,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1556990460=\"\" class=\"card-arrow\">",
           "target": [
-            "a[href=\"/products?categoryId=3\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"]"
+            "a[href=\"/products?categoryId=3\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow"
           ]
         },
         {
@@ -16043,7 +16560,7 @@
           "impact": null,
           "html": "<svg _ngcontent-ng-c1556990460=\"\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">",
           "target": [
-            "a[href=\"/products?categoryId=3\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
+            "a[href=\"/products?categoryId=3\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
           ]
         },
         {
@@ -16063,7 +16580,7 @@
           "impact": null,
           "html": "<line _ngcontent-ng-c1556990460=\"\" x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>",
           "target": [
-            "a[href=\"/products?categoryId=3\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
+            "a[href=\"/products?categoryId=3\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
           ]
         },
         {
@@ -16083,7 +16600,7 @@
           "impact": null,
           "html": "<polyline _ngcontent-ng-c1556990460=\"\" points=\"12 5 19 12 12 19\"></polyline>",
           "target": [
-            "a[href=\"/products?categoryId=3\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
+            "a[href=\"/products?categoryId=3\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
           ]
         },
         {
@@ -16243,7 +16760,7 @@
           "impact": null,
           "html": "<span _ngcontent-ng-c1556990460=\"\" class=\"card-arrow\">",
           "target": [
-            "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"]"
+            "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow"
           ]
         },
         {
@@ -16263,7 +16780,7 @@
           "impact": null,
           "html": "<svg _ngcontent-ng-c1556990460=\"\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">",
           "target": [
-            "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
+            "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
           ]
         },
         {
@@ -16283,7 +16800,7 @@
           "impact": null,
           "html": "<line _ngcontent-ng-c1556990460=\"\" x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>",
           "target": [
-            "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
+            "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
           ]
         },
         {
@@ -16303,7 +16820,447 @@
           "impact": null,
           "html": "<polyline _ngcontent-ng-c1556990460=\"\" points=\"12 5 19 12 12 19\"></polyline>",
           "target": [
-            "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow[_ngcontent-ng-c1556990460=\"\"] > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
+            "a[href=\"/products?categoryId=4\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c1556990460=\"\" appreveal=\"\" class=\"category-card reveal ng-star-inserted\" href=\"/products?categoryId=5\" style=\"transition-delay: 600ms;\">",
+          "target": [
+            "a[href=\"/products?categoryId=5\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c1556990460=\"\" class=\"card-image-wrap\"><img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\"><div _ngcontent-ng-c1556990460=\"\" class=\"card-image-overlay\"></div></div>",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\">",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c1556990460=\"\" class=\"card-image-overlay\"></div>",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > .card-image-overlay[_ngcontent-ng-c1556990460=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c1556990460=\"\" class=\"card-body\">",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">cables</h3>",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c1556990460=\"\" class=\"card-desc\">cables</p>",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-desc"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span _ngcontent-ng-c1556990460=\"\" class=\"card-arrow\">",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<svg _ngcontent-ng-c1556990460=\"\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<line _ngcontent-ng-c1556990460=\"\" x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<polyline _ngcontent-ng-c1556990460=\"\" points=\"12 5 19 12 12 19\"></polyline>",
+          "target": [
+            "a[href=\"/products?categoryId=5\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c1556990460=\"\" appreveal=\"\" class=\"category-card reveal ng-star-inserted\" href=\"/products?categoryId=6\" style=\"transition-delay: 750ms;\">",
+          "target": [
+            "a[href=\"/products?categoryId=6\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c1556990460=\"\" class=\"card-image-wrap\"><img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\"><div _ngcontent-ng-c1556990460=\"\" class=\"card-image-overlay\"></div></div>",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c1556990460=\"\" alt=\"\" loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;q=85\">",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > img[height=\"400\"][width=\"600\"][alt=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c1556990460=\"\" class=\"card-image-overlay\"></div>",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-image-wrap[_ngcontent-ng-c1556990460=\"\"] > .card-image-overlay[_ngcontent-ng-c1556990460=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c1556990460=\"\" class=\"card-body\">",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h3 _ngcontent-ng-c1556990460=\"\" class=\"card-title\">Water meter</h3>",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-title"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c1556990460=\"\" class=\"card-desc\">Built using premium engineering materials for high torque transmission, exceptional durability, and reliable performance in industrial pumping systems.</p>",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-desc"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span _ngcontent-ng-c1556990460=\"\" class=\"card-arrow\">",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<svg _ngcontent-ng-c1556990460=\"\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<line _ngcontent-ng-c1556990460=\"\" x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"></line>",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > line[x1=\"5\"][y1=\"12\"][x2=\"19\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<polyline _ngcontent-ng-c1556990460=\"\" points=\"12 5 19 12 12 19\"></polyline>",
+          "target": [
+            "a[href=\"/products?categoryId=6\"] > .card-body[_ngcontent-ng-c1556990460=\"\"] > .card-arrow > svg[stroke-linecap=\"round\"][stroke-linejoin=\"round\"][fill=\"none\"] > polyline"
           ]
         },
         {
@@ -20321,9 +21278,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            ".footer-brand > h3"
+            ".footer-brand > h2"
           ]
         },
         {
@@ -21568,7 +22525,7 @@
           "impact": "serious",
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ],
           "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a p with no valid role attribute."
         },
@@ -21594,7 +22551,7 @@
           "impact": "serious",
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ],
           "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a p with no valid role attribute."
         },
@@ -21620,7 +22577,7 @@
           "impact": "serious",
           "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
           "target": [
-            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+            ".swiper-slide-next.swiper-slide[_ngcontent-ng-c1263253663=\"\"] > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
           ],
           "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a p with no valid role attribute."
         }
@@ -21692,6 +22649,181 @@
                 "contrastRatio": 0,
                 "fontSize": "39.0pt (52px)",
                 "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 0ms;\"> CRI  <!--container--><!--container--></span>",
+          "target": [
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "39.0pt (52px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span>",
+          "target": [
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2) > .accent[_ngcontent-ng-c1263253663=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.6pt (16.8px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p _ngcontent-ng-c1263253663=\"\" class=\"hero-desc anim-fade-up\" style=\"animation-delay: 300ms;\">CRI Groups is one of the leading pump manufacturers in India. We offer a wide range of Pumps, Pipes, Wires, Cables &amp;amp; Valves for special applications</p>",
+          "target": [
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-desc.anim-fade-up"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span>",
+          "target": [
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-label[_ngcontent-ng-c1263253663=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "11.4pt (15.2px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span>",
+          "target": [
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-number[_ngcontent-ng-c1263253663=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
+          "target": [
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-outline anim-scale-in ng-star-inserted\" style=\"animation-delay: 550ms;\" href=\"/#contact\">",
+          "target": [
+            ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "39.0pt (52px)",
+                "fontWeight": "bold",
                 "messageKey": "bgGradient",
                 "expectedContrastRatio": "3:1"
               },
@@ -21699,7 +22831,7 @@
                 {
                   "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-overlay\"></div>",
                   "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
+                    ".swiper-slide-visible > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
                   ]
                 }
               ],
@@ -21710,9 +22842,9 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 0ms;\"> CRI  <!--container--><!--container--></span>",
+          "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"line anim-fade-up ng-star-inserted\" style=\"animation-delay: 0ms;\"> TARO  <!--container--><!--container--></span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(1)"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(1)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
         },
@@ -21731,7 +22863,7 @@
                 {
                   "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-overlay\"></div>",
                   "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
+                    ".swiper-slide-visible > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
                   ]
                 }
               ],
@@ -21744,7 +22876,7 @@
           "impact": "serious",
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"accent ng-star-inserted\">PUMPS</span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > h1 > .line.anim-fade-up:nth-child(2) > .accent"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > h1 > .line.anim-fade-up[_ngcontent-ng-c1263253663=\"\"]:nth-child(2) > .accent[_ngcontent-ng-c1263253663=\"\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
         },
@@ -21756,29 +22888,22 @@
                 "contrastRatio": 0,
                 "fontSize": "12.6pt (16.8px)",
                 "fontWeight": "normal",
-                "messageKey": "bgGradient",
+                "messageKey": "elmPartiallyObscuring",
                 "expectedContrastRatio": "4.5:1"
               },
-              "relatedNodes": [
-                {
-                  "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-overlay\"></div>",
-                  "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
-                  ]
-                }
-              ],
+              "relatedNodes": [],
               "impact": "serious",
-              "message": "Element's background color could not be determined due to a background gradient"
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
             }
           ],
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<p _ngcontent-ng-c1263253663=\"\" class=\"hero-desc anim-fade-up\" style=\"animation-delay: 300ms;\">CRI Groups is one of the leading pump manufacturers in India. We offer a wide range of Pumps, Pipes, Wires, Cables &amp;amp; Valves for special applications</p>",
+          "html": "<p _ngcontent-ng-c1263253663=\"\" class=\"hero-desc anim-fade-up\" style=\"animation-delay: 300ms;\">Taro Motors combine advanced engineering, superior build quality, and proven reliability to power industries with unmatched efficiency, precision, and long-term performance.</p>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-desc.anim-fade-up"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-desc.anim-fade-up"
           ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
         },
         {
           "any": [
@@ -21795,13 +22920,19 @@
                 {
                   "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
                   "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+                    ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+                  ]
+                },
+                {
+                  "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
+                  "target": [
+                    ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
                   ]
                 },
                 {
                   "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-overlay\"></div>",
                   "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
+                    ".swiper-slide-visible > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
                   ]
                 }
               ],
@@ -21814,7 +22945,7 @@
           "impact": "serious",
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-label"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-label[_ngcontent-ng-c1263253663=\"\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
         },
@@ -21833,13 +22964,19 @@
                 {
                   "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
                   "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+                    ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
+                  ]
+                },
+                {
+                  "html": "<p _ngcontent-ng-c1263253663=\"\" aria-label=\"GeM seller registration number\" class=\"hero-gem-badge anim-fade-up\" style=\"animation-delay: 400ms;\"><span _ngcontent-ng-c1263253663=\"\" class=\"gem-label\">GEM SELLER NO:</span><span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span></p>",
+                  "target": [
+                    ".swiper-slide-prev > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"]"
                   ]
                 },
                 {
                   "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-overlay\"></div>",
                   "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
+                    ".swiper-slide-visible > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
                   ]
                 }
               ],
@@ -21852,7 +22989,7 @@
           "impact": "serious",
           "html": "<span _ngcontent-ng-c1263253663=\"\" class=\"gem-number\">YUK426004466922</span>",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-number"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-gem-badge.anim-fade-up[aria-label=\"GeM seller registration number\"] > .gem-number[_ngcontent-ng-c1263253663=\"\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
         },
@@ -21871,7 +23008,7 @@
                 {
                   "html": "<div _ngcontent-ng-c1263253663=\"\" class=\"hero-slide-overlay\"></div>",
                   "target": [
-                    ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
+                    ".swiper-slide-visible > .hero-slide-bg[_ngcontent-ng-c1263253663=\"\"] > .hero-slide-overlay[_ngcontent-ng-c1263253663=\"\"]"
                   ]
                 }
               ],
@@ -21884,12 +23021,100 @@
           "impact": "serious",
           "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-outline anim-scale-in ng-star-inserted\" style=\"animation-delay: 550ms;\" href=\"/#contact\">",
           "target": [
-            ".swiper-slide.ng-star-inserted[_ngcontent-ng-c1263253663=\"\"]:nth-child(1) > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .hero-actions.stagger-children[_ngcontent-ng-c1263253663=\"\"] > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-outline.anim-scale-in[href$=\"/#contact\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
         }
       ]
     }
   ],
-  "violations": []
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axe-puppeteer",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f7eee9",
+                "bgColor": "#fff5ee",
+                "contrastRatio": 1.06,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
+                  "target": [
+                    ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 1.06 (foreground color: #f7eee9, background color: #fff5ee, font size: 10.8pt (14.4px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a _ngcontent-ng-c1263253663=\"\" class=\"btn-industrial-primary anim-scale-in\" style=\"animation-delay: 500ms;\" href=\"/products\"> Explore Products </a>",
+          "target": [
+            ".swiper-slide-visible > .hero-container.container[_ngcontent-ng-c1263253663=\"\"] > .hero-copy.stagger-children.is-visible > .hero-actions.stagger-children.is-visible > .btn-industrial-primary.anim-scale-in[href$=\"products\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.06 (foreground color: #f7eee9, background color: #fff5ee, font size: 10.8pt (14.4px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/heading-order?application=axe-puppeteer",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h4 _ngcontent-ng-c2773334426=\"\">Quick Links</h4>",
+          "target": [
+            ".col-lg-2.col-md-6.is-visible:nth-child(2) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
 }

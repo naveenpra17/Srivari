@@ -17,6 +17,8 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/v1/admin")
 @RequiredArgsConstructor
@@ -34,6 +36,30 @@ public class AdminController {
     @Operation(summary = "Get dashboard statistics")
     public ResponseEntity<ApiResponse<DashboardStatsResponse>> dashboard() {
         return ResponseEntity.ok(ApiResponse.success(dashboardService.getStats()));
+    }
+
+    @GetMapping("/products/by-category")
+    @Operation(summary = "Get product counts grouped by category")
+    public ResponseEntity<ApiResponse<List<ChartCountResponse>>> productsByCategory() {
+        return ResponseEntity.ok(ApiResponse.success(dashboardService.getProductsByCategory()));
+    }
+
+    @GetMapping("/products/status-distribution")
+    @Operation(summary = "Get active vs inactive product counts")
+    public ResponseEntity<ApiResponse<StatusDistributionResponse>> productStatusDistribution() {
+        return ResponseEntity.ok(ApiResponse.success(dashboardService.getProductStatusDistribution()));
+    }
+
+    @GetMapping("/inquiries/monthly")
+    @Operation(summary = "Get monthly contact and quote inquiry counts")
+    public ResponseEntity<ApiResponse<List<ChartCountResponse>>> monthlyInquiries() {
+        return ResponseEntity.ok(ApiResponse.success(dashboardService.getMonthlyInquiries()));
+    }
+
+    @GetMapping("/industries/top")
+    @Operation(summary = "Get top industries for dashboard chart")
+    public ResponseEntity<ApiResponse<List<ChartCountResponse>>> topIndustries() {
+        return ResponseEntity.ok(ApiResponse.success(dashboardService.getTopIndustries()));
     }
 
     @GetMapping("/messages")

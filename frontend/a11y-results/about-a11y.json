@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2026-07-17T11:21:50.400Z",
+  "timestamp": "2026-07-17T18:23:59.675Z",
   "url": "http://localhost:4200/about",
   "toolOptions": {
     "reporter": "v1"
@@ -3237,13 +3237,13 @@
                 {
                   "html": "<h2 _ngcontent-ng-c1146381442=\"\">Where Innovation Meets Reliability</h2>",
                   "target": [
-                    "h2"
+                    ".col-lg-6[_ngcontent-ng-c1146381442=\"\"]:nth-child(1) > h2"
                   ]
                 },
                 {
-                  "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+                  "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
                   "target": [
-                    "h3"
+                    ".footer-brand > h2"
                   ]
                 },
                 {
@@ -3540,7 +3540,7 @@
           "impact": null,
           "html": "<h2 _ngcontent-ng-c1146381442=\"\">Where Innovation Meets Reliability</h2>",
           "target": [
-            "h2"
+            ".col-lg-6[_ngcontent-ng-c1146381442=\"\"]:nth-child(1) > h2"
           ]
         },
         {
@@ -3548,16 +3548,16 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#8b949e",
+                "fgColor": "#e6edf3",
                 "bgColor": "#0d1117",
-                "contrastRatio": 6.15,
+                "contrastRatio": 16.01,
                 "fontSize": "13.2pt (17.6px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 6.15"
+              "message": "Element has sufficient color contrast of 16.01"
             }
           ],
           "all": [],
@@ -3623,24 +3623,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#ffffff",
+                "fgColor": "#dadfe7",
                 "bgColor": "#0a2b5e",
-                "contrastRatio": 13.81,
-                "fontSize": "12.6pt (16.8px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
+                "contrastRatio": 10.32,
+                "fontSize": "30.0pt (40px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 13.81"
+              "message": "Element has sufficient color contrast of 10.32"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            "h3"
+            ".footer-brand > h2"
           ]
         },
         {
@@ -4278,7 +4278,7 @@
           "impact": null,
           "html": "<h2 _ngcontent-ng-c1146381442=\"\">Where Innovation Meets Reliability</h2>",
           "target": [
-            "h2"
+            ".col-lg-6[_ngcontent-ng-c1146381442=\"\"]:nth-child(1) > h2"
           ]
         },
         {
@@ -4294,9 +4294,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            "h3"
+            ".footer-brand > h2"
           ]
         },
         {
@@ -4413,7 +4413,7 @@
     },
     {
       "id": "heading-order",
-      "impact": null,
+      "impact": "moderate",
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -4442,9 +4442,9 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > app-footer:nth-child(3) > footer > div > div:nth-child(1) > div:nth-child(1) > div > h3:nth-child(1)"
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > app-footer:nth-child(3) > footer > div > div:nth-child(1) > div:nth-child(1) > div > h2:nth-child(1)"
                     ],
-                    "level": 3
+                    "level": 2
                   },
                   {
                     "ancestry": [
@@ -4500,7 +4500,7 @@
           "impact": null,
           "html": "<h2 _ngcontent-ng-c1146381442=\"\">Where Innovation Meets Reliability</h2>",
           "target": [
-            "h2"
+            ".col-lg-6[_ngcontent-ng-c1146381442=\"\"]:nth-child(1) > h2"
           ]
         },
         {
@@ -4516,27 +4516,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            "h3"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h4 _ngcontent-ng-c2773334426=\"\">Quick Links</h4>",
-          "target": [
-            ".col-lg-2.col-md-6.reveal:nth-child(2) > h4"
+            ".footer-brand > h2"
           ]
         },
         {
@@ -7230,7 +7212,7 @@
           "impact": null,
           "html": "<h2 _ngcontent-ng-c1146381442=\"\">Where Innovation Meets Reliability</h2>",
           "target": [
-            "h2"
+            ".col-lg-6[_ngcontent-ng-c1146381442=\"\"]:nth-child(1) > h2"
           ]
         },
         {
@@ -7528,9 +7510,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            "h3"
+            ".footer-brand > h2"
           ]
         },
         {
@@ -8841,5 +8823,38 @@
       ]
     }
   ],
-  "violations": []
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/heading-order?application=axe-puppeteer",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h4 _ngcontent-ng-c2773334426=\"\">Quick Links</h4>",
+          "target": [
+            ".col-lg-2.col-md-6.reveal:nth-child(2) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
 }

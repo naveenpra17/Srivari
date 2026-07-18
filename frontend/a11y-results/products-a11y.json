@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2026-07-17T11:21:37.437Z",
+  "timestamp": "2026-07-17T18:23:40.056Z",
   "url": "http://localhost:4200/products",
   "toolOptions": {
     "reporter": "v1"
@@ -3090,6 +3090,198 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<div _ngcontent-ng-c2773334426=\"\" appreveal=\"\" class=\"col-lg-2 col-md-6 reveal is-visible\" style=\"transition-delay: 100ms;\">",
           "target": [
             ".col-lg-2.reveal.is-visible:nth-child(2)"
@@ -3328,33 +3520,69 @@
                   ]
                 },
                 {
-                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Industrial AC Motor</h2>",
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI BEE Star Rated Pumps</h2>",
                   "target": [
-                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > h2"
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > .product-name"
                   ]
                 },
                 {
-                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Centrifugal Pump</h2>",
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Pumps</h2>",
                   "target": [
-                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > h2"
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > .product-name"
                   ]
                 },
                 {
-                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Stainless Steel Pipes</h2>",
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Tarmac Pumps</h2>",
                   "target": [
-                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > h2"
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > .product-name"
                   ]
                 },
                 {
-                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Couplings</h2>",
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI Electric Motors</h2>",
                   "target": [
-                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > h2"
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > .product-name"
                   ]
                 },
                 {
-                  "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Electric Motors</h2>",
                   "target": [
-                    "h3"
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-body.p-3 > .product-name"
+                  ]
+                },
+                {
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">PVC Pipes (IS 4985)</h2>",
+                  "target": [
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-body.p-3 > .product-name"
+                  ]
+                },
+                {
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">G.I. Pipes (IS 1239)</h2>",
+                  "target": [
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-body.p-3 > .product-name"
+                  ]
+                },
+                {
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Submersible Flat Cables</h2>",
+                  "target": [
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-name"
+                  ]
+                },
+                {
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Kent Water Meters</h2>",
+                  "target": [
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-body.p-3 > .product-name"
+                  ]
+                },
+                {
+                  "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP</h2>",
+                  "target": [
+                    ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-name"
+                  ]
+                },
+                {
+                  "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
+                  "target": [
+                    ".footer-brand > h2"
                   ]
                 },
                 {
@@ -3501,7 +3729,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/\" class=\"ng-star-inserted\"> Home </a>",
           "target": [
-            ".nav-desktop > .ng-star-inserted[href=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href=\"/\"][_ngcontent-ng-c458758637=\"\"]"
           ]
         },
         {
@@ -3576,7 +3804,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/about\" class=\"ng-star-inserted\"> About </a>",
           "target": [
-            ".nav-desktop > .ng-star-inserted[href$=\"about\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"about\"][_ngcontent-ng-c458758637=\"\"]"
           ]
         },
         {
@@ -3724,9 +3952,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Industrial AC Motor</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI BEE Star Rated Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -3749,7 +3977,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c3737505531=\"\">High-efficiency AC motors for heavy-duty applications.</p>",
+          "html": "<p _ngcontent-ng-c3737505531=\"\">High-performance Texmo pumps engineered for domestic, agricultural, and industrial applications.</p>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > p"
           ]
@@ -3824,9 +4052,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Centrifugal Pump</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -3849,7 +4077,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c3737505531=\"\">Robust centrifugal pumps for fluid transfer.</p>",
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Reliable Texmo pumps built for agriculture, residential, and industrial applications.</p>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > p"
           ]
@@ -3924,9 +4152,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Stainless Steel Pipes</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Tarmac Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -3949,7 +4177,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c3737505531=\"\">Corrosion-resistant piping for harsh environments.</p>",
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Heavy-duty Tarmac pumps for reliable water transfer and irrigation systems.</p>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > p"
           ]
@@ -4024,9 +4252,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Couplings</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI Electric Motors</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -4049,7 +4277,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c3737505531=\"\">Precision couplings for seamless power transmission.</p>",
+          "html": "<p _ngcontent-ng-c3737505531=\"\">High-performance CRI motors engineered for industrial and agricultural operations.</p>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > p"
           ]
@@ -4109,24 +4337,624 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#0a2b5e",
-                "contrastRatio": 13.81,
-                "fontSize": "12.6pt (16.8px)",
-                "fontWeight": "normal",
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "13.2pt (17.6px)",
+                "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 13.81"
+              "message": "Element has sufficient color contrast of 5.03"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Electric Motors</h2>",
           "target": [
-            "h3"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8b949e",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.62,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.62"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Energy-efficient Texmo electric motors delivering reliable industrial performance.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#161b22",
+                "bgColor": "#4d8fcc",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/motors\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/motors\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "13.2pt (17.6px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">PVC Pipes (IS 4985)</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8b949e",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.62,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.62"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">ISI certified PVC pipes manufactured as per IS 4985 standards.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#161b22",
+                "bgColor": "#4d8fcc",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/pvc-pipes-is-4985\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"pvc-pipes-is-4985\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/pvc-pipes-is-4985\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"pvc-pipes-is-4985\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "13.2pt (17.6px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">G.I. Pipes (IS 1239)</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8b949e",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.62,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.62"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Galvanized Iron pipes manufactured in compliance with IS 1239 standards.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#161b22",
+                "bgColor": "#4d8fcc",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/gi-pipes-is-1239\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"gi-pipes-is-1239\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/gi-pipes-is-1239\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"gi-pipes-is-1239\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "13.2pt (17.6px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Submersible Flat Cables</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8b949e",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.62,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.62"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Premium waterproof flat cables for borewell and submersible pump installations.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#161b22",
+                "bgColor": "#4d8fcc",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/submersible-flat-cables\">View Details</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-primary-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/submersible-flat-cables\">Request Quote</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-outline-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "13.2pt (17.6px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Kent Water Meters</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8b949e",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.62,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.62"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Precision water meters for residential, commercial, and industrial applications.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#161b22",
+                "bgColor": "#4d8fcc",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/kent-water-meters\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"kent-water-meters\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/kent-water-meters\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"kent-water-meters\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "13.2pt (17.6px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8b949e",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.62,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.62"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Heavy-duty coupling for 10 HP industrial motors.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#161b22",
+                "bgColor": "#4d8fcc",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/motor-coupling--2-hp-5-hp-75-hp-10-hp\">View Details</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-primary-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#4d8fcc",
+                "bgColor": "#161b22",
+                "contrastRatio": 5.03,
+                "fontSize": "10.2pt (13.6px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.03"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/motor-coupling--2-hp-5-hp-75-hp-10-hp\">Request Quote</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-outline-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#dadfe7",
+                "bgColor": "#0a2b5e",
+                "contrastRatio": 10.32,
+                "fontSize": "30.0pt (40px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 10.32"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
+          "target": [
+            ".footer-brand > h2"
           ]
         },
         {
@@ -4762,9 +5590,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Industrial AC Motor</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI BEE Star Rated Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -4780,9 +5608,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Centrifugal Pump</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -4798,9 +5626,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Stainless Steel Pipes</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Tarmac Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -4816,9 +5644,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Couplings</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI Electric Motors</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -4834,9 +5662,117 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Electric Motors</h2>",
           "target": [
-            "h3"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">PVC Pipes (IS 4985)</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">G.I. Pipes (IS 1239)</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Submersible Flat Cables</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Kent Water Meters</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
+          "target": [
+            ".footer-brand > h2"
           ]
         },
         {
@@ -4971,7 +5907,7 @@
     },
     {
       "id": "heading-order",
-      "impact": null,
+      "impact": "moderate",
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -5018,9 +5954,45 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > app-footer:nth-child(3) > footer > div > div:nth-child(1) > div:nth-child(1) > div > h3:nth-child(1)"
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-products-page:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div > div:nth-child(2) > h2:nth-child(1)"
                     ],
-                    "level": 3
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-products-page:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > div > div:nth-child(2) > h2:nth-child(1)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-products-page:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div > div:nth-child(2) > h2:nth-child(1)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-products-page:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(8) > div > div:nth-child(2) > h2:nth-child(1)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-products-page:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(9) > div > div:nth-child(2) > h2:nth-child(1)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-products-page:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > div > div:nth-child(2) > h2:nth-child(1)"
+                    ],
+                    "level": 2
+                  },
+                  {
+                    "ancestry": [
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > app-footer:nth-child(3) > footer > div > div:nth-child(1) > div:nth-child(1) > div > h2:nth-child(1)"
+                    ],
+                    "level": 2
                   },
                   {
                     "ancestry": [
@@ -5074,9 +6046,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Industrial AC Motor</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI BEE Star Rated Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -5092,9 +6064,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Centrifugal Pump</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -5110,9 +6082,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Stainless Steel Pipes</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Tarmac Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -5128,9 +6100,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Couplings</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI Electric Motors</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -5146,9 +6118,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Electric Motors</h2>",
           "target": [
-            "h3"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -5164,9 +6136,99 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h4 _ngcontent-ng-c2773334426=\"\">Quick Links</h4>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">PVC Pipes (IS 4985)</h2>",
           "target": [
-            ".col-lg-2.reveal.is-visible:nth-child(2) > h4"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">G.I. Pipes (IS 1239)</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Submersible Flat Cables</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Kent Water Meters</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
+          "target": [
+            ".footer-brand > h2"
           ]
         },
         {
@@ -5346,9 +6408,9 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310189/motors/products/sz6jvj1mglp3nytsdd7z.png\" alt=\"CRI BEE Star Rated Pumps\">",
           "target": [
-            "img[alt=\"Industrial AC Motor\"]"
+            "img[alt=\"CRI BEE Star Rated Pumps\"]"
           ]
         },
         {
@@ -5372,9 +6434,9 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Centrifugal Pump\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290082/motors/products/qggivfxia6m5llxs1rwj.png\" alt=\"Texmo Pumps\">",
           "target": [
-            "img[alt=\"Centrifugal Pump\"]"
+            "img[alt=\"Texmo Pumps\"]"
           ]
         },
         {
@@ -5398,9 +6460,9 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784115790/motors/products/bi2xvrmvfwbepewsupex.png\" alt=\"Stainless Steel Pipes\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311025/motors/products/p7rc88sh9tlpyrxwgybt.png\" alt=\"Tarmac Pumps\">",
           "target": [
-            "img[alt=\"Stainless Steel Pipes\"]"
+            "img[alt=\"Tarmac Pumps\"]"
           ]
         },
         {
@@ -5424,9 +6486,165 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092162384-89889c1a33f0?w=1200&amp;q=85\" alt=\"Motor Couplings\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310266/motors/products/gh5usw9nej1oojovcq8u.png\" alt=\"CRI Electric Motors\">",
           "target": [
-            "img[alt=\"Motor Couplings\"]"
+            "img[alt=\"CRI Electric Motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311156/motors/products/pcoefoq8jkofzfck4rmo.png\" alt=\"Texmo Electric Motors\">",
+          "target": [
+            "img[alt=\"Texmo Electric Motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290214/motors/products/izmbwiwyudriufteijvo.png\" alt=\"PVC Pipes (IS 4985)\">",
+          "target": [
+            "img[alt=\"PVC Pipes (IS 4985)\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311297/motors/products/q9p8p8r62znhwzqbqwm8.png\" alt=\"G.I. Pipes (IS 1239)\">",
+          "target": [
+            "img[alt=\"G.I. Pipes (IS 1239)\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311654/motors/products/hure7odqgp6tkevdn7y2.png\" alt=\"Submersible Flat Cables\">",
+          "target": [
+            "img[alt=\"Submersible Flat Cables\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311770/motors/products/hmogcandr5fejgx1mj3z.png\" alt=\"Kent Water Meters\">",
+          "target": [
+            "img[alt=\"Kent Water Meters\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has an alt attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "alt-space-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has a valid alt attribute value"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311873/motors/products/hj9bfd92v2w6m9xeb80m.png\" alt=\"Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-image > img"
           ]
         }
       ]
@@ -5455,9 +6673,9 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310189/motors/products/sz6jvj1mglp3nytsdd7z.png\" alt=\"CRI BEE Star Rated Pumps\">",
           "target": [
-            "img[alt=\"Industrial AC Motor\"]"
+            "img[alt=\"CRI BEE Star Rated Pumps\"]"
           ]
         },
         {
@@ -5473,9 +6691,9 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Centrifugal Pump\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290082/motors/products/qggivfxia6m5llxs1rwj.png\" alt=\"Texmo Pumps\">",
           "target": [
-            "img[alt=\"Centrifugal Pump\"]"
+            "img[alt=\"Texmo Pumps\"]"
           ]
         },
         {
@@ -5491,9 +6709,9 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784115790/motors/products/bi2xvrmvfwbepewsupex.png\" alt=\"Stainless Steel Pipes\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311025/motors/products/p7rc88sh9tlpyrxwgybt.png\" alt=\"Tarmac Pumps\">",
           "target": [
-            "img[alt=\"Stainless Steel Pipes\"]"
+            "img[alt=\"Tarmac Pumps\"]"
           ]
         },
         {
@@ -5509,9 +6727,117 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092162384-89889c1a33f0?w=1200&amp;q=85\" alt=\"Motor Couplings\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310266/motors/products/gh5usw9nej1oojovcq8u.png\" alt=\"CRI Electric Motors\">",
           "target": [
-            "img[alt=\"Motor Couplings\"]"
+            "img[alt=\"CRI Electric Motors\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311156/motors/products/pcoefoq8jkofzfck4rmo.png\" alt=\"Texmo Electric Motors\">",
+          "target": [
+            "img[alt=\"Texmo Electric Motors\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290214/motors/products/izmbwiwyudriufteijvo.png\" alt=\"PVC Pipes (IS 4985)\">",
+          "target": [
+            "img[alt=\"PVC Pipes (IS 4985)\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311297/motors/products/q9p8p8r62znhwzqbqwm8.png\" alt=\"G.I. Pipes (IS 1239)\">",
+          "target": [
+            "img[alt=\"G.I. Pipes (IS 1239)\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311654/motors/products/hure7odqgp6tkevdn7y2.png\" alt=\"Submersible Flat Cables\">",
+          "target": [
+            "img[alt=\"Submersible Flat Cables\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311770/motors/products/hmogcandr5fejgx1mj3z.png\" alt=\"Kent Water Meters\">",
+          "target": [
+            "img[alt=\"Kent Water Meters\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not duplicate existing text in <img> alt text"
+            }
+          ],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311873/motors/products/hj9bfd92v2w6m9xeb80m.png\" alt=\"Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-image > img"
           ]
         }
       ]
@@ -6095,7 +7421,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/\" class=\"ng-star-inserted\"> Home </a>",
           "target": [
-            ".nav-desktop > .ng-star-inserted[href=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href=\"/\"][_ngcontent-ng-c458758637=\"\"]"
           ]
         },
         {
@@ -6173,7 +7499,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/about\" class=\"ng-star-inserted\"> About </a>",
           "target": [
-            ".nav-desktop > .ng-star-inserted[href$=\"about\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"about\"][_ngcontent-ng-c458758637=\"\"]"
           ]
         },
         {
@@ -6441,6 +7767,318 @@
           "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/motor-couplings\">Request Quote</a>",
           "target": [
             ".btn-outline-custom.btn-sm[href$=\"motor-couplings\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/motors\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/motors\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/pvc-pipes-is-4985\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"pvc-pipes-is-4985\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/pvc-pipes-is-4985\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"pvc-pipes-is-4985\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/gi-pipes-is-1239\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"gi-pipes-is-1239\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/gi-pipes-is-1239\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"gi-pipes-is-1239\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/submersible-flat-cables\">View Details</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-primary-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/submersible-flat-cables\">Request Quote</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-outline-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/kent-water-meters\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"kent-water-meters\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/kent-water-meters\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"kent-water-meters\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/motor-coupling--2-hp-5-hp-75-hp-10-hp\">View Details</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-primary-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/motor-coupling--2-hp-5-hp-75-hp-10-hp\">Request Quote</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-outline-custom.btn-sm"
           ]
         },
         {
@@ -7346,9 +8984,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310189/motors/products/sz6jvj1mglp3nytsdd7z.png\" alt=\"CRI BEE Star Rated Pumps\">",
           "target": [
-            "img[alt=\"Industrial AC Motor\"]"
+            "img[alt=\"CRI BEE Star Rated Pumps\"]"
           ]
         },
         {
@@ -7364,9 +9002,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Centrifugal Pump\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290082/motors/products/qggivfxia6m5llxs1rwj.png\" alt=\"Texmo Pumps\">",
           "target": [
-            "img[alt=\"Centrifugal Pump\"]"
+            "img[alt=\"Texmo Pumps\"]"
           ]
         },
         {
@@ -7382,9 +9020,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784115790/motors/products/bi2xvrmvfwbepewsupex.png\" alt=\"Stainless Steel Pipes\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311025/motors/products/p7rc88sh9tlpyrxwgybt.png\" alt=\"Tarmac Pumps\">",
           "target": [
-            "img[alt=\"Stainless Steel Pipes\"]"
+            "img[alt=\"Tarmac Pumps\"]"
           ]
         },
         {
@@ -7400,9 +9038,117 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092162384-89889c1a33f0?w=1200&amp;q=85\" alt=\"Motor Couplings\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310266/motors/products/gh5usw9nej1oojovcq8u.png\" alt=\"CRI Electric Motors\">",
           "target": [
-            "img[alt=\"Motor Couplings\"]"
+            "img[alt=\"CRI Electric Motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311156/motors/products/pcoefoq8jkofzfck4rmo.png\" alt=\"Texmo Electric Motors\">",
+          "target": [
+            "img[alt=\"Texmo Electric Motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290214/motors/products/izmbwiwyudriufteijvo.png\" alt=\"PVC Pipes (IS 4985)\">",
+          "target": [
+            "img[alt=\"PVC Pipes (IS 4985)\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311297/motors/products/q9p8p8r62znhwzqbqwm8.png\" alt=\"G.I. Pipes (IS 1239)\">",
+          "target": [
+            "img[alt=\"G.I. Pipes (IS 1239)\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311654/motors/products/hure7odqgp6tkevdn7y2.png\" alt=\"Submersible Flat Cables\">",
+          "target": [
+            "img[alt=\"Submersible Flat Cables\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311770/motors/products/hmogcandr5fejgx1mj3z.png\" alt=\"Kent Water Meters\">",
+          "target": [
+            "img[alt=\"Kent Water Meters\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311873/motors/products/hj9bfd92v2w6m9xeb80m.png\" alt=\"Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-image > img"
           ]
         },
         {
@@ -7751,7 +9497,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/\" class=\"ng-star-inserted\"> Home </a>",
           "target": [
-            ".nav-desktop > .ng-star-inserted[href=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href=\"/\"][_ngcontent-ng-c458758637=\"\"]"
           ]
         },
         {
@@ -7811,7 +9557,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/about\" class=\"ng-star-inserted\"> About </a>",
           "target": [
-            ".nav-desktop > .ng-star-inserted[href$=\"about\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"about\"][_ngcontent-ng-c458758637=\"\"]"
           ]
         },
         {
@@ -8409,7 +10155,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\"></div>",
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310189/motors/products/sz6jvj1mglp3nytsdd7z.png\" alt=\"CRI BEE Star Rated Pumps\"></div>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-image"
           ]
@@ -8429,9 +10175,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310189/motors/products/sz6jvj1mglp3nytsdd7z.png\" alt=\"CRI BEE Star Rated Pumps\">",
           "target": [
-            "img[alt=\"Industrial AC Motor\"]"
+            "img[alt=\"CRI BEE Star Rated Pumps\"]"
           ]
         },
         {
@@ -8469,9 +10215,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Industrial AC Motor</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI BEE Star Rated Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -8489,7 +10235,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c3737505531=\"\">High-efficiency AC motors for heavy-duty applications.</p>",
+          "html": "<p _ngcontent-ng-c3737505531=\"\">High-performance Texmo pumps engineered for domestic, agricultural, and industrial applications.</p>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(1) > .card-custom.product-card > .product-body.p-3 > p"
           ]
@@ -8609,7 +10355,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Centrifugal Pump\"></div>",
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290082/motors/products/qggivfxia6m5llxs1rwj.png\" alt=\"Texmo Pumps\"></div>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-image"
           ]
@@ -8629,9 +10375,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Centrifugal Pump\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290082/motors/products/qggivfxia6m5llxs1rwj.png\" alt=\"Texmo Pumps\">",
           "target": [
-            "img[alt=\"Centrifugal Pump\"]"
+            "img[alt=\"Texmo Pumps\"]"
           ]
         },
         {
@@ -8669,9 +10415,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Centrifugal Pump</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -8689,7 +10435,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c3737505531=\"\">Robust centrifugal pumps for fluid transfer.</p>",
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Reliable Texmo pumps built for agriculture, residential, and industrial applications.</p>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(2) > .card-custom.product-card > .product-body.p-3 > p"
           ]
@@ -8809,7 +10555,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784115790/motors/products/bi2xvrmvfwbepewsupex.png\" alt=\"Stainless Steel Pipes\"></div>",
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311025/motors/products/p7rc88sh9tlpyrxwgybt.png\" alt=\"Tarmac Pumps\"></div>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-image"
           ]
@@ -8829,9 +10575,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784115790/motors/products/bi2xvrmvfwbepewsupex.png\" alt=\"Stainless Steel Pipes\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311025/motors/products/p7rc88sh9tlpyrxwgybt.png\" alt=\"Tarmac Pumps\">",
           "target": [
-            "img[alt=\"Stainless Steel Pipes\"]"
+            "img[alt=\"Tarmac Pumps\"]"
           ]
         },
         {
@@ -8869,9 +10615,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Stainless Steel Pipes</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Tarmac Pumps</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -8889,7 +10635,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c3737505531=\"\">Corrosion-resistant piping for harsh environments.</p>",
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Heavy-duty Tarmac pumps for reliable water transfer and irrigation systems.</p>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(3) > .card-custom.product-card > .product-body.p-3 > p"
           ]
@@ -9009,7 +10755,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092162384-89889c1a33f0?w=1200&amp;q=85\" alt=\"Motor Couplings\"></div>",
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310266/motors/products/gh5usw9nej1oojovcq8u.png\" alt=\"CRI Electric Motors\"></div>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-image"
           ]
@@ -9029,9 +10775,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092162384-89889c1a33f0?w=1200&amp;q=85\" alt=\"Motor Couplings\">",
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784310266/motors/products/gh5usw9nej1oojovcq8u.png\" alt=\"CRI Electric Motors\">",
           "target": [
-            "img[alt=\"Motor Couplings\"]"
+            "img[alt=\"CRI Electric Motors\"]"
           ]
         },
         {
@@ -9069,9 +10815,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Couplings</h2>",
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">CRI Electric Motors</h2>",
           "target": [
-            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > h2"
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > .product-name"
           ]
         },
         {
@@ -9089,7 +10835,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c3737505531=\"\">Precision couplings for seamless power transmission.</p>",
+          "html": "<p _ngcontent-ng-c3737505531=\"\">High-performance CRI motors engineered for industrial and agricultural operations.</p>",
           "target": [
             ".col-lg-3.col-md-6.ng-star-inserted:nth-child(4) > .card-custom.product-card > .product-body.p-3 > p"
           ]
@@ -9152,6 +10898,1206 @@
           "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/motor-couplings\">Request Quote</a>",
           "target": [
             ".btn-outline-custom.btn-sm[href$=\"motor-couplings\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"card-custom product-card\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311156/motors/products/pcoefoq8jkofzfck4rmo.png\" alt=\"Texmo Electric Motors\"></div>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311156/motors/products/pcoefoq8jkofzfck4rmo.png\" alt=\"Texmo Electric Motors\">",
+          "target": [
+            "img[alt=\"Texmo Electric Motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-body p-3\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-body.p-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Texmo Electric Motors</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Energy-efficient Texmo electric motors delivering reliable industrial performance.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-card-actions\"><a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/motors\">View Details</a><a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/motors\">Request Quote</a></div>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(5) > .card-custom.product-card > .product-body.p-3 > .product-card-actions"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/motors\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/motors\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"motors\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"card-custom product-card\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290214/motors/products/izmbwiwyudriufteijvo.png\" alt=\"PVC Pipes (IS 4985)\"></div>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784290214/motors/products/izmbwiwyudriufteijvo.png\" alt=\"PVC Pipes (IS 4985)\">",
+          "target": [
+            "img[alt=\"PVC Pipes (IS 4985)\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-body p-3\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-body.p-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">PVC Pipes (IS 4985)</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">ISI certified PVC pipes manufactured as per IS 4985 standards.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-card-actions\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(6) > .card-custom.product-card > .product-body.p-3 > .product-card-actions"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/pvc-pipes-is-4985\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"pvc-pipes-is-4985\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/pvc-pipes-is-4985\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"pvc-pipes-is-4985\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"card-custom product-card\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311297/motors/products/q9p8p8r62znhwzqbqwm8.png\" alt=\"G.I. Pipes (IS 1239)\"></div>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311297/motors/products/q9p8p8r62znhwzqbqwm8.png\" alt=\"G.I. Pipes (IS 1239)\">",
+          "target": [
+            "img[alt=\"G.I. Pipes (IS 1239)\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-body p-3\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-body.p-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">G.I. Pipes (IS 1239)</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Galvanized Iron pipes manufactured in compliance with IS 1239 standards.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-card-actions\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(7) > .card-custom.product-card > .product-body.p-3 > .product-card-actions"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/gi-pipes-is-1239\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"gi-pipes-is-1239\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/gi-pipes-is-1239\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"gi-pipes-is-1239\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"card-custom product-card\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311654/motors/products/hure7odqgp6tkevdn7y2.png\" alt=\"Submersible Flat Cables\"></div>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311654/motors/products/hure7odqgp6tkevdn7y2.png\" alt=\"Submersible Flat Cables\">",
+          "target": [
+            "img[alt=\"Submersible Flat Cables\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-body p-3\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Submersible Flat Cables</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Premium waterproof flat cables for borewell and submersible pump installations.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-card-actions\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-card-actions"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/submersible-flat-cables\">View Details</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-primary-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/submersible-flat-cables\">Request Quote</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(8) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-outline-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"card-custom product-card\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311770/motors/products/hmogcandr5fejgx1mj3z.png\" alt=\"Kent Water Meters\"></div>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311770/motors/products/hmogcandr5fejgx1mj3z.png\" alt=\"Kent Water Meters\">",
+          "target": [
+            "img[alt=\"Kent Water Meters\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-body p-3\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-body.p-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Kent Water Meters</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Precision water meters for residential, commercial, and industrial applications.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-card-actions\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(9) > .card-custom.product-card > .product-body.p-3 > .product-card-actions"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/kent-water-meters\">View Details</a>",
+          "target": [
+            ".btn-primary-custom.btn-sm[href$=\"kent-water-meters\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/kent-water-meters\">Request Quote</a>",
+          "target": [
+            ".btn-outline-custom.btn-sm[href$=\"kent-water-meters\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"col-lg-3 col-md-6 ng-star-inserted\" style=\"\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"card-custom product-card\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-image\"><img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311873/motors/products/hj9bfd92v2w6m9xeb80m.png\" alt=\"Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP\"></div>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-image"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<img _ngcontent-ng-c3737505531=\"\" loading=\"lazy\" src=\"https://res.cloudinary.com/pwvqyqg3/image/upload/v1784311873/motors/products/hj9bfd92v2w6m9xeb80m.png\" alt=\"Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-image > img"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-body p-3\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2 _ngcontent-ng-c3737505531=\"\" class=\"product-name\">Motor Coupling – 2 HP, 5 HP, 7.5 HP, 10 HP</h2>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-name"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p _ngcontent-ng-c3737505531=\"\">Heavy-duty coupling for 10 HP industrial motors.</p>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > p"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div _ngcontent-ng-c3737505531=\"\" class=\"product-card-actions\">",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-card-actions"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-primary-custom btn-sm\" href=\"/products/motor-coupling--2-hp-5-hp-75-hp-10-hp\">View Details</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-primary-custom.btn-sm"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "All page content is contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a _ngcontent-ng-c3737505531=\"\" class=\"btn-outline-custom btn-sm\" href=\"/products/motor-coupling--2-hp-5-hp-75-hp-10-hp\">Request Quote</a>",
+          "target": [
+            ".col-lg-3.col-md-6.ng-star-inserted:nth-child(10) > .card-custom.product-card > .product-body.p-3 > .product-card-actions > .btn-outline-custom.btn-sm"
           ]
         },
         {
@@ -9271,7 +12217,7 @@
           "impact": null,
           "html": "<div _ngcontent-ng-c2773334426=\"\" class=\"container\">",
           "target": [
-            "footer > .container"
+            ".container[_ngcontent-ng-c2773334426=\"\"]"
           ]
         },
         {
@@ -9349,9 +12295,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            "h3"
+            ".footer-brand > h2"
           ]
         },
         {
@@ -10538,5 +13484,38 @@
     }
   ],
   "incomplete": [],
-  "violations": []
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/heading-order?application=axe-puppeteer",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h4 _ngcontent-ng-c2773334426=\"\">Quick Links</h4>",
+          "target": [
+            ".col-lg-2.reveal.is-visible:nth-child(2) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
 }

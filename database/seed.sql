@@ -20,10 +20,10 @@ SELECT u.id, r.id FROM users u, roles r
 WHERE u.email = 'admin@motors.com' AND r.name = 'ADMIN';
 
 INSERT INTO categories (name, slug, description, image_url, sort_order, active) VALUES
-    ('Motors',      'motors',      'High-performance industrial motors',      'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=85', 1, TRUE),
-    ('Pumps',       'pumps',       'Premium industrial pumps',              'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=85', 2, TRUE),
-    ('Pipes',       'pipes',       'Durable industrial piping solutions',   'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=85', 3, TRUE),
-    ('Accessories', 'accessories', 'Motor and pump accessories',            'https://images.unsplash.com/photo-1565193567171-5a81f4e0f3c7?w=600&q=85', 4, TRUE);
+    ('Motors',      'motors',      'High-performance industrial motors',      NULL, 1, TRUE),
+    ('Pumps',       'pumps',       'Premium industrial pumps',              NULL, 2, TRUE),
+    ('Pipes',       'pipes',       'Durable industrial piping solutions',   NULL, 3, TRUE),
+    ('Accessories', 'accessories', 'Motor and pump accessories',            NULL, 4, TRUE);
 
 INSERT INTO products (category_id, name, slug, short_description, description, image_url, featured, active, sort_order, specifications) VALUES
     (1, 'Industrial AC Motor', 'industrial-ac-motor',

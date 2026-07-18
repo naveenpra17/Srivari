@@ -31,13 +31,19 @@
           [appRevealDelay]="i * 150"
         >
           <div class="card-image-wrap">
-            <img
-              [src]="card.image"
-              alt=""
-              loading="lazy"
-              width="600"
-              height="400"
-            />
+            @if (card.image) {
+              <img
+                [src]="card.image"
+                alt=""
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            } @else {
+              <div class="card-image-placeholder" aria-hidden="true">
+                <span>{{ card.title.charAt(0) }}</span>
+              </div>
+            }
             <div class="card-image-overlay"></div>
           </div>
           <div class="card-body">

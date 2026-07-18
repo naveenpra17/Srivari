@@ -43,7 +43,7 @@ import { SeoService } from '../../core/services/seo.service';
       padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 600;
     }
     h2 { color: var(--primary); margin-bottom: 1rem; }
-    .lead { font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; }
+    .lead { font-size: 1.1rem; color: var(--text-dark); line-height: 1.8; }
     .about-visual {
       height: 320px; border-radius: 18px;
       background: linear-gradient(135deg, rgba(10,43,94,0.1), rgba(255,107,0,0.15));

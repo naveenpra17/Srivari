@@ -25,7 +25,7 @@ import { SeoService } from '../../core/services/seo.service';
     .legal-content { max-width: 720px; }
     h1 { color: var(--primary); margin-bottom: 0.5rem; }
     h2 { color: var(--primary); font-size: 1.25rem; margin: 1.5rem 0 0.75rem; }
-    p { line-height: 1.8; color: var(--text-muted); }
+    p { line-height: 1.8; color: var(--text-dark); }
   `]
 })
 export class TermsPageComponent implements OnInit {

@@ -3,7 +3,7 @@
     <div class="row g-4 g-lg-5">
       <div class="col-lg-4 col-md-6">
         <div class="footer-brand" appReveal>
-          <h3>{{ settings()['company_name'] || 'Sri Vaari Traders' }}</h3>
+          <h2>{{ settings()['company_name'] || 'Sri Vaari Traders' }}</h2>
           <p>{{ settings()['company_tagline'] || 'Where Innovation Meets Reliability' }}</p>
           <div class="social-links">
             @if (settings()['facebook_url']) {
@@ -31,7 +31,7 @@
       </div>
 
       <div class="col-lg-2 col-md-6" appReveal [appRevealDelay]="100">
-        <h4>Quick Links</h4>
+        <h3 class="footer-col-title">Quick Links</h3>
         <ul>
           <li><a routerLink="/">Home</a></li>
           <li><a routerLink="/about">About</a></li>
@@ -42,7 +42,7 @@
       </div>
 
       <div class="col-lg-2 col-md-6" appReveal [appRevealDelay]="200">
-        <h4>Products</h4>
+        <h3 class="footer-col-title">Products</h3>
         <ul>
           <li><a routerLink="/products">Motors</a></li>
           <li><a routerLink="/products">Pumps</a></li>
@@ -52,7 +52,7 @@
       </div>
 
       <div class="col-lg-2 col-md-6" appReveal [appRevealDelay]="300">
-        <h4>Industries</h4>
+        <h3 class="footer-col-title">Industries</h3>
         <ul>
           <li><a routerLink="/" fragment="industries">Oil &amp; Gas</a></li>
           <li><a routerLink="/" fragment="industries">Water</a></li>
@@ -62,7 +62,7 @@
       </div>
 
       <div class="col-lg-2 col-md-6" appReveal [appRevealDelay]="400">
-        <h4>Newsletter</h4>
+        <h3 class="footer-col-title">Newsletter</h3>
         <p class="newsletter-text">Subscribe for product updates and industry insights.</p>
         <form class="newsletter-form" (submit)="$event.preventDefault()">
           <input type="email" placeholder="Your email" aria-label="Email for newsletter">

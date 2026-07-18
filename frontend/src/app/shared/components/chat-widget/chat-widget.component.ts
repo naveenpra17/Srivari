@@ -6,7 +6,7 @@ import { ChatWidgetService } from '../../../core/chat/chat-widget.service';
   standalone: true,
   template: `
     @if (chat.visible()) {
-      <div class="chat-widget" role="complementary" aria-label="Live chat support">
+      <div class="chat-widget">
         <button
           type="button"
           class="chat-widget-btn whatsapp"

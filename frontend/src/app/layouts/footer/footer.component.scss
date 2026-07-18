@@ -15,7 +15,7 @@
     padding: 64px 0 0;
   }
 
-  h3, h4 {
+  h2, h3.footer-col-title {
     color: $color-white;
     margin-bottom: 0.85rem;
     font-size: 1rem;
@@ -25,6 +25,10 @@
       font-size: 1.05rem;
       margin-bottom: 1rem;
     }
+  }
+
+  h3.footer-col-title {
+    font-size: 0.95rem;
   }
 
   p {

@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2026-07-17T11:21:41.798Z",
+  "timestamp": "2026-07-17T18:23:46.204Z",
   "url": "http://localhost:4200/products/industrial-ac-motor",
   "toolOptions": {
     "reporter": "v1"
@@ -137,6 +137,40 @@
       "nodes": []
     },
     {
+      "id": "aria-required-children",
+      "impact": null,
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
+      "id": "aria-required-parent",
+      "impact": null,
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-required-parent?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
       "id": "aria-tab-name",
       "impact": null,
       "tags": [
@@ -252,6 +286,40 @@
       "description": "Ensure <blink> elements are not used",
       "help": "<blink> elements are deprecated and must not be used",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/blink?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
+      "id": "definition-list",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.3"
+      ],
+      "description": "Ensure <dl> elements are structured correctly",
+      "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/definition-list?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
+      "id": "dlitem",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.3"
+      ],
+      "description": "Ensure <dt> and <dd> elements are contained by a <dl>",
+      "help": "<dt> and <dd> elements must be contained by a <dl>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/dlitem?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -989,7 +1057,7 @@
             }
           ],
           "impact": null,
-          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a> / <a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a> / <span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span></nav>",
+          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\">",
           "target": [
             ".breadcrumb"
           ]
@@ -1025,105 +1093,6 @@
           "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Open image gallery\" class=\"product-image-main card-custom\">",
           "target": [
             ".product-image-main"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            },
-            {
-              "id": "aria-allowed-attr-elm",
-              "data": null,
-              "relatedNodes": [],
-              "message": "ARIA attributes are allowed for this element",
-              "impact": "critical"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            },
-            {
-              "id": "aria-allowed-attr-elm",
-              "data": null,
-              "relatedNodes": [],
-              "message": "ARIA attributes are allowed for this element",
-              "impact": "critical"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            },
-            {
-              "id": "aria-allowed-attr-elm",
-              "data": null,
-              "relatedNodes": [],
-              "message": "ARIA attributes are allowed for this element",
-              "impact": "critical"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
           ]
         },
         {
@@ -1500,60 +1469,6 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-allowed-role",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is allowed for given element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-allowed-role",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is allowed for given element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-allowed-role",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is allowed for given element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<div _ngcontent-ng-c3463197843=\"\" role=\"region\" aria-live=\"polite\" aria-label=\"Notifications\" class=\"toast-container top-right\"><!--container--></div>",
           "target": [
             ".toast-container"
@@ -1726,7 +1641,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a> / <a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a> / <span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span></nav>",
+          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\">",
           "target": [
             ".breadcrumb"
           ]
@@ -1747,60 +1662,6 @@
           "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Open image gallery\" class=\"product-image-main card-custom\">",
           "target": [
             ".product-image-main"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
           ]
         },
         {
@@ -2017,60 +1878,6 @@
           "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Open image gallery\" class=\"product-image-main card-custom\">",
           "target": [
             ".product-image-main"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "deprecatedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is not deprecated"
-            }
-          ],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "deprecatedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is not deprecated"
-            }
-          ],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "deprecatedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is not deprecated"
-            }
-          ],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
           ]
         },
         {
@@ -2398,7 +2205,7 @@
             }
           ],
           "impact": null,
-          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a> / <a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a> / <span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span></nav>",
+          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\">",
           "target": [
             ".breadcrumb"
           ]
@@ -2419,60 +2226,6 @@
           "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Open image gallery\" class=\"product-image-main card-custom\">",
           "target": [
             ".product-image-main"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
           ]
         },
         {
@@ -2704,153 +2457,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-required-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "All required ARIA attributes are present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-required-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "All required ARIA attributes are present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-required-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "All required ARIA attributes are present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<div _ngcontent-ng-c3463197843=\"\" role=\"region\" aria-live=\"polite\" aria-label=\"Notifications\" class=\"toast-container top-right\"><!--container--></div>",
           "target": [
             ".toast-container"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "aria-required-children",
-      "impact": null,
-      "tags": [
-        "cat.aria",
-        "wcag2a",
-        "wcag131",
-        "EN-301-549",
-        "EN-9.1.3.1",
-        "RGAAv4",
-        "RGAA-9.3.1"
-      ],
-      "description": "Ensure elements with an ARIA role that require child roles contain them",
-      "help": "Certain ARIA roles must contain particular children",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "aria-required-children",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Required ARIA children are present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "aria-required-parent",
-      "impact": null,
-      "tags": [
-        "cat.aria",
-        "wcag2a",
-        "wcag131",
-        "EN-301-549",
-        "EN-9.1.3.1",
-        "RGAAv4",
-        "RGAA-9.3.1"
-      ],
-      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
-      "help": "Certain ARIA roles must be contained by particular parents",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-required-parent?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "aria-required-parent",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Required ARIA parent role present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-required-parent",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Required ARIA parent role present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
           ]
         }
       ]
@@ -2901,102 +2510,6 @@
           "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Open image gallery\" class=\"product-image-main card-custom\">",
           "target": [
             ".product-image-main"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "invalidrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is valid"
-            },
-            {
-              "id": "abstractrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Abstract roles are not used"
-            },
-            {
-              "id": "unsupportedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "invalidrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is valid"
-            },
-            {
-              "id": "abstractrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Abstract roles are not used"
-            },
-            {
-              "id": "unsupportedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "invalidrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is valid"
-            },
-            {
-              "id": "abstractrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Abstract roles are not used"
-            },
-            {
-              "id": "unsupportedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
           ]
         },
         {
@@ -3236,7 +2749,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a> / <a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a> / <span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span></nav>",
+          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\">",
           "target": [
             ".breadcrumb"
           ]
@@ -3271,102 +2784,6 @@
           "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Open image gallery\" class=\"product-image-main card-custom\">",
           "target": [
             ".product-image-main"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
           ]
         },
         {
@@ -3810,7 +3227,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a> / <a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a> / <span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span></nav>",
+          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\">",
           "target": [
             ".breadcrumb"
           ]
@@ -3831,60 +3248,6 @@
           "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"button\" tabindex=\"0\" aria-label=\"Open image gallery\" class=\"product-image-main card-custom\">",
           "target": [
             ".product-image-main"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
           ]
         },
         {
@@ -4510,56 +3873,6 @@
               "relatedNodes": [],
               "impact": "critical",
               "message": "Element has inner text that is visible to screen readers"
-            },
-            {
-              "id": "aria-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-label attribute exists and is not empty"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
-            },
-            {
-              "id": "aria-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-label attribute exists and is not empty"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
             }
           ],
           "all": [],
@@ -4635,21 +3948,15 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</h1>",
+                  "html": "<h1 _ngcontent-ng-c2535305929=\"\">CRI BEE Star Rated Pumps</h1>",
                   "target": [
                     "h1"
                   ]
                 },
                 {
-                  "html": "<h2 _ngcontent-ng-c2535305929=\"\">Specifications</h2>",
+                  "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
                   "target": [
                     "h2"
-                  ]
-                },
-                {
-                  "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
-                  "target": [
-                    "h3"
                   ]
                 },
                 {
@@ -4796,7 +4103,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/\" class=\"ng-star-inserted\"> Home </a>",
           "target": [
-            ".nav-desktop > a[href=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href=\"/\"]"
           ]
         },
         {
@@ -4821,7 +4128,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" class=\"active ng-star-inserted\" href=\"/products\"> Products </a>",
           "target": [
-            ".nav-desktop > .active[href$=\"products\"]"
+            ".nav-desktop > .active.ng-star-inserted[href$=\"products\"]"
           ]
         },
         {
@@ -4846,7 +4153,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" routerlink=\"/\" href=\"/#industries\" class=\"ng-star-inserted\"> Industries </a>",
           "target": [
-            ".nav-desktop > a[href$=\"/#industries\"][routerlink=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"/#industries\"][routerlink=\"/\"]"
           ]
         },
         {
@@ -4871,7 +4178,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/about\" class=\"ng-star-inserted\"> About </a>",
           "target": [
-            ".nav-desktop > a[href$=\"about\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"about\"]"
           ]
         },
         {
@@ -4896,7 +4203,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" routerlink=\"/\" href=\"/#contact\" class=\"ng-star-inserted\"> Contact </a>",
           "target": [
-            ".nav-desktop > a[href$=\"/#contact\"][routerlink=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"/#contact\"][routerlink=\"/\"]"
           ]
         },
         {
@@ -4944,7 +4251,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a> / <a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a> / <span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span></nav>",
+          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\">",
           "target": [
             ".breadcrumb"
           ]
@@ -4971,7 +4278,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a>",
           "target": [
-            ".breadcrumb > a[href=\"/\"][routerlink=\"/\"]"
+            "a[href=\"/\"][routerlink=\"/\"][_ngcontent-ng-c2535305929=\"\"]"
           ]
         },
         {
@@ -4996,7 +4303,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a>",
           "target": [
-            ".breadcrumb > a[routerlink=\"/products\"][href$=\"products\"]"
+            "a[routerlink=\"/products\"][href$=\"products\"][_ngcontent-ng-c2535305929=\"\"]"
           ]
         },
         {
@@ -5019,7 +4326,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span>",
+          "html": "<span _ngcontent-ng-c2535305929=\"\">CRI BEE Star Rated Pumps</span>",
           "target": [
             ".breadcrumb > span"
           ]
@@ -5044,7 +4351,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</h1>",
+          "html": "<h1 _ngcontent-ng-c2535305929=\"\">CRI BEE Star Rated Pumps</h1>",
           "target": [
             "h1"
           ]
@@ -5069,7 +4376,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span _ngcontent-ng-c2535305929=\"\" class=\"category-badge ng-star-inserted\">Motors</span>",
+          "html": "<span _ngcontent-ng-c2535305929=\"\" class=\"category-badge ng-star-inserted\">Pumps</span>",
           "target": [
             ".category-badge"
           ]
@@ -5094,7 +4401,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c2535305929=\"\" class=\"short-desc\">High-efficiency AC motors for heavy-duty applications.</p>",
+          "html": "<p _ngcontent-ng-c2535305929=\"\" class=\"short-desc\">High-performance Texmo pumps engineered for domestic, agricultural, and industrial applications.</p>",
           "target": [
             ".short-desc"
           ]
@@ -5119,634 +4426,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"description ng-star-inserted\">Our industrial AC motors deliver exceptional performance, energy efficiency, and reliability for demanding manufacturing environments.</div>",
+          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"description ng-star-inserted\">",
           "target": [
             ".description"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#4d8fcc",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.03,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.03"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 _ngcontent-ng-c2535305929=\"\">Specifications</h2>",
-          "target": [
-            "h2"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Speed</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(1) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">1440 RPM (4 Pole)</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(1) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Voltage</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(2) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">415V AC, 3 Phase</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(2) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Mounting</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(3) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Foot / Flange (B3 / B5)</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(3) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Enclosure</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(4) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">TEFC (Totally Enclosed Fan Cooled)</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(4) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Frequency</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(5) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">50 Hz</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(5) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Motor Type</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(6) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Three Phase Induction Motor</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(6) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Protection</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(7) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">IP55</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(7) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Application</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(8) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Compressors, conveyors, machine tools, industrial drives</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(8) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Power Range</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(9) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">1 HP to 50 HP</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(9) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Efficiency Class</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(10) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">IE2 / IE3</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(10) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Insulation Class</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(11) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Class F</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(11) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#8b949e",
-                "bgColor": "#161b22",
-                "contrastRatio": 5.62,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 5.62"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Ambient Temperature</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(12) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#e6edf3",
-                "bgColor": "#161b22",
-                "contrastRatio": 14.63,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.63"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Up to 45°C</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(12) > dd"
           ]
         },
         {
@@ -5779,24 +4461,24 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#ffffff",
+                "fgColor": "#dadfe7",
                 "bgColor": "#0a2b5e",
-                "contrastRatio": 13.81,
-                "fontSize": "12.6pt (16.8px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
+                "contrastRatio": 10.32,
+                "fontSize": "30.0pt (40px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
               },
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Element has sufficient color contrast of 13.81"
+              "message": "Element has sufficient color contrast of 10.32"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            "h3"
+            "h2"
           ]
         },
         {
@@ -6352,499 +5034,6 @@
       ]
     },
     {
-      "id": "definition-list",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag2a",
-        "wcag131",
-        "EN-301-549",
-        "EN-9.1.3.1",
-        "RGAAv4",
-        "RGAA-9.3.3"
-      ],
-      "description": "Ensure <dl> elements are structured correctly",
-      "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/definition-list?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "structured-dlitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "When not empty, element has both <dt> and <dd> elements"
-            },
-            {
-              "id": "only-dlitems",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "dl element only has direct children that are allowed inside; <dt>, <dd>, or <div> elements"
-            }
-          ],
-          "impact": null,
-          "html": "<dl _ngcontent-ng-c2535305929=\"\">",
-          "target": [
-            "dl"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "dlitem",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag2a",
-        "wcag131",
-        "EN-301-549",
-        "EN-9.1.3.1",
-        "RGAAv4",
-        "RGAA-9.3.3"
-      ],
-      "description": "Ensure <dt> and <dd> elements are contained by a <dl>",
-      "help": "<dt> and <dd> elements must be contained by a <dl>",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/dlitem?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Speed</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(1) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">1440 RPM (4 Pole)</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(1) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Voltage</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(2) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">415V AC, 3 Phase</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(2) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Mounting</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(3) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Foot / Flange (B3 / B5)</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(3) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Enclosure</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(4) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">TEFC (Totally Enclosed Fan Cooled)</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(4) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Frequency</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(5) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">50 Hz</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(5) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Motor Type</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(6) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Three Phase Induction Motor</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(6) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Protection</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(7) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">IP55</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(7) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Application</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(8) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Compressors, conveyors, machine tools, industrial drives</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(8) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Power Range</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(9) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">1 HP to 50 HP</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(9) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Efficiency Class</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(10) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">IE2 / IE3</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(10) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Insulation Class</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(11) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Class F</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(11) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Ambient Temperature</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(12) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "dlitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Description list item has a <dl> parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Up to 45°C</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(12) > dd"
-          ]
-        }
-      ]
-    },
-    {
       "id": "document-title",
       "impact": null,
       "tags": [
@@ -6907,7 +5096,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</h1>",
+          "html": "<h1 _ngcontent-ng-c2535305929=\"\">CRI BEE Star Rated Pumps</h1>",
           "target": [
             "h1"
           ]
@@ -6925,27 +5114,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c2535305929=\"\">Specifications</h2>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
             "h2"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
-          "target": [
-            "h3"
           ]
         },
         {
@@ -7062,7 +5233,7 @@
     },
     {
       "id": "heading-order",
-      "impact": null,
+      "impact": "moderate",
       "tags": [
         "cat.semantics",
         "best-practice"
@@ -7085,15 +5256,9 @@
                   },
                   {
                     "ancestry": [
-                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > main:nth-child(2) > div:nth-child(1) > app-product-detail:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(2) > div > div:nth-child(3) > h2:nth-child(1)"
+                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > app-footer:nth-child(3) > footer > div > div:nth-child(1) > div:nth-child(1) > div > h2:nth-child(1)"
                     ],
                     "level": 2
-                  },
-                  {
-                    "ancestry": [
-                      "html > body > app-root:nth-child(1) > app-public-layout:nth-child(2) > app-footer:nth-child(3) > footer > div > div:nth-child(1) > div:nth-child(1) > div > h3:nth-child(1)"
-                    ],
-                    "level": 3
                   },
                   {
                     "ancestry": [
@@ -7129,7 +5294,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</h1>",
+          "html": "<h1 _ngcontent-ng-c2535305929=\"\">CRI BEE Star Rated Pumps</h1>",
           "target": [
             "h1"
           ]
@@ -7147,45 +5312,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 _ngcontent-ng-c2535305929=\"\">Specifications</h2>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
             "h2"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
-          "target": [
-            "h3"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "heading-order",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Heading order valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h4 _ngcontent-ng-c2773334426=\"\">Quick Links</h4>",
-          "target": [
-            ".col-lg-2.col-md-6.reveal:nth-child(2) > h4"
           ]
         },
         {
@@ -7365,61 +5494,9 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"800\" height=\"600\" loading=\"eager\" class=\"main-image ng-star-inserted\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
+          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"800\" height=\"600\" loading=\"eager\" class=\"main-image ng-star-inserted\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
           "target": [
-            ".main-image"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"100\" height=\"80\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"] > img[width=\"100\"][height=\"80\"][loading=\"lazy\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-alt",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has an alt attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "alt-space-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a valid alt attribute value"
-            }
-          ],
-          "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"100\" height=\"80\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"] > img[width=\"100\"][height=\"80\"][loading=\"lazy\"]"
+            "img"
           ]
         }
       ]
@@ -7448,45 +5525,9 @@
             }
           ],
           "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"800\" height=\"600\" loading=\"eager\" class=\"main-image ng-star-inserted\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
+          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"800\" height=\"600\" loading=\"eager\" class=\"main-image ng-star-inserted\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
           "target": [
-            ".main-image"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"100\" height=\"80\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"] > img[width=\"100\"][height=\"80\"][loading=\"lazy\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "duplicate-img-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element does not duplicate existing text in <img> alt text"
-            }
-          ],
-          "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"100\" height=\"80\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"] > img[width=\"100\"][height=\"80\"][loading=\"lazy\"]"
+            "img"
           ]
         }
       ]
@@ -7898,7 +5939,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a> / <a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a> / <span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span></nav>",
+          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\">",
           "target": [
             ".breadcrumb"
           ]
@@ -8047,7 +6088,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/\" class=\"ng-star-inserted\"> Home </a>",
           "target": [
-            ".nav-desktop > a[href=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href=\"/\"]"
           ]
         },
         {
@@ -8073,7 +6114,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" class=\"active ng-star-inserted\" href=\"/products\"> Products </a>",
           "target": [
-            ".nav-desktop > .active[href$=\"products\"]"
+            ".nav-desktop > .active.ng-star-inserted[href$=\"products\"]"
           ]
         },
         {
@@ -8099,7 +6140,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" routerlink=\"/\" href=\"/#industries\" class=\"ng-star-inserted\"> Industries </a>",
           "target": [
-            ".nav-desktop > a[href$=\"/#industries\"][routerlink=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"/#industries\"][routerlink=\"/\"]"
           ]
         },
         {
@@ -8125,7 +6166,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/about\" class=\"ng-star-inserted\"> About </a>",
           "target": [
-            ".nav-desktop > a[href$=\"about\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"about\"]"
           ]
         },
         {
@@ -8151,7 +6192,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" routerlink=\"/\" href=\"/#contact\" class=\"ng-star-inserted\"> Contact </a>",
           "target": [
-            ".nav-desktop > a[href$=\"/#contact\"][routerlink=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"/#contact\"][routerlink=\"/\"]"
           ]
         },
         {
@@ -8210,7 +6251,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a>",
           "target": [
-            ".breadcrumb > a[href=\"/\"][routerlink=\"/\"]"
+            "a[href=\"/\"][routerlink=\"/\"][_ngcontent-ng-c2535305929=\"\"]"
           ]
         },
         {
@@ -8236,7 +6277,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a>",
           "target": [
-            ".breadcrumb > a[routerlink=\"/products\"][href$=\"products\"]"
+            "a[routerlink=\"/products\"][href$=\"products\"][_ngcontent-ng-c2535305929=\"\"]"
           ]
         },
         {
@@ -9160,81 +7201,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"800\" height=\"600\" loading=\"eager\" class=\"main-image ng-star-inserted\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
+          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"800\" height=\"600\" loading=\"eager\" class=\"main-image ng-star-inserted\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
           "target": [
-            ".main-image"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"100\" height=\"80\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"] > img[width=\"100\"][height=\"80\"][loading=\"lazy\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"100\" height=\"80\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"] > img[width=\"100\"][height=\"80\"][loading=\"lazy\"]"
+            "img"
           ]
         },
         {
@@ -9312,7 +7281,7 @@
               "data": null,
               "relatedNodes": [
                 {
-                  "html": "<h1 _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</h1>",
+                  "html": "<h1 _ngcontent-ng-c2535305929=\"\">CRI BEE Star Rated Pumps</h1>",
                   "target": [
                     "h1"
                   ]
@@ -9461,7 +7430,7 @@
           "impact": null,
           "html": "<div _ngcontent-ng-c458758637=\"\" class=\"container\">",
           "target": [
-            ".container[_ngcontent-ng-c458758637=\"\"]"
+            "header > .container"
           ]
         },
         {
@@ -9601,7 +7570,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/\" class=\"ng-star-inserted\"> Home </a>",
           "target": [
-            ".nav-desktop > a[href=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href=\"/\"]"
           ]
         },
         {
@@ -9621,7 +7590,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" class=\"active ng-star-inserted\" href=\"/products\"> Products </a>",
           "target": [
-            ".nav-desktop > .active[href$=\"products\"]"
+            ".nav-desktop > .active.ng-star-inserted[href$=\"products\"]"
           ]
         },
         {
@@ -9641,7 +7610,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" routerlink=\"/\" href=\"/#industries\" class=\"ng-star-inserted\"> Industries </a>",
           "target": [
-            ".nav-desktop > a[href$=\"/#industries\"][routerlink=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"/#industries\"][routerlink=\"/\"]"
           ]
         },
         {
@@ -9661,7 +7630,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" href=\"/about\" class=\"ng-star-inserted\"> About </a>",
           "target": [
-            ".nav-desktop > a[href$=\"about\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"about\"]"
           ]
         },
         {
@@ -9681,7 +7650,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c458758637=\"\" routerlink=\"/\" href=\"/#contact\" class=\"ng-star-inserted\"> Contact </a>",
           "target": [
-            ".nav-desktop > a[href$=\"/#contact\"][routerlink=\"/\"]"
+            ".nav-desktop > .ng-star-inserted[href$=\"/#contact\"][routerlink=\"/\"]"
           ]
         },
         {
@@ -10081,7 +8050,7 @@
           "impact": null,
           "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"container\">",
           "target": [
-            ".page-hero > .container"
+            ".page-hero > .container[_ngcontent-ng-c2535305929=\"\"]"
           ]
         },
         {
@@ -10099,7 +8068,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a> / <a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a> / <span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span></nav>",
+          "html": "<nav _ngcontent-ng-c2535305929=\"\" aria-label=\"Breadcrumb\" class=\"breadcrumb\">",
           "target": [
             ".breadcrumb"
           ]
@@ -10121,7 +8090,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c2535305929=\"\" routerlink=\"/\" href=\"/\">Home</a>",
           "target": [
-            ".breadcrumb > a[href=\"/\"][routerlink=\"/\"]"
+            "a[href=\"/\"][routerlink=\"/\"][_ngcontent-ng-c2535305929=\"\"]"
           ]
         },
         {
@@ -10141,7 +8110,7 @@
           "impact": null,
           "html": "<a _ngcontent-ng-c2535305929=\"\" routerlink=\"/products\" href=\"/products\">Products</a>",
           "target": [
-            ".breadcrumb > a[routerlink=\"/products\"][href$=\"products\"]"
+            "a[routerlink=\"/products\"][href$=\"products\"][_ngcontent-ng-c2535305929=\"\"]"
           ]
         },
         {
@@ -10159,7 +8128,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</span>",
+          "html": "<span _ngcontent-ng-c2535305929=\"\">CRI BEE Star Rated Pumps</span>",
           "target": [
             ".breadcrumb > span"
           ]
@@ -10179,7 +8148,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h1 _ngcontent-ng-c2535305929=\"\">Industrial AC Motor</h1>",
+          "html": "<h1 _ngcontent-ng-c2535305929=\"\">CRI BEE Star Rated Pumps</h1>",
           "target": [
             "h1"
           ]
@@ -10199,7 +8168,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span _ngcontent-ng-c2535305929=\"\" class=\"category-badge ng-star-inserted\">Motors</span>",
+          "html": "<span _ngcontent-ng-c2535305929=\"\" class=\"category-badge ng-star-inserted\">Pumps</span>",
           "target": [
             ".category-badge"
           ]
@@ -10261,7 +8230,7 @@
           "impact": null,
           "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"col-lg-6\">",
           "target": [
-            ".col-lg-6:nth-child(1)"
+            ".col-lg-6[_ngcontent-ng-c2535305929=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -10319,109 +8288,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"800\" height=\"600\" loading=\"eager\" class=\"main-image ng-star-inserted\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
+          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"800\" height=\"600\" loading=\"eager\" class=\"main-image ng-star-inserted\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
           "target": [
-            ".main-image"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" role=\"tablist\" aria-label=\"Product images\" class=\"thumbnail-row ng-star-inserted\">",
-          "target": [
-            ".thumbnail-row"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"100\" height=\"80\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"] > img[width=\"100\"][height=\"80\"][loading=\"lazy\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<img _ngcontent-ng-c2535305929=\"\" width=\"100\" height=\"80\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&amp;q=85\" alt=\"Industrial AC Motor\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"] > img[width=\"100\"][height=\"80\"][loading=\"lazy\"]"
+            "img"
           ]
         },
         {
@@ -10441,7 +8310,7 @@
           "impact": null,
           "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"col-lg-6\">",
           "target": [
-            ".col-lg-6:nth-child(2)"
+            ".col-lg-6[_ngcontent-ng-c2535305929=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -10479,7 +8348,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p _ngcontent-ng-c2535305929=\"\" class=\"short-desc\">High-efficiency AC motors for heavy-duty applications.</p>",
+          "html": "<p _ngcontent-ng-c2535305929=\"\" class=\"short-desc\">High-performance Texmo pumps engineered for domestic, agricultural, and industrial applications.</p>",
           "target": [
             ".short-desc"
           ]
@@ -10499,789 +8368,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"description ng-star-inserted\">Our industrial AC motors deliver exceptional performance, energy efficiency, and reliability for demanding manufacturing environments.</div>",
+          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"description ng-star-inserted\">",
           "target": [
             ".description"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"specifications card-custom ng-star-inserted\">",
-          "target": [
-            ".specifications"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 _ngcontent-ng-c2535305929=\"\">Specifications</h2>",
-          "target": [
-            "h2"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dl _ngcontent-ng-c2535305929=\"\">",
-          "target": [
-            "dl"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Speed</dt><dd _ngcontent-ng-c2535305929=\"\">1440 RPM (4 Pole)</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Speed</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(1) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">1440 RPM (4 Pole)</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(1) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Voltage</dt><dd _ngcontent-ng-c2535305929=\"\">415V AC, 3 Phase</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Voltage</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(2) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">415V AC, 3 Phase</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(2) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Mounting</dt><dd _ngcontent-ng-c2535305929=\"\">Foot / Flange (B3 / B5)</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Mounting</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(3) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Foot / Flange (B3 / B5)</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(3) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Enclosure</dt><dd _ngcontent-ng-c2535305929=\"\">TEFC (Totally Enclosed Fan Cooled)</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(4)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Enclosure</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(4) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">TEFC (Totally Enclosed Fan Cooled)</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(4) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Frequency</dt><dd _ngcontent-ng-c2535305929=\"\">50 Hz</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(5)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Frequency</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(5) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">50 Hz</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(5) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Motor Type</dt><dd _ngcontent-ng-c2535305929=\"\">Three Phase Induction Motor</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(6)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Motor Type</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(6) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Three Phase Induction Motor</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(6) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Protection</dt><dd _ngcontent-ng-c2535305929=\"\">IP55</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Protection</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(7) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">IP55</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(7) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Application</dt><dd _ngcontent-ng-c2535305929=\"\">Compressors, conveyors, machine tools, industrial drives</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(8)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Application</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(8) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Compressors, conveyors, machine tools, industrial drives</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(8) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Power Range</dt><dd _ngcontent-ng-c2535305929=\"\">1 HP to 50 HP</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Power Range</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(9) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">1 HP to 50 HP</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(9) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Efficiency Class</dt><dd _ngcontent-ng-c2535305929=\"\">IE2 / IE3</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Efficiency Class</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(10) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">IE2 / IE3</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(10) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Insulation Class</dt><dd _ngcontent-ng-c2535305929=\"\">Class F</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Insulation Class</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(11) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Class F</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(11) > dd"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<div _ngcontent-ng-c2535305929=\"\" class=\"spec-row ng-star-inserted\"><dt _ngcontent-ng-c2535305929=\"\">Ambient Temperature</dt><dd _ngcontent-ng-c2535305929=\"\">Up to 45°C</dd></div>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dt _ngcontent-ng-c2535305929=\"\">Ambient Temperature</dt>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(12) > dt"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<dd _ngcontent-ng-c2535305929=\"\">Up to 45°C</dd>",
-          "target": [
-            ".spec-row.ng-star-inserted:nth-child(12) > dd"
           ]
         },
         {
@@ -11519,9 +8608,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h3>",
+          "html": "<h2 _ngcontent-ng-c2773334426=\"\">Sri Vaari Traders</h2>",
           "target": [
-            "h3"
+            "h2"
           ]
         },
         {
@@ -12754,46 +9843,43 @@
           "target": [
             ".product-image-main"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "tabindex",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have a tabindex greater than 0"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail active ng-star-inserted\" tabindex=\"0\" aria-selected=\"true\" aria-label=\"View image 1 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 1 of 2\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "tabindex",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have a tabindex greater than 0"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button _ngcontent-ng-c2535305929=\"\" type=\"button\" role=\"tab\" class=\"thumbnail ng-star-inserted\" tabindex=\"-1\" aria-selected=\"false\" aria-label=\"View image 2 of 2\">",
-          "target": [
-            "button[aria-label=\"View image 2 of 2\"]"
-          ]
         }
       ]
     }
   ],
   "incomplete": [],
-  "violations": []
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/heading-order?application=axe-puppeteer",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h4 _ngcontent-ng-c2773334426=\"\">Quick Links</h4>",
+          "target": [
+            ".col-lg-2.col-md-6.reveal:nth-child(2) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
 }
