@@ -2,9 +2,9 @@
 @use '../../../../../styles/industrial/mixins' as *;
 
 .products-industrial {
-  @include section-padding;
   background: $color-bg;
   overflow: hidden;
+  @include section-padding;
 }
 
 .container-products {

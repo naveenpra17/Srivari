@@ -17,7 +17,6 @@ import { RouterLink } from '@angular/router';
 import Swiper from 'swiper';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { HeroSlide } from '../../../../models';
-import { RevealDirective } from '../../../../shared/directives/reveal.directive';
 
 interface HeadlineLine {
   text?: string;
@@ -38,7 +37,7 @@ interface DisplaySlide {
 @Component({
   selector: 'app-hero-section',
   standalone: true,
-  imports: [CommonModule, RouterLink, RevealDirective],
+  imports: [CommonModule, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss'

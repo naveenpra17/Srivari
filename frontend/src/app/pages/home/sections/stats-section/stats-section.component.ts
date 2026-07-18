@@ -10,7 +10,6 @@ import {
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { SiteSettings } from '../../../../models';
-import { RevealDirective } from '../../../../shared/directives/reveal.directive';
 
 interface StatItem {
   key: string;
@@ -22,7 +21,7 @@ interface StatItem {
 @Component({
   selector: 'app-stats-section',
   standalone: true,
-  imports: [CommonModule, RevealDirective],
+  imports: [CommonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './stats-section.component.html',
   styleUrl: './stats-section.component.scss'

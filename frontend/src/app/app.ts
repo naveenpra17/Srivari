@@ -13,7 +13,7 @@ import { ToastContainerComponent } from './shared/components/toast-container/toa
   imports: [RouterOutlet, ToastContainerComponent],
   animations: [routeSlideFade],
   template: `
-    <router-outlet [@routeSlideFade]="o.activatedRouteData?.[ 'animation'] ?? ''" #o="outlet" />
+    <router-outlet [@routeSlideFade]="o.activatedRouteData['animation'] ?? ''" #o="outlet" />
     <app-toast-container />
   `,
   styles: [`:host { display: block; }`]

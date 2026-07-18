@@ -1,12 +1,12 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { CommonModule, DatePipe, JsonPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { AdminService } from '../../../core/services/admin.service';
 import { AuditLogEntry } from '../../../models';
 
 @Component({
   selector: 'app-admin-audit-log',
   standalone: true,
-  imports: [CommonModule, DatePipe, JsonPipe],
+  imports: [CommonModule],
   templateUrl: './admin-audit-log.component.html',
   styleUrl: '../admin-shared.scss'
 })
