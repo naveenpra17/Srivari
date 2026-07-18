@@ -92,6 +92,12 @@ export class ProductDetailComponent implements OnInit {
         error: () => this.loading.set(false)
       });
     }
+
+    this.route.fragment.subscribe(fragment => {
+      if (fragment === 'quote') {
+        this.openQuoteForm();
+      }
+    });
   }
 
   // Keyboard navigation for lightbox and thumbnails
@@ -250,11 +256,24 @@ export class ProductDetailComponent implements OnInit {
   // Form methods
   toggleQuoteForm(): void {
     this.showQuoteForm.update(v => !v);
-    if (!this.showQuoteForm()) {
+    if (this.showQuoteForm()) {
+      this.scrollToQuoteForm();
+    } else {
       this.formSubmitted.set(false);
       this.formErrors.set({});
       this.quoteForm.reset({ quantity: 1 });
     }
+  }
+
+  private openQuoteForm(): void {
+    this.showQuoteForm.set(true);
+    this.scrollToQuoteForm();
+  }
+
+  private scrollToQuoteForm(): void {
+    setTimeout(() => {
+      document.getElementById('product-quote')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 120);
   }
 
   validateForm(): boolean {
@@ -317,7 +336,12 @@ export class ProductDetailComponent implements OnInit {
   }
 
   private updateSeo(product: Product): void {
-    this.chat.setPageContext({ type: 'product', productName: product.name });
+    this.chat.setPageContext({
+      type: 'product',
+      productName: product.name,
+      productSlug: product.slug,
+      categoryName: product.categoryName
+    });
     this.seo.update({
       title: product.name,
       description: product.shortDescription ?? `Explore ${product.name} from Sri Vaari Traders`,

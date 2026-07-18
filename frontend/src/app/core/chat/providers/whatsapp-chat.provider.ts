@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ChatPageContext, ChatProvider, ChatWidgetConfig } from '../chat.types';
+import { resolveChatMessage } from '../chat-message.util';
 
 @Injectable({ providedIn: 'root' })
 export class WhatsappChatProvider implements ChatProvider {
@@ -13,14 +14,9 @@ export class WhatsappChatProvider implements ChatProvider {
     const phone = this.normalizePhone(config.phone);
     if (!phone) return;
 
-    const message = this.resolveMessage(config, context);
+    const message = resolveChatMessage(config, context);
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
-  }
-
-  private resolveMessage(config: ChatWidgetConfig, context: ChatPageContext): string {
-    const template = config.messages[context.type] ?? config.messages.general;
-    return template.replace(/\{productName\}/g, context.productName ?? 'your product');
   }
 
   private normalizePhone(phone: string): string {

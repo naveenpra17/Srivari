@@ -5,6 +5,9 @@ export type ChatMessageContext = 'general' | 'product' | 'contact';
 export interface ChatPageContext {
   type: ChatMessageContext;
   productName?: string;
+  productSlug?: string;
+  categoryName?: string;
+  pageUrl?: string;
 }
 
 export interface ChatWidgetConfig {
