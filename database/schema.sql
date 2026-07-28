@@ -68,6 +68,7 @@ CREATE TABLE products (
     short_description VARCHAR(500),
     description     TEXT,
     image_url       VARCHAR(500),
+    catalog_image_url VARCHAR(500),
     brochure_url    VARCHAR(500),
     price           DECIMAL(12, 2),
     featured        BOOLEAN      NOT NULL DEFAULT FALSE,

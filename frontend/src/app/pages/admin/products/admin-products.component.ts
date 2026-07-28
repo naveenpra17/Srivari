@@ -40,6 +40,7 @@ export class AdminProductsComponent implements OnInit {
     shortDescription: [''],
     description: [''],
     imageUrl: [''],
+    catalogImageUrl: [''],
     brochureUrl: [''],
     price: [null as number | null],
     featured: [false],
@@ -69,7 +70,7 @@ export class AdminProductsComponent implements OnInit {
     this.productImages.set([]);
     this.newGalleryUrl.set('');
     this.newGalleryAlt.set('');
-    this.form.reset({ featured: false, active: true, sortOrder: 0 });
+    this.form.reset({ featured: false, active: true, sortOrder: 0, catalogImageUrl: '' });
     this.showModal.set(true);
   }
 
@@ -83,6 +84,7 @@ export class AdminProductsComponent implements OnInit {
       shortDescription: product.shortDescription ?? '',
       description: product.description ?? '',
       imageUrl: product.imageUrl ?? '',
+      catalogImageUrl: product.catalogImageUrl ?? '',
       brochureUrl: product.brochureUrl ?? '',
       price: product.price ?? null,
       featured: product.featured,

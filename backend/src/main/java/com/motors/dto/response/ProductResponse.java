@@ -24,6 +24,7 @@ public class ProductResponse {
     private String shortDescription;
     private String description;
     private String imageUrl;
+    private String catalogImageUrl;
     private String brochureUrl;
     private BigDecimal price;
     private Boolean featured;

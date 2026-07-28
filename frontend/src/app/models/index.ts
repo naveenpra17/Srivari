@@ -25,6 +25,7 @@ export interface Product {
   description?: string;
   imageUrl?: string;
   brochureUrl?: string;
+  catalogImageUrl?: string;
   price?: number;
   featured: boolean;
   active: boolean;

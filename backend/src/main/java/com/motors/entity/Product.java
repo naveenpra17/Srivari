@@ -42,6 +42,9 @@ public class Product extends BaseEntity {
     @Column(name = "image_url", length = 500)
     private String imageUrl;
 
+    @Column(name = "catalog_image_url", length = 500)
+    private String catalogImageUrl;
+
     @Column(name = "brochure_url", length = 500)
     private String brochureUrl;
 

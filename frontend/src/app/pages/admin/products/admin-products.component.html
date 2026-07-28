@@ -108,6 +108,14 @@
             (imageUrlChange)="form.patchValue({ imageUrl: $event })" />
           <small class="text-muted">Used as fallback and listing thumbnail. Gallery images below can override on detail page.</small>
         </div>
+        <div class="form-group">
+          <label>Catalog Image</label>
+          <app-image-upload
+            folder="products-catalog"
+            [imageUrl]="form.get('catalogImageUrl')?.value || ''"
+            (imageUrlChange)="form.patchValue({ catalogImageUrl: $event })" />
+          <small class="text-muted">Shown in the &quot;Catalog Preview&quot; section on the product page. Gallery images below are separate and used for the photo gallery and listing cards.</small>
+        </div>
         <div class="form-row">
           <div class="form-group">
             <label>Brochure URL</label>

@@ -179,6 +179,124 @@
   }
 }
 
+.product-catalog-section {
+  .section-head {
+    margin-bottom: 1.75rem;
+    h2 {
+      font-size: clamp(1.75rem, 2.2vw, 2.25rem);
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    p {
+      margin: 0;
+      color: var(--text-muted);
+      line-height: 1.75;
+      max-width: 720px;
+    }
+  }
+
+  .catalog-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .catalog-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+
+    .catalog-card-image {
+      position: relative;
+      overflow: hidden;
+      min-height: 220px;
+      background: var(--bg);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.25s ease;
+      }
+    }
+
+    .catalog-card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      h3 {
+        margin: 0;
+        font-size: 1rem;
+        color: var(--primary);
+      }
+
+      p {
+        margin: 0;
+        color: var(--text-muted);
+        line-height: 1.6;
+        flex: 1;
+      }
+
+      .btn-sm {
+        align-self: flex-start;
+      }
+    }
+
+    &:hover .catalog-card-image img,
+    &:focus-within .catalog-card-image img {
+      transform: scale(1.03);
+    }
+  }
+}
+
+.catalog-preview-card {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  .catalog-preview-inner {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .catalog-preview-image {
+    overflow: hidden;
+    border-radius: 18px;
+    background: var(--bg);
+    min-height: 320px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .catalog-preview-content {
+    h2 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: clamp(1.6rem, 2vw, 2rem);
+    }
+
+    p {
+      margin: 0 0 1rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .catalog-preview-inner {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+  }
+}
+
 .action-buttons {
   display: flex;
   gap: 1rem;

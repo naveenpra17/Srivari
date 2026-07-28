@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Sri Vaari Guide">
+  <meta name="theme-color" content="#0a2b5e">
+  <meta name="description" content="Simple guide for Sri Vaari Traders admin panel — read on phone">
+  <title>Sri Vaari Traders — Simple User Guide</title>
+  <style>
+    :root {
+      --primary: #0a2b5e;
+      --primary-light: #1a4a8a;
+      --accent: #25d366;
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 14px;
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #334155;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+      padding: 0 0 calc(24px + var(--safe-bottom));
+    }
+
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--primary);
+      color: #fff;
+      padding: calc(12px + var(--safe-top)) 16px 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.15);
+    }
+
+    .top-bar h1 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .top-bar p {
+      margin: 4px 0 12px;
+      font-size: 0.82rem;
+      opacity: .9;
+    }
+
+    .quick-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .quick-links a {
+      flex: 1;
+      min-width: 120px;
+      text-align: center;
+      padding: 10px 12px;
+      background: rgba(255,255,255,.15);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .quick-links a.primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 4px 0;
+      margin-bottom: 20px;
+    }
+
+    .toc-title {
+      padding: 12px 16px 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+
+    .toc a {
+      display: block;
+      padding: 10px 16px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .toc a:active { background: rgba(10,43,94,.06); }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+
+    section > summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      min-height: 52px;
+    }
+
+    section > summary::-webkit-details-marker { display: none; }
+
+    section > summary::after {
+      content: "+";
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    section[open] > summary::after { content: "−"; }
+
+    .section-body {
+      padding: 0 16px 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-body > *:first-child { margin-top: 14px; }
+
+    ol, ul { padding-left: 1.25rem; margin: 12px 0; }
+    li { margin-bottom: 8px; }
+    li:last-child { margin-bottom: 0; }
+
+    p { margin: 12px 0; }
+
+    strong { color: var(--primary); font-weight: 600; }
+
+    .card-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 12px 0;
+    }
+
+    .card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+
+    .card .label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .card .value {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .card .desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .tip {
+      background: #ecfdf5;
+      border-left: 4px solid var(--accent);
+      padding: 12px 14px;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.92rem;
+      margin: 14px 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .tip { background: rgba(37,211,102,.1); }
+    }
+
+    .warn {
+      background: #fff7ed;
+      border-left: 4px solid #ea580c;
+      padding: 12px 14px;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.92rem;
+      margin: 14px 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .warn { background: rgba(234,88,12,.12); }
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    a.link { color: var(--primary-light); word-break: break-all; }
+  </style>
+</head>
+<body>
+
+  <header class="top-bar">
+    <h1>Sri Vaari Traders</h1>
+    <p>Simple User Guide — for phone &amp; tablet</p>
+    <div class="quick-links">
+      <a href="https://srivari-ui.vercel.app/admin/login" class="primary">Open Admin</a>
+      <a href="https://srivari-ui.vercel.app">View Website</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <nav class="toc" aria-label="Contents">
+      <div class="toc-title">Jump to section</div>
+      <a href="#login">1. Logging in</a>
+      <a href="#after-login">2. After login</a>
+      <a href="#daily">3. Daily tasks</a>
+      <a href="#messages">4. Customer messages</a>
+      <a href="#quotes">5. Quote requests</a>
+      <a href="#add-product">6. Add a product</a>
+      <a href="#edit-product">7. Edit / remove product</a>
+      <a href="#categories">8. Categories</a>
+      <a href="#hero">9. Homepage banner</a>
+      <a href="#testimonials">10. Testimonials</a>
+      <a href="#settings">11. Company settings</a>
+      <a href="#customers">12. What customers see</a>
+      <a href="#roles">13. Who can do what</a>
+      <a href="#habits">14. Good habits</a>
+      <a href="#problems">15. Common problems</a>
+    </nav>
+
+    <details id="login" open>
+      <summary>1. Logging in</summary>
+      <div class="section-body">
+        <ol>
+          <li>Open the <strong>Admin</strong> link at the top of this page.</li>
+          <li>Enter your <strong>email</strong> and <strong>password</strong>.</li>
+          <li>Tap <strong>Login</strong>.</li>
+          <li>You will see the <strong>Dashboard</strong> — your home screen in admin.</li>
+        </ol>
+        <p><strong>First-time login:</strong></p>
+        <div class="card-row">
+          <div class="card">
+            <div class="label">Email</div>
+            <div class="value">admin@motors.com</div>
+          </div>
+          <div class="card">
+            <div class="label">Password</div>
+            <div class="value">Admin@123</div>
+          </div>
+        </div>
+        <div class="warn">Change this password after first login → <strong>Profile</strong> → Change Password.</div>
+      </div>
+    </details>
+
+    <details id="after-login">
+      <summary>2. What you see after login</summary>
+      <div class="section-body">
+        <p><strong>Left menu</strong> — tap any item to open that section:</p>
+        <div class="card-row">
+          <div class="card"><div class="value">Dashboard</div><div class="desc">Overview with numbers and charts</div></div>
+          <div class="card"><div class="value">Products</div><div class="desc">Add and edit items you sell</div></div>
+          <div class="card"><div class="value">Categories</div><div class="desc">Groups like Motors, Pumps</div></div>
+          <div class="card"><div class="value">Industries</div><div class="desc">Business types you serve</div></div>
+          <div class="card"><div class="value">Gallery</div><div class="desc">Homepage photos</div></div>
+          <div class="card"><div class="value">Testimonials</div><div class="desc">Customer reviews</div></div>
+          <div class="card"><div class="value">Hero Slider</div><div class="desc">Top homepage banners</div></div>
+          <div class="card"><div class="value">Messages</div><div class="desc">Contact form enquiries</div></div>
+          <div class="card"><div class="value">Quotes</div><div class="desc">Price quote requests</div></div>
+          <div class="card"><div class="value">Settings</div><div class="desc">Phone, address, WhatsApp</div></div>
+          <div class="card"><div class="value">Users</div><div class="desc">Staff accounts (Admin only)</div></div>
+          <div class="card"><div class="value">Profile</div><div class="desc">Your name and password</div></div>
+        </div>
+        <p><strong>Top bar:</strong></p>
+        <ul>
+          <li><strong>View Site</strong> — see what customers see</li>
+          <li><strong>Theme toggle</strong> — light or dark screen</li>
+          <li><strong>Logout</strong> — sign out when done</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="daily">
+      <summary>3. Daily tasks — quick reference</summary>
+      <div class="section-body">
+        <div class="card-row">
+          <div class="card"><div class="label">New messages?</div><div class="value">→ Messages</div></div>
+          <div class="card"><div class="label">New quotes?</div><div class="value">→ Quotes</div></div>
+          <div class="card"><div class="label">Add/edit product?</div><div class="value">→ Products</div></div>
+          <div class="card"><div class="label">Change phone/address?</div><div class="value">→ Settings</div></div>
+          <div class="card"><div class="label">Update banner?</div><div class="value">→ Hero Slider</div></div>
+          <div class="card"><div class="label">Add review?</div><div class="value">→ Testimonials</div></div>
+          <div class="card"><div class="label">Change password?</div><div class="value">→ Profile</div></div>
+        </div>
+      </div>
+    </details>
+
+    <details id="messages">
+      <summary>4. How to handle customer messages</summary>
+      <div class="section-body">
+        <p><strong>Messages</strong> = enquiries from the “Contact Us” form.</p>
+        <ol>
+          <li>Tap <strong>Messages</strong> in the menu.</li>
+          <li>Unread messages stand out in the list.</li>
+          <li>Tap a message to read name, email, phone, subject, and message.</li>
+          <li>Reply by <strong>email or phone</strong> — the admin does not send replies automatically.</li>
+          <li>Opening a message marks it as <strong>read</strong>.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details id="quotes">
+      <summary>5. How to handle quote requests</summary>
+      <div class="section-body">
+        <p><strong>Quotes</strong> = when someone asks for a price on a product.</p>
+        <ol>
+          <li>Tap <strong>Quotes</strong> in the menu.</li>
+          <li>Tap a quote to see customer details, product, quantity, and notes.</li>
+          <li>Contact the customer with your price by email or phone.</li>
+          <li>Opening a quote marks it as <strong>read</strong>.</li>
+        </ol>
+        <div class="tip">Customers can also use <strong>Help → Chat on WhatsApp</strong> on the website.</div>
+      </div>
+    </details>
+
+    <details id="add-product">
+      <summary>6. How to add a new product</summary>
+      <div class="section-body">
+        <ol>
+          <li>Go to <strong>Products</strong>.</li>
+          <li>Tap <strong>Add Product</strong>.</li>
+          <li>Fill in the fields below.</li>
+          <li>Tap <strong>Save</strong>.</li>
+        </ol>
+        <div class="card-row">
+          <div class="card"><div class="value">Name</div><div class="desc">e.g. 5 HP Induction Motor</div></div>
+          <div class="card"><div class="value">Category</div><div class="desc">Pick the right group</div></div>
+          <div class="card"><div class="value">Short description</div><div class="desc">1–2 lines for listings</div></div>
+          <div class="card"><div class="value">Description</div><div class="desc">Full details on product page</div></div>
+          <div class="card"><div class="value">Image</div><div class="desc">Upload photo or paste link</div></div>
+          <div class="card"><div class="value">Price</div><div class="desc">Starting price in ₹ (optional)</div></div>
+          <div class="card"><div class="value">Active</div><div class="desc">Turn ON so customers can see it</div></div>
+          <div class="card"><div class="value">Featured</div><div class="desc">Turn ON for homepage (optional)</div></div>
+        </div>
+        <p><strong>More photos:</strong> Open product → Images section → upload → drag to reorder → set <strong>Primary</strong>.</p>
+      </div>
+    </details>
+
+    <details id="edit-product">
+      <summary>7. How to edit or remove a product</summary>
+      <div class="section-body">
+        <p><strong>Edit</strong></p>
+        <ol>
+          <li>Products → find item → <strong>Edit</strong> → change → <strong>Save</strong>.</li>
+        </ol>
+        <p><strong>Hide from website (keep in admin)</strong></p>
+        <p>Turn <strong>Active</strong> OFF and save.</p>
+        <p><strong>Delete forever</strong> (Admin only)</p>
+        <p>Tap <strong>Delete</strong>. Cannot be undone.</p>
+      </div>
+    </details>
+
+    <details id="categories">
+      <summary>8. How to manage categories</summary>
+      <div class="section-body">
+        <ol>
+          <li>Go to <strong>Categories</strong>.</li>
+          <li><strong>Add</strong> — name, description, image (optional).</li>
+          <li><strong>Reorder</strong> — drag up/down.</li>
+          <li><strong>Edit</strong> — tap to change.</li>
+          <li><strong>Active OFF</strong> — hide from website.</li>
+        </ol>
+        <p>No image? The site shows the first letter of the category name.</p>
+      </div>
+    </details>
+
+    <details id="hero">
+      <summary>9. How to update homepage banner</summary>
+      <div class="section-body">
+        <ol>
+          <li>Go to <strong>Hero Slider</strong>.</li>
+          <li>Each row = one slide on homepage.</li>
+          <li>Set <strong>Title</strong>, <strong>Subtitle</strong>, <strong>Image</strong>, and button text/link.</li>
+          <li>Drag or use sort order for slide sequence.</li>
+          <li><strong>Active OFF</strong> hides a slide without deleting it.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details id="testimonials">
+      <summary>10. How to add a testimonial</summary>
+      <div class="section-body">
+        <ol>
+          <li>Go to <strong>Testimonials</strong> → <strong>Add</strong>.</li>
+          <li>Enter customer name, company, job title.</li>
+          <li>Add short quote and longer story (optional).</li>
+          <li>Set rating (1–5 stars), photo (optional).</li>
+          <li><strong>Featured</strong> = homepage · <strong>Active</strong> = visible on site.</li>
+          <li>Tap <strong>Save</strong>.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details id="settings">
+      <summary>11. How to update company details</summary>
+      <div class="section-body">
+        <ol>
+          <li>Go to <strong>Settings</strong>.</li>
+          <li>Update the sections you need.</li>
+          <li>Tap <strong>Save All Settings</strong> at the top.</li>
+        </ol>
+        <div class="card-row">
+          <div class="card"><div class="value">Company Information</div><div class="desc">Name, phone, email, address, hours</div></div>
+          <div class="card"><div class="value">Statistics</div><div class="desc">Years, clients — homepage counters</div></div>
+          <div class="card"><div class="value">About</div><div class="desc">Mission, vision, history</div></div>
+          <div class="card"><div class="value">Social Media</div><div class="desc">Facebook, LinkedIn, Instagram</div></div>
+          <div class="card"><div class="value">Google Maps</div><div class="desc">Map on contact section</div></div>
+          <div class="card"><div class="value">WhatsApp &amp; Chat</div><div class="desc">Number and chat messages</div></div>
+        </div>
+        <p><strong>WhatsApp (simple):</strong></p>
+        <div class="card-row">
+          <div class="card"><div class="value">chat_widget_enabled</div><div class="desc">Set to <strong>true</strong> to show Help &amp; WhatsApp</div></div>
+          <div class="card"><div class="value">whatsapp_phone</div><div class="desc">Numbers only, e.g. 919842231111</div></div>
+          <div class="card"><div class="value">whatsapp_message_product</div><div class="desc">Use {productName} for product name</div></div>
+        </div>
+      </div>
+    </details>
+
+    <details id="customers">
+      <summary>12. What customers see</summary>
+      <div class="section-body">
+        <p>The website updates automatically when you save in admin.</p>
+        <div class="card-row">
+          <div class="card"><div class="value">Home</div><div class="desc">Banner, categories, contact form</div></div>
+          <div class="card"><div class="value">Products</div><div class="desc">Search and browse catalog</div></div>
+          <div class="card"><div class="value">Product page</div><div class="desc">Photos, specs, quote form</div></div>
+          <div class="card"><div class="value">Testimonials</div><div class="desc">Customer stories</div></div>
+          <div class="card"><div class="value">Help button</div><div class="desc">Quote, WhatsApp, or call</div></div>
+        </div>
+      </div>
+    </details>
+
+    <details id="roles">
+      <summary>13. Who can do what</summary>
+      <div class="section-body">
+        <div class="card-row">
+          <div class="card"><div class="value">Admin</div><div class="desc">Everything — delete, users, logs</div></div>
+          <div class="card"><div class="value">Editor</div><div class="desc">Add/edit content, view messages</div></div>
+          <div class="card"><div class="value">Viewer</div><div class="desc">Look only — cannot change anything</div></div>
+        </div>
+        <p>See <strong>Read Only</strong>? Ask an Admin to upgrade your role.</p>
+      </div>
+    </details>
+
+    <details id="habits">
+      <summary>14. Good habits</summary>
+      <div class="section-body">
+        <ol>
+          <li>Check <strong>Messages</strong> and <strong>Quotes</strong> daily.</li>
+          <li>Keep phone and WhatsApp correct in <strong>Settings</strong>.</li>
+          <li>Use clear product photos.</li>
+          <li>Turn <strong>Active OFF</strong> instead of deleting if you may list again.</li>
+          <li>Tap <strong>View Site</strong> after changes to check the live site.</li>
+          <li><strong>Logout</strong> on shared computers.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details id="problems">
+      <summary>15. Common problems</summary>
+      <div class="section-body">
+        <div class="card-row">
+          <div class="card"><div class="label">Cannot log in</div><div class="desc">Check email/password; ask Admin</div></div>
+          <div class="card"><div class="label">Changes not visible</div><div class="desc">Tap Save; refresh site; check Active is ON</div></div>
+          <div class="card"><div class="label">No WhatsApp button</div><div class="desc">Settings: chat_widget_enabled = true + phone filled</div></div>
+          <div class="card"><div class="label">Image not showing</div><div class="desc">Wait and save again; try smaller file</div></div>
+          <div class="card"><div class="label">Forgot password</div><div class="desc">Ask Admin or Profile → Change Password</div></div>
+        </div>
+      </div>
+    </details>
+
+  </main>
+
+  <footer class="footer">
+  Sri Vaari Traders — Simple User Guide<br>
+  Website: <a class="link" href="https://srivari-ui.vercel.app">srivari-ui.vercel.app</a>
+  </footer>
+
+</body>
+</html>

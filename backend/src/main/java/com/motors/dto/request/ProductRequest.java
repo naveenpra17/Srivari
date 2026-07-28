@@ -20,6 +20,8 @@ public class ProductRequest {
 
     private String imageUrl;
 
+    private String catalogImageUrl;
+
     private String brochureUrl;
 
     private java.math.BigDecimal price;

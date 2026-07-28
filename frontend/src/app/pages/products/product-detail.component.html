@@ -19,6 +19,23 @@
       </div>
     </div>
 
+    @if (p.catalogImageUrl) {
+      <div class="container section">
+        <div class="catalog-preview-card card-custom" appReveal [appRevealDelay]="150">
+          <div class="catalog-preview-inner">
+            <div class="catalog-preview-image">
+              <img [src]="p.catalogImageUrl" [alt]="p.name + ' catalog preview'" loading="lazy">
+            </div>
+            <div class="catalog-preview-content">
+              <h2>Catalog Preview</h2>
+              <p>View the product catalog preview image for {{ p.name }}.</p>
+              <a [href]="p.catalogImageUrl" target="_blank" rel="noopener" class="btn-secondary-custom">Open Catalog Image</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
     <div class="container section">
       <div class="row g-5">
         <div class="col-lg-6">
@@ -141,6 +158,33 @@
         </div>
       </div>
     </div>
+
+    @if (galleryImages().length > 1) {
+      <div class="container section">
+        <div class="product-catalog-section" appReveal [appRevealDelay]="250">
+          <div class="section-head">
+            <h2>Product Catalog</h2>
+            <p>Browse image-based catalog items for this product and select the option you want to explore.</p>
+          </div>
+          <div class="catalog-grid row g-4">
+            @for (img of galleryImages(); track img.id; let i = $index) {
+              <div class="col-lg-4 col-md-6">
+                <article class="catalog-card card-custom">
+                  <div class="catalog-card-image">
+                    <img [src]="img.imageUrl" [alt]="img.altText || ('Catalog item ' + (i + 1))" loading="lazy">
+                  </div>
+                  <div class="catalog-card-body">
+                    <h3>{{ img.altText || ('Catalog item ' + (i + 1)) }}</h3>
+                    <p>If this is the product variant you want, click View to set it as the main image.</p>
+                    <button type="button" class="btn-outline-custom btn-sm" (click)="selectImage(i)">View</button>
+                  </div>
+                </article>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    }
   } @else {
     <div class="container section text-center">
       <h1>Product not found</h1>

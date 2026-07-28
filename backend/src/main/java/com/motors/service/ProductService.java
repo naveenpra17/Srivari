@@ -113,8 +113,9 @@ public class ProductService {
         product.setName(request.getName());
         product.setShortDescription(request.getShortDescription());
         product.setDescription(request.getDescription());
-        product.setImageUrl(request.getImageUrl());
-        product.setBrochureUrl(request.getBrochureUrl());
+        product.setImageUrl(blankToNull(request.getImageUrl()));
+        product.setCatalogImageUrl(blankToNull(request.getCatalogImageUrl()));
+        product.setBrochureUrl(blankToNull(request.getBrochureUrl()));
         product.setPrice(request.getPrice());
         if (request.getFeatured() != null) product.setFeatured(request.getFeatured());
         if (request.getActive() != null) product.setActive(request.getActive());
@@ -127,6 +128,14 @@ public class ProductService {
             product.setCategory(category);
         }
         return product;
+    }
+
+    private String blankToNull(String value) {
+        if (value == null) {
+            return null;
+        }
+        String trimmed = value.trim();
+        return trimmed.isEmpty() ? null : trimmed;
     }
 
     private String generateUniqueSlug(String name) {
