@@ -19,23 +19,6 @@
       </div>
     </div>
 
-    @if (p.catalogImageUrl) {
-      <div class="container section">
-        <div class="catalog-preview-card card-custom" appReveal [appRevealDelay]="150">
-          <div class="catalog-preview-inner">
-            <div class="catalog-preview-image">
-              <img [src]="p.catalogImageUrl" [alt]="p.name + ' catalog preview'" loading="lazy">
-            </div>
-            <div class="catalog-preview-content">
-              <h2>Catalog Preview</h2>
-              <p>View the product catalog preview image for {{ p.name }}.</p>
-              <a [href]="p.catalogImageUrl" target="_blank" rel="noopener" class="btn-secondary-custom">Open Catalog Image</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    }
-
     <div class="container section">
       <div class="row g-5">
         <div class="col-lg-6">
@@ -159,12 +142,31 @@
       </div>
     </div>
 
-    @if (galleryImages().length > 1) {
-      <div class="container section">
-        <div class="product-catalog-section" appReveal [appRevealDelay]="250">
+    @if (p.catalogImageUrl) {
+      <div class="container section catalog-section">
+        <div class="catalog-preview-block" appReveal [appRevealDelay]="250">
           <div class="section-head">
             <h2>Product Catalog</h2>
-            <p>Browse image-based catalog items for this product and select the option you want to explore.</p>
+            <p>View the catalog image for {{ p.name }}.</p>
+          </div>
+          <div class="catalog-preview-card card-custom">
+            <div class="catalog-preview-image">
+              <img [src]="p.catalogImageUrl" [alt]="p.name + ' catalog preview'" loading="lazy" decoding="async">
+            </div>
+            <div class="catalog-preview-actions">
+              <a [href]="p.catalogImageUrl" target="_blank" rel="noopener" class="btn-secondary-custom">Open Full Catalog Image</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    @if (galleryImages().length > 1) {
+      <div class="container section">
+        <div class="product-catalog-section" appReveal [appRevealDelay]="300">
+          <div class="section-head">
+            <h2>Gallery</h2>
+            <p>Browse additional product images and select a variant to view in the main gallery.</p>
           </div>
           <div class="catalog-grid row g-4">
             @for (img of galleryImages(); track img.id; let i = $index) {
