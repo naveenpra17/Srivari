@@ -142,7 +142,19 @@
   padding: 1.25rem;
   margin-bottom: 1.5rem;
 
-  h2 { font-size: 1rem; color: var(--primary); margin-bottom: 1rem; }
+  summary {
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+    &::after { content: '−'; float: right; }
+    span { color: var(--text-muted); font-size: 0.8rem; font-weight: 500; margin-left: 0.5rem; }
+  }
+  &:not([open]) summary::after { content: '+'; }
+  dl { margin: 1rem 0 0; }
 
   .spec-row {
     display: flex;
@@ -336,6 +348,10 @@
   margin-bottom: 2rem;
 }
 
+.sticky-quote-cta {
+  display: none;
+}
+
 .quote-form {
   padding: 1.5rem;
   margin-top: 1rem;
@@ -395,172 +411,29 @@
   }
 }
 
-/* Lightbox Styles */
-.lightbox-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.95);
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 0.2s ease;
-  overflow: hidden;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.lightbox-container {
-  position: relative;
-  max-width: 95vw;
-  max-height: 95vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: -50px;
-  right: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s, transform 0.2s;
-  z-index: 10;
-
-  &:hover,
-  &:focus-visible {
-    background: var(--secondary);
-    transform: scale(1.1);
-    outline: none;
-  }
-}
-
-.lightbox-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s, transform 0.2s;
-  z-index: 10;
-
-  &:hover,
-  &:focus-visible {
-    background: var(--secondary);
-    transform: translateY(-50%) scale(1.1);
-    outline: none;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-}
-
-.lightbox-prev { left: -70px; }
-.lightbox-next { right: -70px; }
-
 @media (max-width: 768px) {
-  .lightbox-prev { left: 10px; }
-  .lightbox-next { right: 10px; }
-}
+  .product-detail-page { padding-bottom: 82px; }
 
-.lightbox-image-wrapper {
-  position: relative;
-  max-width: 90vw;
-  max-height: 80vh;
-  border-radius: 8px;
-  overflow: hidden;
-  touch-action: none;
-}
-
-.lightbox-image {
-  display: block;
-  max-width: 100%;
-  max-height: 80vh;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  transform-origin: center center;
-  transition: transform 0.1s ease-out;
-  user-select: none;
-}
-
-.lightbox-counter {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.85rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.lightbox-thumbnails {
-  display: flex;
-  gap: 8px;
-  margin-top: 16px;
-  padding: 0 10px;
-  overflow-x: auto;
-  max-width: 90vw;
-}
-
-.lightbox-thumbnail {
-  flex-shrink: 0;
-  width: 60px;
-  height: 45px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 2px solid transparent;
-  padding: 0;
-  cursor: pointer;
-  background: none;
-  transition: var(--transition);
-
-  img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-  &.active,
-  &:hover,
-  &:focus-visible {
-    border-color: var(--secondary);
-    outline: none;
+  .specifications {
+    padding: 1rem;
+    .spec-row { gap: 1rem; font-size: 0.84rem; }
+    dd { text-align: right; }
   }
 
-  &:focus-visible {
-    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.3);
-  }
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .lightbox-overlay,
-  .lightbox-image,
-  .zoom-hint,
-  .main-image,
-  .thumbnail {
-    animation: none !important;
-    transition: none !important;
+  .sticky-quote-cta {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 1rem;
+    right: 1rem;
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    min-height: 52px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--secondary);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+    font: inherit;
+    font-weight: 700;
   }
 }

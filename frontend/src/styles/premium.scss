@@ -1,0 +1,90 @@
+// A lightweight visual layer: depth and polish without a WebGL dependency.
+:root {
+  --surface-glass: rgba(255, 255, 255, .76);
+  --premium-ring: rgba(255, 107, 0, .26);
+}
+
+.hero-industrial {
+  isolation: isolate;
+  background: #061d3f;
+
+  &::before, &::after {
+    position: absolute;
+    z-index: 2;
+    width: clamp(220px, 34vw, 520px);
+    aspect-ratio: 1;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 50%;
+    content: '';
+    pointer-events: none;
+  }
+
+  &::before { top: 12%; right: -12%; box-shadow: 0 0 0 32px rgba(255, 107, 0, .07), 0 0 0 90px rgba(255, 255, 255, .035); animation: premium-orbit 18s ease-in-out infinite; }
+  &::after { right: 18%; bottom: -22%; width: clamp(140px, 18vw, 300px); border-color: var(--premium-ring); animation: premium-orbit 13s ease-in-out infinite reverse; }
+}
+
+.hero-industrial .hero-copy {
+  position: relative;
+  padding-left: clamp(1rem, 2.6vw, 2.25rem);
+  border-left: 1px solid rgba(255,255,255,.4);
+  text-shadow: 0 2px 18px rgba(0,0,0,.2);
+}
+
+.hero-industrial .hero-copy::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  width: 3px;
+  border-radius: 999px;
+  background: var(--secondary);
+  content: '';
+  box-shadow: 0 0 20px rgba(255,107,0,.7);
+}
+
+.products-industrial, .categories-premium, .industries-industrial, .gallery-industrial {
+  position: relative;
+}
+
+.products-industrial .product-card,
+.categories-premium .category-card,
+.industries-industrial .industry-tile {
+  border: 1px solid rgba(10, 43, 94, .08);
+  box-shadow: 0 16px 35px rgba(10, 43, 94, .08);
+  transform: perspective(1200px) translateZ(0);
+  transform-style: preserve-3d;
+  transition: transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease, border-color .45s ease;
+}
+
+@media (hover: hover) and (min-width: 769px) {
+  .products-industrial .product-card:hover,
+  .categories-premium .category-card:hover,
+  .industries-industrial .industry-tile:hover {
+    border-color: rgba(255, 107, 0, .45);
+    box-shadow: 0 26px 55px rgba(10, 43, 94, .18);
+    transform: perspective(1200px) translateY(-10px) rotateX(2deg) rotateY(-2deg);
+  }
+}
+
+.page-hero, .testimonials-hero {
+  background-image: radial-gradient(circle at 80% 18%, rgba(255,107,0,.35), transparent 24%), linear-gradient(125deg, #061d3f, #0a2b5e 58%, #123e79) !important;
+}
+
+.card-custom {
+  border: 1px solid rgba(10, 43, 94, .08);
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid rgba(255,107,0,.62);
+  outline-offset: 3px;
+}
+
+@keyframes premium-orbit {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(-18px, 12px, 42px) rotate(12deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-industrial::before, .hero-industrial::after { animation: none; }
+  .products-industrial .product-card, .categories-premium .category-card, .industries-industrial .industry-tile { transition: none; transform: none; }
+}

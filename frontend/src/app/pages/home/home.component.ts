@@ -35,6 +35,7 @@ export class HomeComponent implements OnInit {
   private readonly seo = inject(SeoService);
   data = signal<HomePageData | null>(null);
   loading = signal(true);
+  error = signal(false);
 
   ngOnInit(): void {
     this.seo.update({
@@ -43,16 +44,24 @@ export class HomeComponent implements OnInit {
       keywords: 'industrial motors, pumps, pipes, manufacturing, motors industries, engineering'
     });
 
+    this.loadHomeData();
+  }
+
+  retry(): void {
+    this.loadHomeData();
+  }
+
+  private loadHomeData(): void {
+    this.loading.set(true);
+    this.error.set(false);
     this.publicService.getHomePageData().subscribe({
       next: (res) => {
         this.data.set(res.data);
         this.loading.set(false);
       },
       error: () => {
-        this.data.set({
-          heroSlides: [], featuredProducts: [], categories: [],
-          industries: [], testimonials: [], gallery: [], settings: {}
-        });
+        this.data.set(null);
+        this.error.set(true);
         this.loading.set(false);
       }
     });

@@ -12,6 +12,12 @@
         </div>
       </div>
     </div>
+  } @else if (error()) {
+    <section class="container section text-center" role="alert">
+      <h1>We couldn’t load the website content</h1>
+      <p class="text-muted">Please check your connection and try again.</p>
+      <button type="button" class="btn-secondary-custom" (click)="retry()">Try again</button>
+    </section>
   } @else {
     <app-hero-section [slides]="data()?.heroSlides ?? []" />
     <app-categories-section [categories]="data()?.categories ?? []" />

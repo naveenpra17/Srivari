@@ -79,6 +79,12 @@
           </div>
         }
       </div>
+    } @else if (error()) {
+      <div class="empty-state" role="alert">
+        <h3>Testimonials couldn’t be loaded</h3>
+        <p>Please check your connection and try again.</p>
+        <button type="button" class="btn-secondary-custom" (click)="loadTestimonials()">Try again</button>
+      </div>
     } @else if (testimonials().length === 0) {
       <div class="empty-state" role="status">
         <div class="empty-icon">

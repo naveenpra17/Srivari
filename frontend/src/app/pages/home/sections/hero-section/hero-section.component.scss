@@ -377,43 +377,6 @@
   transform: scale(1);
 }
 
-// Parallax background effect
-.hero-slide-bg {
-  overflow: hidden;
-
-  img {
-    transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    will-change: transform;
-  }
-
-  &.parallax-active img {
-    transform: scale(1.08) translateY(0);
-  }
-}
-
-// Stagger children container
-.stagger-children {
-  > * {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-
-  &.is-visible > * {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  // Stagger delays
-  &.is-visible > *:nth-child(1) { transition-delay: 0ms; }
-  &.is-visible > *:nth-child(2) { transition-delay: 80ms; }
-  &.stagger-children.is-visible > *:nth-child(3) { transition-delay: 160ms; }
-  &.stagger-children.is-visible > *:nth-child(4) { transition-delay: 240ms; }
-  &.stagger-children.is-visible > *:nth-child(5) { transition-delay: 320ms; }
-  &.stagger-children.is-visible > *:nth-child(6) { transition-delay: 400ms; }
-}
-
 // Reduced motion support
 @media (prefers-reduced-motion: reduce) {
   .anim-fade-up,

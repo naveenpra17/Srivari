@@ -20,13 +20,21 @@ import { Product } from '../../models';
       </div>
       <div class="container section">
         <div class="filters mb-4">
-          <input
-            type="text"
-            [(ngModel)]="searchQuery"
-            (ngModelChange)="onSearch()"
-            placeholder="Search products..."
-            class="search-input">
+          <div class="search-shell">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+            <input type="search" [(ngModel)]="searchQuery" (ngModelChange)="onSearch()" placeholder="Search motors, pumps, pipes..." class="search-input" aria-label="Search products">
+            @if (searchQuery) { <button type="button" class="clear-search" (click)="clearSearch()" aria-label="Clear product search">×</button> }
+          </div>
+          @if (!loading() && !error()) { <p class="results-summary">{{ products().length }} product{{ products().length === 1 ? '' : 's' }} shown</p> }
         </div>
+        @if (loading()) {
+          <p class="text-center py-5" role="status">Loading products…</p>
+        } @else if (error()) {
+          <div class="text-center py-5" role="alert">
+            <p class="text-muted">Products couldn’t be loaded. Please try again.</p>
+            <button type="button" class="btn-primary-custom" (click)="loadProducts()">Try again</button>
+          </div>
+        } @else {
         <div class="row g-4">
           @for (product of products(); track product.id) {
             <div class="col-lg-3 col-md-6">
@@ -50,6 +58,7 @@ import { Product } from '../../models';
             </div>
           }
         </div>
+        }
         @if (totalPages() > 1) {
           <div class="pagination-controls d-flex justify-content-center gap-2 mt-4">
             <button class="btn-outline-custom" [disabled]="currentPage() === 0" (click)="goToPage(currentPage() - 1)">Previous</button>
@@ -70,11 +79,14 @@ import { Product } from '../../models';
       p { color: #e2e8f0; font-size: 1.1rem; }
     }
     .search-input {
-      width: 100%; max-width: 100%; padding: 12px 20px; min-height: 44px;
-      border: 1px solid var(--border-color, #e0e0e0);
-      border-radius: 50px; font-family: inherit; font-size: 1rem; outline: none;
+      width: 100%; max-width: 100%; padding: 12px 44px; min-height: 52px; border: 0;
+      background: transparent; font-family: inherit; font-size: 1rem; outline: none;
       &:focus { border-color: var(--primary); }
     }
+    .search-shell { display: flex; align-items: center; position: relative; max-width: 720px; margin: 0 auto; border: 1px solid var(--border-color); border-radius: 999px; background: var(--card-bg); box-shadow: 0 12px 28px rgba(10,43,94,.08); }
+    .search-shell > svg { position: absolute; left: 18px; color: var(--secondary); }
+    .clear-search { position: absolute; right: 10px; width: 34px; height: 34px; border: 0; border-radius: 50%; background: rgba(10,43,94,.08); color: var(--primary); font-size: 1.4rem; line-height: 1; }
+    .results-summary { max-width: 720px; margin: .75rem auto 0; color: var(--text-muted); font-size: .86rem; }
     .page-hero {
       padding: 100px 0 40px;
       h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
@@ -102,6 +114,8 @@ export class ProductsPageComponent implements OnInit {
   private readonly seo = inject(SeoService);
   private readonly route = inject(ActivatedRoute);
   products = signal<Product[]>([]);
+  loading = signal(true);
+  error = signal(false);
   currentPage = signal(0);
   totalPages = signal(0);
   searchQuery = '';
@@ -140,21 +154,31 @@ export class ProductsPageComponent implements OnInit {
     }, 400);
   }
 
+  clearSearch(): void {
+    this.searchQuery = '';
+    this.onSearch();
+  }
+
   goToPage(page: number): void {
     this.currentPage.set(page);
     this.loadProducts();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  private loadProducts(): void {
+  loadProducts(): void {
+    this.loading.set(true);
+    this.error.set(false);
     this.productService.getProducts(this.currentPage(), 12, this.searchQuery, this.categoryId).subscribe({
       next: (res) => {
         this.products.set(res.data.content);
         this.totalPages.set(res.data.totalPages);
+        this.loading.set(false);
       },
       error: () => {
         this.products.set([]);
         this.totalPages.set(0);
+        this.error.set(true);
+        this.loading.set(false);
       }
     });
   }

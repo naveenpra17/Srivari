@@ -23,6 +23,7 @@ export class TestimonialsPageComponent implements OnInit, OnDestroy {
   categories = signal<string[]>([]);
   loading = signal(true);
   loadingMore = signal(false);
+  error = signal(false);
   currentPage = signal(0);
   totalPages = signal(0);
   totalItems = signal(0);
@@ -76,6 +77,7 @@ export class TestimonialsPageComponent implements OnInit, OnDestroy {
       this.loading.set(true);
     }
 
+    if (!append) this.error.set(false);
     this.testimonialService.search({
       page: this.currentPage(),
       size: 9,
@@ -96,6 +98,8 @@ export class TestimonialsPageComponent implements OnInit, OnDestroy {
         this.loadingMore.set(false);
       },
       error: () => {
+        if (!append) this.testimonials.set([]);
+        this.error.set(true);
         this.loading.set(false);
         this.loadingMore.set(false);
       }

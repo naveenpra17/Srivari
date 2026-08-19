@@ -18,6 +18,12 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--border-color, #eee);
+  }
 }
 
 .admin-table {
@@ -48,9 +54,10 @@
   }
 
   @media (max-width: 768px) {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+    min-width: 680px;
+
+    th, td { padding: 11px 12px; }
+    .admin-actions { gap: 6px; }
   }
 }
 

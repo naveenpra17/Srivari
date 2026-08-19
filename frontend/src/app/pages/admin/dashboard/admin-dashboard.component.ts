@@ -11,12 +11,16 @@ Chart.register(...registerables);
   standalone: true,
   imports: [CommonModule],
   template: `
-    <h1 class="mb-4" style="color: var(--primary); font-size: 1.75rem">Dashboard</h1>
+    <header class="dashboard-intro">
+      <div><span class="dashboard-kicker">Operations overview</span><h1>Dashboard</h1><p>Live catalogue and customer activity at a glance.</p></div>
+      <div class="dashboard-status"><span></span> Live data</div>
+    </header>
     
     <div class="row g-4 mb-4">
       @for (stat of statCards(); track stat.label) {
         <div class="col-lg-3 col-md-6">
-          <div class="stat-card card-custom p-4">
+          <div class="stat-card card-custom p-4" [style.--stat-index]="$index">
+            <div class="stat-orb" aria-hidden="true"></div>
             <div class="stat-value">{{ stat.value }}</div>
             <div class="stat-label">{{ stat.label }}</div>
           </div>
@@ -52,7 +56,16 @@ Chart.register(...registerables);
     </div>
   `,
   styles: [`
+    .dashboard-intro { display:flex; align-items:flex-end; justify-content:space-between; gap:1rem; margin-bottom:1.75rem; }
+    .dashboard-intro h1 { margin:.2rem 0; color:var(--primary); font-size:clamp(1.65rem,3vw,2.15rem); }
+    .dashboard-intro p { margin:0; color:var(--text-muted); }
+    .dashboard-kicker { color:var(--secondary); font-size:.74rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .dashboard-status { display:flex; align-items:center; gap:.5rem; padding:.55rem .8rem; border:1px solid var(--border-color); border-radius:999px; color:var(--text-muted); font-size:.82rem; background:var(--card-bg); }
+    .dashboard-status span { width:8px; height:8px; border-radius:50%; background:#31b46d; box-shadow:0 0 0 4px rgba(49,180,109,.13); }
     .stat-card {
+      position:relative; overflow:hidden; isolation:isolate;
+      &::after { position:absolute; inset:auto -32px -42px auto; z-index:-1; width:120px; aspect-ratio:1; border-radius:50%; background:linear-gradient(135deg, rgba(255,107,0,.18), rgba(10,43,94,.05)); content:''; }
+      .stat-orb { position:absolute; top:14px; right:16px; width:9px; height:9px; border-radius:50%; background:var(--secondary); box-shadow:0 0 0 5px rgba(255,107,0,.12); }
       .stat-value { font-size: 2rem; font-weight: 800; color: var(--primary); }
       .stat-label { color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem; }
     }
@@ -60,6 +73,7 @@ Chart.register(...registerables);
     canvas {
       max-height: 280px !important;
     }
+    @media (max-width: 576px) { .dashboard-intro { align-items:flex-start; flex-direction:column; } }
   `]
 })
 export class AdminDashboardComponent implements OnInit, AfterViewInit, OnDestroy {

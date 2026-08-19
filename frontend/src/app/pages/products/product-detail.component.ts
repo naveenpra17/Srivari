@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, signal, computed, HostListener, ElementRef, viewChild, afterNextRender } from '@angular/core';
+import { Component, OnDestroy, OnInit, inject, signal, computed, HostListener, ElementRef, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
@@ -19,7 +19,7 @@ const FALLBACK_PRODUCT_IMAGE =
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss'
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit, OnDestroy {
   private readonly route = inject(ActivatedRoute);
   private readonly productService = inject(ProductService);
   private readonly quoteService = inject(QuoteService);
@@ -28,6 +28,9 @@ export class ProductDetailComponent implements OnInit {
   private readonly chat = inject(ChatWidgetService);
   private readonly fb = inject(FormBuilder);
   private readonly el = inject(ElementRef);
+  private readonly lightboxContainer = viewChild<ElementRef<HTMLElement>>('lightboxContainer');
+  private readonly lightboxCloseButton = viewChild<ElementRef<HTMLButtonElement>>('lightboxCloseButton');
+  private previouslyFocusedElement: HTMLElement | null = null;
 
   // Lightbox state
   lightboxOpen = signal(false);
@@ -43,6 +46,7 @@ export class ProductDetailComponent implements OnInit {
   // Form state
   product = signal<Product | null>(null);
   loading = signal(true);
+  loadError = signal(false);
   quoteSubmitting = signal(false);
   showQuoteForm = signal(false);
   selectedImageIndex = signal(0);
@@ -89,8 +93,13 @@ export class ProductDetailComponent implements OnInit {
           this.loading.set(false);
           this.updateSeo(res.data);
         },
-        error: () => this.loading.set(false)
+        error: () => {
+          this.loadError.set(true);
+          this.loading.set(false);
+        }
       });
+    } else {
+      this.loading.set(false);
     }
 
     this.route.fragment.subscribe(fragment => {
@@ -100,10 +109,18 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
+  ngOnDestroy(): void {
+    document.body.style.overflow = '';
+  }
+
   // Keyboard navigation for lightbox and thumbnails
   @HostListener('document:keydown', ['$event'])
   handleKeydown(event: KeyboardEvent): void {
     if (this.lightboxOpen()) {
+      if (event.key === 'Tab') {
+        this.trapFocus(event);
+        return;
+      }
       switch (event.key) {
         case 'Escape':
           this.closeLightbox();
@@ -138,8 +155,13 @@ export class ProductDetailComponent implements OnInit {
 
   // Touch/swipe support for lightbox
   onTouchStart(event: TouchEvent): void {
-    this.touchStartX.set(event.touches[0].clientX);
-    this.touchStartY.set(event.touches[0].clientY);
+    const touch = event.touches[0];
+    this.touchStartX.set(touch.clientX);
+    this.touchStartY.set(touch.clientY);
+    if (this.lightboxTransform().scale > 1) {
+      const transform = this.lightboxTransform();
+      this.dragStart.set({ x: touch.clientX - transform.x, y: touch.clientY - transform.y });
+    }
   }
 
   onTouchEnd(event: TouchEvent): void {
@@ -160,16 +182,20 @@ export class ProductDetailComponent implements OnInit {
 
   // Lightbox methods
   openLightbox(index: number): void {
+    this.previouslyFocusedElement = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     this.lightboxIndex.set(index);
     this.lightboxOpen.set(true);
     this.lightboxTransform.set({ scale: 1, x: 0, y: 0 });
     document.body.style.overflow = 'hidden';
+    setTimeout(() => this.lightboxCloseButton()?.nativeElement.focus());
   }
 
   closeLightbox(): void {
     this.lightboxOpen.set(false);
     this.lightboxTransform.set({ scale: 1, x: 0, y: 0 });
     document.body.style.overflow = '';
+    this.previouslyFocusedElement?.focus();
+    this.previouslyFocusedElement = null;
   }
 
   prevLightboxImage(): void {
@@ -265,9 +291,28 @@ export class ProductDetailComponent implements OnInit {
     }
   }
 
-  private openQuoteForm(): void {
+  openQuoteForm(): void {
     this.showQuoteForm.set(true);
     this.scrollToQuoteForm();
+  }
+
+  private trapFocus(event: KeyboardEvent): void {
+    const container = this.lightboxContainer()?.nativeElement;
+    if (!container) return;
+    const focusable = Array.from(container.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    )).filter(element => !element.hasAttribute('disabled'));
+    if (!focusable.length) return;
+
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
   }
 
   private scrollToQuoteForm(): void {
