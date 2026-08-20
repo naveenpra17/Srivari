@@ -53,10 +53,6 @@ npm start
 # App: http://localhost:4200
 ```
 
-### Default Admin Credentials
-- **Email:** admin@motors.com
-- **Password:** Admin@123
-
 ## Environment Variables
 
 ### Backend (Render)
